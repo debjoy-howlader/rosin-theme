@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check tag matches package.json
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          PKG="$(node -p "require('./package.json').version")"
+          [ "$VERSION" = "$PKG" ] || { echo "Tag $GITHUB_REF_NAME does not match package.json version $PKG"; exit 1; }
+
+      - name: Package
+        run: npx --yes @vscode/vsce package -o "rosin-theme-${GITHUB_REF_NAME#v}.vsix"
+
+      - name: Release notes from CHANGELOG
+        run: |
+          awk -v ver="${GITHUB_REF_NAME#v}" '/^## /{ if (p) exit; if ($2 == ver) p = 1; next } p' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "Rosin ${GITHUB_REF_NAME}" > notes.md
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" "rosin-theme-${GITHUB_REF_NAME#v}.vsix" \
+            --title "Rosin ${GITHUB_REF_NAME}" --notes-file notes.md

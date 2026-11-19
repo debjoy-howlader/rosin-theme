@@ -7,6 +7,8 @@
 <p align="center">Calm, low-glare dark themes for VS Code, where every colour means the same thing in every language.</p>
 
 <p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=debjoy-howlader.rosin-theme"><img src="https://img.shields.io/badge/VS%20Marketplace-Install-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Install from the VS Marketplace"></a>
+  <a href="https://github.com/debjoy-howlader/rosin-theme/releases/latest"><img src="https://img.shields.io/badge/Download-.vsix-C9732F?style=for-the-badge&logo=github&logoColor=white" alt="Download the .vsix"></a>
   <a href="https://github.com/debjoy-howlader/rosin-theme"><img src="https://img.shields.io/badge/GitHub-rosin--theme-24292f?style=for-the-badge&logo=github&logoColor=white" alt="View on GitHub"></a>
 </p>
 
@@ -249,6 +251,8 @@
 1. Open the Extensions view (`Ctrl+Shift+X`) and search for **Rosin**.
 2. Install it, then run **Preferences: Color Theme** and pick a **Rosin · …** flavour.
 
+Offline or on a fork of VS Code? Download the `.vsix` from the [latest release](https://github.com/debjoy-howlader/rosin-theme/releases/latest) and run **Extensions: Install from VSIX…**.
+
 ### Recommended settings
 
 ```jsonc
@@ -265,6 +269,8 @@ python tools/gen.py             # writes themes/*.json
 python tools/readme_assets.py   # redraws the preview, swatches and colour tables (needs Pillow)
 npx @vscode/vsce package        # builds the .vsix
 ```
+
+To release, bump `version` in `package.json`, add a `CHANGELOG.md` entry, then push a matching tag (`git tag v1.0.2 && git push --tags`). A GitHub Action builds the `.vsix` and attaches it to a new release.
 
 ## License
 

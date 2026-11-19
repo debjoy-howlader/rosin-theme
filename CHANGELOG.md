@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- README: Marketplace install and `.vsix` download buttons.
+- Releases on GitHub now include the `.vsix`.
+
 ## 1.0.0
 
 - First release with six flavours: Sea Salt, Black Cherry, Matcha, Espresso, Licorice (stealth) and OLED.
