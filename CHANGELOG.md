@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- README & package: Minor update to Litrature and Description
+
 ## 1.0.1
 
 - README: Marketplace install and `.vsix` download buttons.

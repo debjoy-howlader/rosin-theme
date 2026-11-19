@@ -25,7 +25,6 @@
 
 ## Highlights
 
-- **The whole window is themed.** Every colour VS Code lets a theme set (about 970 of them) is set in all six flavours. That covers the editor, panels, terminal, diff and merge views, testing, debugging, notebooks, chat and the settings editor.
 - **Built for semantic highlighting.** Tuned for C/C++ IntelliSense and clangd, rust-analyzer and Pylance. Globals, statics, `const` values, parameters and library calls are each distinguishable.
 - **Toolchains as well as languages.** Makefiles, CMake, shell, PowerShell, TOML, INI, YAML, Dockerfiles, diffs and git get the same care. Assembly, linker-script and devicetree grammars get it too, when an extension provides them.
 - **Readable logs.** In `.log` files, errors, warnings, info and debug lines each get their own colour. ESP-IDF style (`E (512) tag:`) and Zephyr style (`<err>`) levels are recognised, along with panic and fault messages.

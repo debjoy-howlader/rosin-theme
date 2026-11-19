@@ -1,8 +1,8 @@
 {
   "name": "rosin-theme",
   "displayName": "Rosin",
-  "description": "Six calm, low-glare dark themes, including a stealth and an OLED variant, with consistent colour meaning across languages, build tools and logs.",
-  "version": "1.0.1",
+  "description": "Calm, low-glare dark themes, with consistent colour meaning across languages, build tools and logs.",
+  "version": "1.0.2",
   "publisher": "debjoy-howlader",
   "author": {
     "name": "Debjoy Howlader"
