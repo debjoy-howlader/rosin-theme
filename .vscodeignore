@@ -1,0 +1,8 @@
+.vscode/**
+.github/**
+.gitignore
+*.vsix
+tools/**
+images/swatches/**
+images/preview.png
+images/icon-512.png

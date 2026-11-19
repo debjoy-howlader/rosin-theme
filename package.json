@@ -1,0 +1,91 @@
+{
+  "name": "rosin-theme",
+  "displayName": "Rosin",
+  "description": "Six calm, low-glare dark themes, including a stealth and an OLED variant, with consistent colour meaning across languages, build tools and logs.",
+  "version": "1.0.0",
+  "publisher": "debjoy-howlader",
+  "author": {
+    "name": "Debjoy Howlader"
+  },
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/debjoy-howlader/rosin-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/debjoy-howlader/rosin-theme/issues"
+  },
+  "homepage": "https://github.com/debjoy-howlader/rosin-theme#readme",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "color theme",
+    "oled",
+    "black",
+    "monochrome",
+    "stealth",
+    "low contrast",
+    "readability",
+    "semantic highlighting",
+    "c",
+    "cpp",
+    "rust",
+    "embedded",
+    "logs"
+  ],
+  "galleryBanner": {
+    "color": "#13171F",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Rosin · Sea Salt",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-sea-salt.json"
+      },
+      {
+        "label": "Rosin · Black Cherry",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-black-cherry.json"
+      },
+      {
+        "label": "Rosin · Matcha",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-matcha.json"
+      },
+      {
+        "label": "Rosin · Espresso",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-espresso.json"
+      },
+      {
+        "label": "Rosin · Licorice",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-licorice.json"
+      },
+      {
+        "label": "Rosin · OLED",
+        "uiTheme": "vs-dark",
+        "path": "./themes/rosin-oled.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "rosin.loglevels.injection",
+        "path": "./syntaxes/loglevels.injection.json",
+        "injectTo": [
+          "text.log"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "scopeName": "rosin.loglevels.injection",
+  "injectionSelector": "L:text.log",
+  "patterns": [
+    {
+      "match": "^(E) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "captures": {
+        "1": {
+          "name": "log.error"
+        },
+        "2": {
+          "name": "log.date"
+        },
+        "3": {
+          "name": "log.tag.rosin"
+        }
+      }
+    },
+    {
+      "match": "^(W) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "captures": {
+        "1": {
+          "name": "log.warning"
+        },
+        "2": {
+          "name": "log.date"
+        },
+        "3": {
+          "name": "log.tag.rosin"
+        }
+      }
+    },
+    {
+      "match": "^(I) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "captures": {
+        "1": {
+          "name": "log.info"
+        },
+        "2": {
+          "name": "log.date"
+        },
+        "3": {
+          "name": "log.tag.rosin"
+        }
+      }
+    },
+    {
+      "match": "^([DV]) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "captures": {
+        "1": {
+          "name": "log.debug"
+        },
+        "2": {
+          "name": "log.date"
+        },
+        "3": {
+          "name": "log.tag.rosin"
+        }
+      }
+    },
+    {
+      "match": "<(err)>",
+      "captures": {
+        "1": {
+          "name": "log.error"
+        }
+      }
+    },
+    {
+      "match": "<(wrn)>",
+      "captures": {
+        "1": {
+          "name": "log.warning"
+        }
+      }
+    },
+    {
+      "match": "<(inf)>",
+      "captures": {
+        "1": {
+          "name": "log.info"
+        }
+      }
+    },
+    {
+      "match": "<(dbg)>",
+      "captures": {
+        "1": {
+          "name": "log.debug"
+        }
+      }
+    },
+    {
+      "match": "^\\[\\d\\d:\\d\\d:\\d\\d\\.\\d{3},\\d{3}\\]",
+      "name": "log.date"
+    },
+    {
+      "match": "\\b(?:Guru Meditation Error|panic(?:ked)?|HardFault|Backtrace|abort\\(\\)|assert(?:ion)? failed)\\b",
+      "name": "log.error"
+    }
+  ]
+}
