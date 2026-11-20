@@ -1,0 +1,44 @@
+#@ toml.comment comment comment
+# comment
+#@ toml.table.header function package
+[package]
+#@ toml.key member name
+#@ toml.string string corpus
+name = "corpus"
+#@ toml.key.dotted member features
+features.default = ["std"]
+#@ toml.number number 115200
+baud = 115200
+#@ toml.bool number true
+debug = true
+#@ toml.date number 2026-11-20
+date = 2026-11-20
+#@ toml.arraytable function bin
+[[bin]]
+#@ toml.inline.key member path
+dep = { path = "../x", version = "1.0" }
+#@ toml.literal.string string ~C:
+win = 'C:\tools'
+#@ toml.number.hex number ~0xFF
+#@ toml.number.float number ~3.14
+#@ toml.number.inf number inf
+#@ toml.number.nan number nan
+#@ toml.number.bin number ~0b11
+#@ toml.number.oct number ~0o7
+n = [0xFF, 3.14, inf, nan, 0b11, 0o7]
+#@ toml.datetime.offset number ~1979-05-27T07
+dt = 1979-05-27T07:32:00Z
+#@ toml.time number ~07:32
+t = 07:32:00
+#@ toml.escape escape \n
+e = "a\nb"
+ml = """
+#@ toml.multiline string multi
+multi"""
+ml2 = '''
+#@ toml.multiline.literal string lit
+lit'''
+#@ toml.array.comma punct ,
+arr = [1, 2]
+#@ toml.datetime.local number ~1979-05-27T07
+ldt = 1979-05-27T07:32:00

@@ -1,0 +1,49 @@
+1795190364175 warmup
+1795190427205 step 1 Rosin · Sea Salt cpp.extern.block
+1795190436875 step 2 Rosin · Sea Salt cpp.kw.decltype
+1795190446553 step 3 Rosin · Sea Salt cpp.noexcept.op
+1795190456240 step 4 Rosin · Sea Salt cpp.kw.requires
+1795190465700 step 5 Rosin · Sea Salt c.macro.va_args
+1795190475395 step 6 Rosin · Sea Salt c.asm.operand.constraint
+1795190484841 step 7 Rosin · Sea Salt cpp.attr.std
+1795190494506 step 8 Rosin · Sea Salt cpp.udl.string
+1795190504184 step 9 Rosin · Sea Salt cpp.ns.nested.outer
+1795190513873 step 10 Rosin · Sea Salt cpp.ool.fn.owner
+1795190523561 step 11 Rosin · Sea Salt cpp.member.decl
+1795190533005 step 12 Rosin · Sea Salt c.number.exp.plus
+1795190542472 step 13 Rosin · Sea Salt rs.kw.static
+1795190552149 step 14 Rosin · Sea Salt rs.kw.super
+1795190561825 step 15 Rosin · Sea Salt rs.macro.rules
+1795190571504 step 16 Rosin · Sea Salt rs.option.some
+1795190581181 step 17 Rosin · Sea Salt rs.type.string
+1795190590859 step 18 Rosin · Sea Salt rs.macro.metavar
+1795190600541 step 19 Rosin · Sea Salt rs.macro.fragment
+1795190610225 step 20 Rosin · Sea Salt rs.scope.op
+1795190619677 step 21 Rosin · Sea Salt py.kw.global
+1795190629347 step 22 Rosin · Sea Salt py.line.continuation
+1795190639035 step 23 Rosin · Sea Salt py.number.imag
+1795190648702 step 24 Rosin · Sea Salt py.raw.string
+1795190658380 step 25 Rosin · Sea Salt py.rawbytes
+1795190668051 step 26 Rosin · Sea Salt py.magic.call
+1795190677735 step 27 Rosin · Sea Salt py.import.name
+1795190687416 step 28 Rosin · Sea Salt py.decorator.name
+1795190696900 step 29 Rosin · Sea Salt toml.key.dotted
+1795190706356 step 30 Rosin · Sea Salt ld.section.name
+1795190716034 step 31 Rosin · Sea Salt ld.symbol.def
+1795190725489 step 32 Rosin · Sea Salt diff.from
+1795190735179 step 33 Rosin · Sea Salt diff.range
+1795190744645 step 34 Rosin · Sea Salt dts.ref.node
+1795190754099 step 35 Rosin · Sea Salt yaml.list.dash
+1795190763766 step 36 Rosin · Sea Salt yaml.merge.key
+1795190773221 step 37 Rosin · Sea Salt cm.genex.open
+1795190782688 step 38 Rosin · Sea Salt mk.prereq
+1795190792156 step 39 Rosin · Sea Salt sh.alias.name
+1795190801833 step 40 Rosin · Sea Salt sh.for.var
+1795190811289 step 41 Rosin · Sea Salt git.filetype.new
+1795190820733 step 42 Rosin · Sea Salt log.espidf.verbose.2
+1795190832831 step 2 Rosin · Licorice cpp.kw.decltype
+1795190842300 step 15 Rosin · Licorice rs.macro.rules
+1795190851766 step 21 Rosin · Licorice py.kw.global
+1795190861232 step 35 Rosin · Licorice yaml.list.dash
+1795190870676 step 41 Rosin · Licorice git.filetype.new
+1795190879817 done

@@ -1,0 +1,8 @@
+{
+  "name": "blink",
+  "version": 3,
+  "debug": true,
+  "nothing": null,
+  "pins": [2, 4.5, "gpio"],
+  "nested": { "inner": "\u00e9" }
+}

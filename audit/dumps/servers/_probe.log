@@ -1,0 +1,81 @@
+2026-11-20T11:12:26.033Z start servers (cpptools, rust-analyzer, Pylance, Even Better TOML, YAML, Bash IDE, CMake Tools, Makefile Tools, devicetree, ESP-IDF)
+2026-11-20T11:12:35.175Z c/corpus.c lang=c tokens=89 kind=document diags=10 waited=8653
+2026-11-20T11:12:43.026Z cpp/corpus.cpp lang=cpp tokens=78 kind=document diags=2 waited=7605
+2026-11-20T11:13:00.999Z rust/corpus.rs lang=rust tokens=0 kind=document diags=0 waited=17735
+2026-11-20T11:13:11.011Z python/corpus.py lang=python tokens=75 kind=document diags=4 waited=9477
+2026-11-20T11:13:21.116Z config/corpus.toml lang=toml tokens=3 kind=document diags=0 waited=10053
+2026-11-20T11:13:31.303Z config/corpus.yaml lang=yaml tokens=0 kind=document diags=0 waited=10034
+2026-11-20T11:13:41.379Z config/corpus.json lang=json tokens=0 kind=document diags=0 waited=10036
+2026-11-20T11:13:51.451Z config/corpus.ini lang=ini tokens=0 kind=document diags=0 waited=10029
+2026-11-20T11:14:01.737Z shell/corpus.sh lang=shellscript tokens=0 kind=document diags=0 waited=10058
+2026-11-20T11:14:11.816Z make/Makefile lang=makefile tokens=0 kind=document diags=0 waited=10042
+2026-11-20T11:14:21.918Z cmake/CMakeLists.txt lang=cmake tokens=0 kind=document diags=0 waited=10031
+2026-11-20T11:14:32.013Z kconfig/Kconfig lang=kconfig tokens=0 kind=document diags=0 waited=10057
+2026-11-20T11:14:42.100Z dts/corpus.dts lang=dts tokens=0 kind=document diags=0 waited=10050
+2026-11-20T11:14:52.208Z ld/corpus.ld lang=linkerscript tokens=0 kind=document diags=0 waited=10072
+2026-11-20T11:15:02.312Z asm/corpus.S lang=arm tokens=0 kind=document diags=0 waited=10060
+2026-11-20T11:15:12.608Z markdown/corpus.md lang=markdown tokens=0 kind=document diags=0 waited=10044
+2026-11-20T11:15:22.698Z logs/corpus.log lang=log tokens=0 kind=document diags=0 waited=10042
+2026-11-20T11:15:32.784Z diff/corpus.diff lang=diff tokens=0 kind=document diags=0 waited=10045
+2026-11-20T11:15:42.862Z git/COMMIT_EDITMSG lang=git-commit tokens=0 kind=document diags=0 waited=10036
+2026-11-20T11:15:42.862Z done
+2026-11-20T13:37:24.602Z start servers (Pylance, Even Better TOML, YAML, Bash IDE, CMake Tools, Makefile Tools, devicetree, ESP-IDF, linker, ARM)
+2026-11-20T13:37:33.724Z python/corpus.py lang=python tokens=116 kind=document diags=6 waited=8693
+2026-11-20T13:37:41.329Z config/corpus.toml lang=toml tokens=5 kind=document diags=0 waited=7545
+2026-11-20T13:37:51.533Z config/corpus.yaml lang=yaml tokens=0 kind=document diags=3 waited=10037
+2026-11-20T13:38:01.643Z config/corpus.json lang=json tokens=0 kind=document diags=0 waited=10068
+2026-11-20T13:38:11.765Z config/corpus.ini lang=ini tokens=0 kind=document diags=0 waited=10080
+2026-11-20T13:38:22.041Z shell/corpus.sh lang=shellscript tokens=0 kind=document diags=0 waited=10030
+2026-11-20T13:38:32.142Z make/Makefile lang=makefile tokens=0 kind=document diags=0 waited=10066
+2026-11-20T13:38:42.266Z cmake/CMakeLists.txt lang=cmake tokens=0 kind=document diags=0 waited=10053
+2026-11-20T13:38:52.361Z kconfig/Kconfig lang=kconfig tokens=0 kind=document diags=0 waited=10039
+2026-11-20T13:39:02.453Z dts/corpus.dts lang=dts tokens=0 kind=document diags=0 waited=10050
+2026-11-20T13:39:12.556Z ld/corpus.ld lang=linkerscript tokens=0 kind=document diags=0 waited=10061
+2026-11-20T13:39:22.654Z asm/corpus.S lang=arm tokens=0 kind=document diags=0 waited=10058
+2026-11-20T13:39:32.947Z markdown/corpus.md lang=markdown tokens=0 kind=document diags=0 waited=10051
+2026-11-20T13:39:43.029Z logs/corpus.log lang=log tokens=0 kind=document diags=0 waited=10044
+2026-11-20T13:39:53.131Z diff/corpus.diff lang=diff tokens=0 kind=document diags=0 waited=10053
+2026-11-20T13:40:03.212Z git/COMMIT_EDITMSG lang=git-commit tokens=0 kind=document diags=0 waited=10039
+2026-11-20T13:40:13.307Z config/corpus.jsonc lang=jsonc tokens=0 kind=document diags=0 waited=10050
+2026-11-20T13:40:23.428Z diff/corpus.ctx.diff lang=diff tokens=0 kind=document diags=0 waited=10081
+2026-11-20T13:40:23.429Z done
+2026-11-20T13:45:51.446Z start servers (Pylance, Even Better TOML, YAML, Bash IDE, CMake Tools, Makefile Tools, devicetree, ESP-IDF, linker, ARM)
+2026-11-20T13:45:59.844Z python/corpus.py lang=python tokens=135 kind=document diags=8 waited=8031
+2026-11-20T13:46:07.435Z config/corpus.toml lang=toml tokens=5 kind=document diags=0 waited=7539
+2026-11-20T13:46:17.649Z config/corpus.yaml lang=yaml tokens=0 kind=document diags=4 waited=10061
+2026-11-20T13:46:27.739Z config/corpus.json lang=json tokens=0 kind=document diags=0 waited=10053
+2026-11-20T13:46:37.803Z config/corpus.ini lang=ini tokens=0 kind=document diags=0 waited=10033
+2026-11-20T13:46:48.052Z shell/corpus.sh lang=shellscript tokens=0 kind=document diags=0 waited=10051
+2026-11-20T13:46:58.174Z make/Makefile lang=makefile tokens=0 kind=document diags=0 waited=10073
+2026-11-20T13:47:08.291Z cmake/CMakeLists.txt lang=cmake tokens=0 kind=document diags=0 waited=10053
+2026-11-20T13:47:18.384Z kconfig/Kconfig lang=kconfig tokens=0 kind=document diags=0 waited=10049
+2026-11-20T13:47:28.500Z dts/corpus.dts lang=dts tokens=0 kind=document diags=0 waited=10086
+2026-11-20T13:47:38.590Z ld/corpus.ld lang=linkerscript tokens=0 kind=document diags=0 waited=10059
+2026-11-20T13:47:48.679Z asm/corpus.S lang=arm tokens=0 kind=document diags=0 waited=10049
+2026-11-20T13:47:58.978Z markdown/corpus.md lang=markdown tokens=0 kind=document diags=0 waited=10061
+2026-11-20T13:48:09.061Z logs/corpus.log lang=log tokens=0 kind=document diags=0 waited=10045
+2026-11-20T13:48:19.187Z diff/corpus.diff lang=diff tokens=0 kind=document diags=0 waited=10066
+2026-11-20T13:48:29.257Z git/COMMIT_EDITMSG lang=git-commit tokens=0 kind=document diags=0 waited=10038
+2026-11-20T13:48:39.366Z config/corpus.jsonc lang=jsonc tokens=0 kind=document diags=0 waited=10059
+2026-11-20T13:48:49.471Z diff/corpus.ctx.diff lang=diff tokens=0 kind=document diags=0 waited=10075
+2026-11-20T13:48:49.471Z done
+2026-11-20T15:50:46.379Z start servers (Pylance, Even Better TOML, YAML, Bash IDE, CMake Tools, Makefile Tools, devicetree, ESP-IDF, linker, ARM)
+2026-11-20T15:50:55.252Z python/corpus.py lang=python tokens=142 kind=document diags=8 waited=8434
+2026-11-20T15:51:05.359Z config/corpus.toml lang=toml tokens=5 kind=document diags=0 waited=10054
+2026-11-20T15:51:15.571Z config/corpus.yaml lang=yaml tokens=0 kind=document diags=4 waited=10047
+2026-11-20T15:51:25.646Z config/corpus.json lang=json tokens=0 kind=document diags=0 waited=10035
+2026-11-20T15:51:35.715Z config/corpus.ini lang=ini tokens=0 kind=document diags=0 waited=10036
+2026-11-20T15:51:45.968Z shell/corpus.sh lang=shellscript tokens=0 kind=document diags=0 waited=10048
+2026-11-20T15:51:56.072Z make/Makefile lang=makefile tokens=0 kind=document diags=0 waited=10066
+2026-11-20T15:52:06.198Z cmake/CMakeLists.txt lang=cmake tokens=0 kind=document diags=0 waited=10065
+2026-11-20T15:52:16.280Z kconfig/Kconfig lang=kconfig tokens=0 kind=document diags=0 waited=10039
+2026-11-20T15:52:26.402Z dts/corpus.dts lang=dts tokens=0 kind=document diags=0 waited=10055
+2026-11-20T15:52:36.481Z ld/corpus.ld lang=linkerscript tokens=0 kind=document diags=0 waited=10039
+2026-11-20T15:52:46.568Z asm/corpus.S lang=arm tokens=0 kind=document diags=0 waited=10036
+2026-11-20T15:52:56.838Z markdown/corpus.md lang=markdown tokens=0 kind=document diags=0 waited=10055
+2026-11-20T15:53:06.936Z logs/corpus.log lang=log tokens=0 kind=document diags=0 waited=10049
+2026-11-20T15:53:17.023Z diff/corpus.diff lang=diff tokens=0 kind=document diags=0 waited=10036
+2026-11-20T15:53:27.127Z git/COMMIT_EDITMSG lang=git-commit tokens=0 kind=document diags=0 waited=10062
+2026-11-20T15:53:37.195Z config/corpus.jsonc lang=jsonc tokens=0 kind=document diags=1 waited=10027
+2026-11-20T15:53:47.293Z diff/corpus.ctx.diff lang=diff tokens=0 kind=document diags=0 waited=10056
+2026-11-20T15:53:47.293Z done

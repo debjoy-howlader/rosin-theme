@@ -1,0 +1,10 @@
+@ git.subject keyword Fix L1
+@ git.body variable Body L3
+@ git.comment comment Please L4
+@ git.filetype.modified keyword modified L7
+@ git.filename string src/main.c L7
+@ git.filetype.new keyword new L8
+@ git.filetype.deleted keyword deleted L9
+@ git.diff.header comment diff L12
+@ git.diff.removed error int L17
+@ git.diff.added string int L18

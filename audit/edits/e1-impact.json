@@ -1,0 +1,2653 @@
+[
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.cpu",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.directive",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.global",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.label.def",
+  "reasons": [
+   "CP target CP-A1-086",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.pc",
+  "reasons": [
+   "CP target CP-A1-007",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.register",
+  "reasons": [
+   "CP target CP-A1-007",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.register.sp",
+  "reasons": [
+   "CP target CP-A1-007",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.section.directive",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "asm/corpus.S",
+  "component": "asm.writeback",
+  "reasons": [
+   "CP target CP-A1-007",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.array.decl.size",
+  "reasons": [
+   "CP target CP-A1-014",
+   "colour or style moved in the what-if",
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.doc.block",
+  "reasons": [
+   "CP target CP-A1-015",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.doc.tag",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.asm",
+  "reasons": [
+   "CP target CP-A1-016",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.break",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.case",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.continue",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.default",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.do",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.else",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.for",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.goto",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.if",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.return",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.sizeof",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.switch",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.typedef",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.kw.while",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.fn.def",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.name.def",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.param.def",
+  "reasons": [
+   "CP target CP-A1-021",
+   "colour or style moved in the what-if",
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.param.use",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.use.cond",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.macro.va_args",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.member.use",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.member.use.dot",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.binary.prefix",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.exp.minus",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.exp.plus",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.exp.sign",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.exponent",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.hex.prefix",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.octal",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.suffix",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.number.suffix.f",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.addressof",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.arith",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.bitand",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.bitassign",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.bitnot",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.bitor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.compare",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.compound.arith",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.compound.bitand",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.compound.shr",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.decr",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.deref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.incr",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.logical",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.mul",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.not",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.shift",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.shift.assign",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.ternary",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.op.xor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.define",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.defined",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.directive",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.elif",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.else",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.if",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.line",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.pragma",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.stringize",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pp.undef",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.pragma.mark",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.ptr.declarator",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.type.enum.kw",
+  "reasons": [
+   "CP target CP-A1-017",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.type.struct.kw",
+  "reasons": [
+   "CP target CP-A1-018",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.type.typedef.def2",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "c/corpus.c",
+  "component": "c.type.union.kw",
+  "reasons": [
+   "CP target CP-A1-019",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.bracket.arg",
+  "reasons": [
+   "CP target CP-A1-094",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.fn.def.kw",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.foreach",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.kw.endif",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.kw.if",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.kwarg",
+  "reasons": [
+   "CP target CP-A1-046",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.kwarg.public",
+  "reasons": [
+   "CP target CP-A1-046",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.op.strequal",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.return",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.var.cache.kw",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cmake/CMakeLists.txt",
+  "component": "cm.var.use",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "config/corpus.ini",
+  "component": "ini.key",
+  "reasons": [
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.json",
+  "component": "json.key.nested",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.json",
+  "component": "json.key.quote",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.json",
+  "component": "json.key.top",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.jsonc",
+  "component": "jsonc.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.toml",
+  "component": "toml.arraytable",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "config/corpus.toml",
+  "component": "toml.inline.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.toml",
+  "component": "toml.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.toml",
+  "component": "toml.key.dotted",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.toml",
+  "component": "toml.table.header",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.anchor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.block.indicator",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.flow.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.folded",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.indent.indicator",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.key.nested",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "config/corpus.yaml",
+  "component": "yaml.merge.key",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.alias.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.cast.const",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.cast.reinterpret",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.cast.static",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.class.kw",
+  "reasons": [
+   "CP target CP-A1-001",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.class.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.class.use",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.ctor.default.delete",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.decltype.auto",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.delete.array.bracket",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.enum.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.alignof",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.case",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.catch",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.class.fwd",
+  "reasons": [
+   "CP target CP-A1-001",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.concept",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.decltype",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.delete",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.delete.array",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.enumclass",
+  "reasons": [
+   "CP target CP-A1-026",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.for.range",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.goto",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.if.constexpr",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.new",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.new.array",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.return",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.sizeof",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.sizeof.pack",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.static_assert",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.struct",
+  "reasons": [
+   "CP target CP-A1-003",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.switch",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.template",
+  "reasons": [
+   "CP target CP-A1-030",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.throw",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.try",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.typedef",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.typename",
+  "reasons": [
+   "CP target CP-A1-029",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.kw.using",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.lambda.capture.ref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.macro.def",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.macro.param",
+  "reasons": [
+   "CP target CP-A1-034",
+   "colour or style moved in the what-if",
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.noexcept.op",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.ns.alias.kw",
+  "reasons": [
+   "CP target CP-A1-027",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.ns.kw",
+  "reasons": [
+   "CP target CP-A1-028",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.number.oct",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.number.suffix.ull",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.obj.prop",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.addressof",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.bitand",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.bitor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.compound.bit",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.conversion",
+  "reasons": [
+   "CP target CP-A1-005",
+   "colour or style moved in the what-if",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.decr",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.deref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.logical",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.new.overload",
+  "reasons": [
+   "CP target CP-A1-005",
+   "colour or style moved in the what-if",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.not.bit",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.overload.decl",
+  "reasons": [
+   "colour or style moved in the what-if",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.shift",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.ternary",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.op.xor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.define",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.defined",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.directive",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.include.macro",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.line",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.pragma",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.pp.undef",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.predef.macro",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.scope.opover.def",
+  "reasons": [
+   "colour or style moved in the what-if",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.struct.fwd",
+  "reasons": [
+   "CP target CP-A1-003",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.struct.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.template.call",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.this.use",
+  "reasons": [
+   "CP target CP-A1-032",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.tparam.decl",
+  "reasons": [
+   "CP target CP-A1-103",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.udl.char",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.udl.op.decl",
+  "reasons": [
+   "colour or style moved in the what-if",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.udl.string",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.udl.suffix",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.union.kw",
+  "reasons": [
+   "CP target CP-A1-031",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.union.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.upper.def",
+  "reasons": [
+   "winning rule edited: Macro names & macro parameters"
+  ]
+ },
+ {
+  "file": "cpp/corpus.cpp",
+  "component": "cpp.using.ns",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "dts/corpus.dts",
+  "component": "dts.include",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "dts/corpus.dts",
+  "component": "dts.label.def",
+  "reasons": [
+   "CP target CP-A1-113",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "dts/corpus.dts",
+  "component": "dts.node.name",
+  "reasons": [
+   "CP target CP-A1-051",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "dts/corpus.dts",
+  "component": "dts.node.unit",
+  "reasons": [
+   "CP target CP-A1-051",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "git/COMMIT_EDITMSG",
+  "component": "git.subject",
+  "reasons": [
+   "CP target CP-A1-116",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.config",
+  "reasons": [
+   "CP target CP-A1-053",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.default",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.depends",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.help",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.menu",
+  "reasons": [
+   "CP target CP-A1-053",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.range",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.select",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.type",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "kconfig/Kconfig",
+  "component": "kc.type.string",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.assign.append",
+  "reasons": [
+   "CP target CP-A1-036",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.assign.cond",
+  "reasons": [
+   "CP target CP-A1-036",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.assign.op",
+  "reasons": [
+   "CP target CP-A1-036",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.cond.endif",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.cond.ifeq",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.define",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.else",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.include",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.phony",
+  "reasons": [
+   "CP target CP-A1-122",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.var.braced",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.var.use",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.var.use.recipe",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "make/Makefile",
+  "component": "mk.vpath",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.code.inline",
+  "reasons": [
+   "CP target CP-A1-123",
+   "colour or style moved in the what-if",
+   "winning rule edited: Markup"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.c.keyword",
+  "reasons": [
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.cpp.keyword",
+  "reasons": [
+   "CP target CP-A1-125",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.lang",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.make.var",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.py.builtin",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.rs.macro",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.toml.key",
+  "reasons": [
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.fence.yaml.key",
+  "reasons": [
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.link.text",
+  "reasons": [
+   "CP target CP-A1-054",
+   "colour or style moved in the what-if",
+   "winning rule edited: Links"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.link.url",
+  "reasons": [
+   "winning rule edited: Links"
+  ]
+ },
+ {
+  "file": "markdown/corpus.md",
+  "component": "md.ref.link",
+  "reasons": [
+   "CP target CP-A1-054",
+   "colour or style moved in the what-if",
+   "winning rule edited: Links"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.attr.use",
+  "reasons": [
+   "CP target CP-A1-077",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.class.base",
+  "reasons": [
+   "CP target CP-A1-012",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.class.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.codetag",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.decorator.builtin",
+  "reasons": [
+   "CP target CP-A1-073",
+   "CP target CP-A1-130",
+   "colour or style moved in the what-if",
+   "semantic rule edited: class"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.decorator.name",
+  "reasons": [
+   "CP target CP-A1-075",
+   "colour or style moved in the what-if",
+   "semantic rule edited: function"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.dunder.decl",
+  "reasons": [
+   "CP target CP-A1-131",
+   "colour or style moved in the what-if",
+   "winning rule edited: Members / keys / properties"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.exception.builtin",
+  "reasons": [
+   "CP target CP-A1-012",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.field.decl",
+  "reasons": [
+   "CP target CP-A1-078",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.fn.builtin",
+  "reasons": [
+   "CP target CP-A1-040",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.fn.builtin.open",
+  "reasons": [
+   "CP target CP-A1-040",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.async",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.await",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.case",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.class",
+  "reasons": [
+   "CP target CP-A1-056",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up",
+   "winning rule edited: Type-declaring keywords (class interface type enum namespace)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.def",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.except",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.from",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.import",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.match",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.raise",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.return",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.try",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.with",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.kw.yield",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.lambda",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.magic.call",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.matmul",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.metaclass.builtin",
+  "reasons": [
+   "CP target CP-A1-012",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.metaclass.kw",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.bitor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.in",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.is",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.not",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.shift",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.op.walrus",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.param.decl",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.posonly.sep",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.typehint.builtin",
+  "reasons": [
+   "CP target CP-A1-074",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "python/corpus.py",
+  "component": "py.unpack.star",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.arrow.fat",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.attr.derive.item",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.borrow.mut",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.borrow.ref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.closure.pipe",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.const.decl",
+  "reasons": [
+   "CP target CP-A1-080",
+   "colour or style moved in the what-if",
+   "semantic rule edited: const"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.const.use",
+  "reasons": [
+   "CP target CP-A1-079",
+   "colour or style moved in the what-if",
+   "semantic rule edited: const"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.deref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.enum.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.enum.variant.decl",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.enum.variant.use",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.format.named",
+  "reasons": [
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.format.spec",
+  "reasons": [
+   "CP target CP-A1-145",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.generic.where",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.as",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.async",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.break",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.crate",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.dyn",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.enum",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.fn",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.for",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.if",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.impl",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.let",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.match",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.mod",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.move",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.ref",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.result",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.return",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.struct",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.trait",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.type",
+  "reasons": [
+   "CP target CP-A1-004",
+   "colour or style moved in the what-if",
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.unsafe.block",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.kw.use",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.macro.metavar",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.number.exp",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.number.exp.sign",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.number.suffix",
+  "reasons": [
+   "CP target CP-A1-135",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.bitxor",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.cmp",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.range",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.range.inclusive",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.subpattern",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.op.try",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.option.some",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.qual.unsafe",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.rawptr",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.ref.lifetime",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.scope.op",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.self.ref",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.selfty",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.static.decl",
+  "reasons": [
+   "CP target CP-A1-084",
+   "colour or style moved in the what-if",
+   "semantic rule edited: static"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.struct.lit",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.struct.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.tparam.decl",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.tparam.use",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.trait.name",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.type.prim",
+  "reasons": [
+   "CP target CP-A1-060",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.type.prim.u8",
+  "reasons": [
+   "CP target CP-A1-060",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.type.str",
+  "reasons": [
+   "CP target CP-A1-137",
+   "colour or style moved in the what-if",
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.type.string",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "rust/corpus.rs",
+  "component": "rs.typealias.decl",
+  "reasons": [
+   "winning rule edited: Composite-type keywords & user types (turquoise)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.arith.op",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.array.at",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.case",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.case.default",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.clobber",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.esac",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.flag.test",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.herestring",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.done",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.fi",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.for",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.function",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.if",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.in",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.kw.then",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.op.and",
+  "reasons": [
+   "CP target CP-A1-152",
+   "colour or style moved in the what-if"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.or.op",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.param.op",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.pipe",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.redirect",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.redirect.fd",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.redirect.stdout",
+  "reasons": [
+   "coupled: an edited rule is a runner-up"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.regex.match",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.select",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.while",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ },
+ {
+  "file": "shell/corpus.sh",
+  "component": "sh.while.kw",
+  "reasons": [
+   "winning rule edited: Keywords & control flow (amber)"
+  ]
+ }
+]

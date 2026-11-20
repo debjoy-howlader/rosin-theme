@@ -1,0 +1,8 @@
+@ diff.onlyin comment Only L1
+@ diff.ctx.from comment *** L2
+@ diff.ctx.separator punct *************** L4
+@ diff.ctx.range directive 1,2 L5
+@ diff.changed keyword int L6
+@ diff.normal.range directive 1c1 L9
+@ diff.normal.removed error old L10
+@ diff.normal.added string new L12

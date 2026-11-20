@@ -1,0 +1,12 @@
+{
+ "label": "calibration",
+ "calibrate": "../reports/calibration-set-6.json",
+ "out": "../dumps/calib6",
+ "themes": [
+  "Rosin \u00b7 Sea Salt",
+  "Rosin \u00b7 Licorice"
+ ],
+ "warmupMs": 60000,
+ "intervalMs": 9000,
+ "quit": true
+}

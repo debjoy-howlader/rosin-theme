@@ -1,0 +1,273 @@
+[
+ {
+  "id": "CP-A1-001",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-003",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-004",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-005",
+  "status": "limit",
+  "left": [
+   [
+    "cpp.op.new.overload",
+    "S-cpptools",
+    "keyword",
+    "limit",
+    "server can't tell"
+   ]
+  ]
+ },
+ {
+  "id": "CP-A1-007",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-012",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-014",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-015",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-016",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-017",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-018",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-019",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-021",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-026",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-027",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-028",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-029",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-030",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-031",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-032",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-034",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-036",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-040",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-046",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-051",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-053",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-054",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-056",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-060",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-073",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-074",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-075",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-077",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-078",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-079",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-080",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-084",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-086",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-094",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-103",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-113",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-116",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-122",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-123",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-125",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-130",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-131",
+  "status": "open",
+  "left": [
+   [
+    "py.dunder.decl",
+    "T",
+    "variable",
+    "fix",
+    "missing rule"
+   ]
+  ]
+ },
+ {
+  "id": "CP-A1-135",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-137",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-145",
+  "status": "resolved",
+  "left": []
+ },
+ {
+  "id": "CP-A1-152",
+  "status": "resolved",
+  "left": []
+ }
+]

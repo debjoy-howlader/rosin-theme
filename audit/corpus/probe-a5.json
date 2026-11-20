@@ -1,0 +1,3 @@
+{ "label": "A5 readiness (long legend wait: Bash IDE, YAML server; Pylance and Even Better TOML as positive controls)",
+  "out": "../dumps/a5-readiness", "quit": true, "timeoutMs": 200000, "pollMs": 3000, "legendWaitMs": 90000, "emptyOkAfterMs": 20000,
+  "files": ["python/corpus.py", "config/corpus.toml", "shell/corpus.sh", "config/corpus.yaml"] }

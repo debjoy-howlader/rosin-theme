@@ -1,0 +1,6 @@
+2026-11-20T16:40:25.149Z start A5 readiness (long legend wait: Bash IDE, YAML server; Pylance and Even Better TOML as positive controls)
+2026-11-20T16:40:34.606Z python/corpus.py lang=python tokens=142 kind=document diags=8 waited=9065
+2026-11-20T16:40:43.676Z config/corpus.toml lang=toml tokens=5 kind=document diags=0 waited=9020
+2026-11-20T16:42:14.266Z shell/corpus.sh lang=shellscript tokens=0 kind=document diags=0 waited=90419
+2026-11-20T16:43:44.696Z config/corpus.yaml lang=yaml tokens=0 kind=document diags=4 waited=90389
+2026-11-20T16:43:44.696Z done

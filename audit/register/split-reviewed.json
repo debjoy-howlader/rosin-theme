@@ -1,0 +1,58 @@
+{
+ "c.number.octal": {
+  "reason": "DESIGN",
+  "evidence": "base prefix `0` takes the unit colour, digits the number colour (P: number prefixes are unit)"
+ },
+ "cpp.number.oct": {
+  "reason": "DESIGN",
+  "evidence": "base prefix `0` takes the unit colour, digits the number colour (P: number prefixes are unit)"
+ },
+ "py.number.bin": {
+  "reason": "DESIGN",
+  "evidence": "base prefix `0b` takes the unit colour, digits the number colour"
+ },
+ "py.number.oct": {
+  "reason": "DESIGN",
+  "evidence": "base prefix `0o` takes the unit colour, digits the number colour"
+ },
+ "yaml.folded": {
+  "reason": "DESIGN",
+  "evidence": "`>` block indicator is keyword-coloured, the `-` chomping indicator qualifier-coloured"
+ },
+ "yaml.indent.indicator": {
+  "reason": "DESIGN",
+  "evidence": "`|` block indicator is keyword-coloured, the indentation digit number-coloured"
+ },
+ "cpp.char.u8": {
+  "reason": "DESIGN",
+  "evidence": "`u8` prefix takes the string colour, the quote the punctuation colour like every string quote"
+ },
+ "rs.char": {
+  "reason": "DESIGN",
+  "evidence": "char literal body takes the string colour, the quotes the punctuation colour like every string quote"
+ },
+ "cpp.op.compound.bit": {
+  "reason": "SPLIT",
+  "evidence": "the C++ grammar scopes `|` of `|=` as a bitwise operator and `=` as assignment, so the compound operator is half hazard, half quiet (clangd colours it whole)"
+ },
+ "py.regex.group": {
+  "reason": "SPLIT",
+  "evidence": "the regex grammar splits a named group opener `(?P<` into punctuation and a group-name scope"
+ },
+ "sh.extglob": {
+  "reason": "SPLIT",
+  "evidence": "the bash grammar does not recognise extglob `@(...)`; `@` is plain text and `(` punctuation"
+ },
+ "sh.redirect.both": {
+  "reason": "SPLIT",
+  "evidence": "the bash grammar splits `&>` into a background `&` and a redirect `>`"
+ },
+ "cpp.op.overload.decl": {
+  "reason": "SPLIT",
+  "evidence": "clangd marks only the word `operator` as the function; the operator symbols keep the grammar colour"
+ },
+ "cpp.scope.opover.def": {
+  "reason": "SPLIT",
+  "evidence": "clangd marks only the word `operator` as the function; the operator symbols keep the grammar colour"
+ }
+}

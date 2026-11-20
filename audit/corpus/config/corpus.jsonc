@@ -1,0 +1,13 @@
+{
+  //@ jsonc.comment comment line
+  // line comment
+  //@ jsonc.key member key
+  "key": "value",
+  /* block comment */
+  //@ jsonc.number number 1.5e3
+  "n": 1.5e3,
+  //@ jsonc.escape escape ~\"
+  "esc": "say \"hi\""
+}
+/** doc comment */
+[1, 2, true]

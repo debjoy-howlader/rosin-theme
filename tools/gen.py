@@ -12,7 +12,7 @@ BASE = os.path.join(HERE, 'base')               # Sweet C 1.0.1 sources
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
 KEYS = json.load(open(os.path.join(BASE, 'vscode-color-keys.json')))['all']
 
-from token_rules import R, extra_rules, extra_semantic
+from token_rules import R, extra_rules, extra_semantic, base_edits, e1_rules, e2_rules, semantic_overrides, prune_shadowed
 
 # ---------------------------------------------------------------- colour helpers
 def rgb(h): h = h.lstrip('#'); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
@@ -201,7 +201,14 @@ NEW = {
                  qualifier='#868A8E', member='#B3B6B9', function='#94B9DA', method='#A7C6E2', libfn='#8FA2B5',
                  variable='#CACCCE', param='#B9BCBF', directive='#808488', macro='#E4E6E8', punct='#66696D', error='#D9827A',
                  globalvar='#E8E9EA', staticvar='#C0C3C6'),
-        style={'Keywords & control flow (amber)': 'bold', 'Compile-time keywords (typedef sizeof alignof)': 'bold italic'},
+        style={'Keywords & control flow (amber)': 'bold', 'Compile-time keywords (typedef sizeof alignof)': 'bold italic',
+               # E1: rules that now carry the keyword colour keep Licorice's bold keywords
+               'Type-declaring keywords (class interface type enum namespace)': 'bold', 'E1 Rust declaration keywords (storage.type.rust innermost)': 'bold',
+               'E1 C/C++ inline asm keyword': 'bold', 'E1 C++ template and typename keywords (P1)': 'bold', 'E1 Kconfig keywords': 'bold', 'E1 Make .PHONY and special targets': 'bold',
+               'E1 Shell && and ||': 'bold', 'E1 Git commit subject': 'bold',
+               # E2 keyword-coloured rules
+               'E2 C++ keywords the grammar scopes as types or operators (decltype noexcept requires)': 'bold', 'E2 Python global / nonlocal': 'bold', 'E2 YAML list dash (same as list bullets)': 'bold',
+               'E2 Git status words in commit comments (new file, deleted)': 'bold', 'E2 Rust macro_rules!': 'bold', 'E2 Rust static and super keywords': 'bold', 'E2 Shell alias keyword': 'bold', 'E2 Rust macro fragment specifiers (expr ty ident)': 'bold'},
         ui_over=dict(button='#3E5468', buttonHover='#4A6379', badge='#2E3A46', selection='#2A3540')),
 }
 
@@ -248,6 +255,7 @@ def tag_rules(ui, syn):
 
 report = {}
 REPORT = {}
+SHADOWED = {}
 os.makedirs(f'{OUT}/themes', exist_ok=True)
 for name, (ui, syn0) in ROLE.items():
     syn = syn_extra(syn0, ui)
@@ -255,18 +263,22 @@ for name, (ui, syn0) in ROLE.items():
     colors = {k: v for k, v in colors.items()}
     tokens = render(T_TOKENS, ui, syn)
     style = NEW.get(name, {}).get('style', {})
-    for r in tokens:
+    tokens = base_edits(tokens)
+    extras = extra_rules(syn) + e1_rules(syn) + e2_rules(syn)
+    for r in tokens + extras:
         if r.get('name') in style:
             r['settings']['fontStyle'] = style[r['name']]
-    extras = extra_rules(syn)
     tags, tagcols = tag_rules(ui, syn)
     sem = render(T_SEM, ui, syn)
     for k, v in extra_semantic(syn).items():
         sem.setdefault(k, v)
+    sem.update(semantic_overrides(syn))
+    pruned, shadowed = prune_shadowed(tokens + extras + tags)
+    SHADOWED[name] = shadowed
     theme = {
         '$schema': 'vscode://schemas/color-theme',
         'name': LABEL(name), 'type': 'dark', 'semanticHighlighting': True,
-        'semanticTokenColors': sem, 'colors': colors, 'tokenColors': tokens + extras + tags,
+        'semanticTokenColors': sem, 'colors': colors, 'tokenColors': pruned,
     }
     fn = FILE(name)
     json.dump(theme, open(f'{OUT}/themes/{fn}', 'w', encoding='utf-8'), indent=2, ensure_ascii=False)

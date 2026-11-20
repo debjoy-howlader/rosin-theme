@@ -1,0 +1,10 @@
+[package]
+name = "corpus"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "corpus"
+path = "corpus.rs"
+
+[dependencies]

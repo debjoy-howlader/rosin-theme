@@ -1,0 +1,359 @@
+{
+ "readings": [
+  {
+   "comp": "cpp.extern.block",
+   "flavour": "Sea Salt",
+   "predicted": "#9CADCB",
+   "observed": "#9CADCB",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.kw.decltype",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.kw.requires",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.attr.std",
+   "flavour": "Sea Salt",
+   "predicted": "#AB81AD",
+   "observed": "#AB81AD",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.udl.string",
+   "flavour": "Sea Salt",
+   "predicted": "#AEA581",
+   "observed": "#AEA581",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.ool.fn.owner",
+   "flavour": "Sea Salt",
+   "predicted": "#75CCC4",
+   "observed": "#75CCC4",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.member.decl",
+   "flavour": "Sea Salt",
+   "predicted": "#7DABB0",
+   "observed": "#7DABB0",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "c.number.exp.plus",
+   "flavour": "Sea Salt",
+   "predicted": "#AEA581",
+   "observed": "#AEA581",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.kw.static",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.macro.rules",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.option.some",
+   "flavour": "Sea Salt",
+   "predicted": "#D5C984",
+   "observed": "#D5C984",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.type.string",
+   "flavour": "Sea Salt",
+   "predicted": "#5EA0CD",
+   "observed": "#5EA0CD",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.macro.metavar",
+   "flavour": "Sea Salt",
+   "predicted": "#C2B7DB italic",
+   "observed": "#C2B7DB italic",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.macro.fragment",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "rs.scope.op",
+   "flavour": "Sea Salt",
+   "predicted": "#8A939E",
+   "observed": "#8A939E",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "py.kw.global",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "py.line.continuation",
+   "flavour": "Sea Salt",
+   "predicted": "#CB8871",
+   "observed": "#CB8871",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "py.raw.string",
+   "flavour": "Sea Salt",
+   "predicted": "#CB8871",
+   "observed": "#CB8871",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "py.magic.call",
+   "flavour": "Sea Salt",
+   "predicted": "#C0B2FF",
+   "observed": "#C0B2FF",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "py.import.name",
+   "flavour": "Sea Salt",
+   "predicted": "#8D96BE",
+   "observed": "#8D96BE",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "toml.key.dotted",
+   "flavour": "Sea Salt",
+   "predicted": "#7DABB0 bold",
+   "observed": "#7DABB0 bold",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "ld.symbol.def",
+   "flavour": "Sea Salt",
+   "predicted": "#DEAF97",
+   "observed": "#DEAF97",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "diff.from",
+   "flavour": "Sea Salt",
+   "predicted": "#7A8696 italic",
+   "observed": "#7A8696 italic",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "diff.range",
+   "flavour": "Sea Salt",
+   "predicted": "#AB81AD",
+   "observed": "#AB81AD",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "dts.ref.node",
+   "flavour": "Sea Salt",
+   "predicted": "#B5A4FF",
+   "observed": "#B5A4FF",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "yaml.merge.key",
+   "flavour": "Sea Salt",
+   "predicted": "#7DABB0",
+   "observed": "#7DABB0",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cm.genex.open",
+   "flavour": "Sea Salt",
+   "predicted": "#E2726B",
+   "observed": "#E2726B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "mk.prereq",
+   "flavour": "Sea Salt",
+   "predicted": "#B5A4FF",
+   "observed": "#B5A4FF",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "sh.alias.name",
+   "flavour": "Sea Salt",
+   "predicted": "#B5A4FF",
+   "observed": "#B5A4FF",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "git.filetype.new",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "cpp.noexcept.op",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "cpp.ns.nested.outer",
+   "flavour": "Sea Salt",
+   "predicted": "#6F9895",
+   "observed": "#6F9895",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "py.number.imag",
+   "flavour": "Sea Salt",
+   "predicted": "#AEA581",
+   "observed": "#AEA581",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "py.rawbytes",
+   "flavour": "Sea Salt",
+   "predicted": "#75C290",
+   "observed": "#75C290",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "py.decorator.name",
+   "flavour": "Sea Salt",
+   "predicted": "#AB81AD",
+   "observed": "#AB81AD",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "ld.section.name",
+   "flavour": "Sea Salt",
+   "predicted": "#75CCC4",
+   "observed": "#75CCC4",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "yaml.list.dash",
+   "flavour": "Sea Salt",
+   "predicted": "#E59B5B",
+   "observed": "#E59B5B",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "log.espidf.verbose.2",
+   "flavour": "Sea Salt",
+   "predicted": "#7A8696",
+   "observed": "#7A8696",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "rs.macro.rules",
+   "flavour": "Licorice",
+   "predicted": "#8E9296 bold",
+   "observed": "#8E9296 bold",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "git.filetype.new",
+   "flavour": "Licorice",
+   "predicted": "#8E9296 bold",
+   "observed": "#8E9296 bold",
+   "match": true,
+   "run": "calib5"
+  },
+  {
+   "comp": "yaml.list.dash",
+   "flavour": "Licorice",
+   "predicted": "#8E9296 bold",
+   "observed": "#8E9296 bold",
+   "match": true,
+   "run": "calib6"
+  },
+  {
+   "comp": "log.espidf.verbose.2",
+   "flavour": "Licorice",
+   "predicted": "#7A7E82",
+   "observed": "#7A7E82",
+   "match": true,
+   "run": "calib6"
+  }
+ ],
+ "visual_only": [
+  {
+   "comp": "c.macro.va_args",
+   "note": "inspector did not open for C files in this session; colour checked by eye only, consistent with prediction"
+  },
+  {
+   "comp": "c.asm.operand.constraint",
+   "note": "inspector did not open for C files in this session; colour checked by eye only, consistent with prediction"
+  },
+  {
+   "comp": "rs.kw.super",
+   "note": "inspector not captured; keyword colour seen by eye"
+  }
+ ],
+ "unread": [
+  "cpp.kw.decltype (Licorice)",
+  "py.kw.global (Licorice)",
+  "sh.for.var"
+ ]
+}

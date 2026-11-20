@@ -6,3 +6,5 @@ tools/**
 images/swatches/**
 images/preview.png
 images/icon-512.png
+audit/**
+try-from-source.cmd

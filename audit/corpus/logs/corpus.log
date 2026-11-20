@@ -1,0 +1,19 @@
+I (312) wifi: connected to ap
+W (412) adc: calibration missing
+E (512) gpio: invalid pin 34
+D (612) spi: transfer done
+[00:00:01.000,000] <err> sensor: read failed
+[00:00:01.100,000] <wrn> sensor: retry
+[00:00:01.200,000] <inf> sensor: ok
+2026-11-20 16:00:00 ERROR something broke
+2026-11-20 16:00:01 WARN something odd
+2026-11-20 16:00:02 INFO all good
+Guru Meditation Error: Core 0 panic'ed (LoadProhibited)
+value 0x3FFB0000 "quoted"
+V (712) spi: verbose detail
+Traceback (most recent call last):
+  File "main.py", line 3, in <module>
+ValueError: bad value
+key=value something
+V (612) gpio: verbose trace
+java.lang.IllegalStateException: boom

@@ -1,0 +1,20 @@
+2026-11-20T11:18:56.301Z start cpptools (GCC IntelliSense mode)
+2026-11-20T11:19:03.882Z c/corpus.c lang=c tokens=90 kind=document diags=5 waited=7535
+2026-11-20T11:19:11.448Z cpp/corpus.cpp lang=cpp tokens=82 kind=document diags=2 waited=7529
+2026-11-20T11:19:11.449Z done
+2026-11-20T11:25:51.418Z start cpptools (GCC IntelliSense mode)
+2026-11-20T11:25:59.017Z c/corpus.c lang=c tokens=90 kind=document diags=4 waited=7545
+2026-11-20T11:26:06.575Z cpp/corpus.cpp lang=cpp tokens=82 kind=document diags=2 waited=7528
+2026-11-20T11:26:06.575Z done
+2026-11-20T13:41:53.476Z start cpptools (GCC IntelliSense mode)
+2026-11-20T13:42:01.052Z c/corpus.c lang=c tokens=138 kind=document diags=22 waited=7529
+2026-11-20T13:42:08.611Z cpp/corpus.cpp lang=cpp tokens=236 kind=document diags=28 waited=7522
+2026-11-20T13:42:08.613Z done
+2026-11-20T13:44:14.397Z start cpptools (GCC IntelliSense mode)
+2026-11-20T13:44:22.033Z c/corpus.c lang=c tokens=145 kind=document diags=19 waited=7546
+2026-11-20T13:44:29.600Z cpp/corpus.cpp lang=cpp tokens=248 kind=document diags=19 waited=7532
+2026-11-20T13:44:29.600Z done
+2026-11-20T15:48:58.973Z start cpptools (GCC IntelliSense mode)
+2026-11-20T15:49:06.552Z c/corpus.c lang=c tokens=154 kind=document diags=20 waited=7532
+2026-11-20T15:49:14.134Z cpp/corpus.cpp lang=cpp tokens=344 kind=document diags=27 waited=7526
+2026-11-20T15:49:14.135Z done

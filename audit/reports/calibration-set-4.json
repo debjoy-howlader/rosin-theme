@@ -1,0 +1,145 @@
+[
+ {
+  "n": 6,
+  "file": "cpp/corpus.cpp",
+  "line": 12,
+  "start": 1,
+  "comp": "cpp.kw.template",
+  "mode": "S-cpptools",
+  "pred_ss": "#E59B5B",
+  "pred_lic": "#8E9296 bold",
+  "licorice": false
+ },
+ {
+  "n": 7,
+  "file": "cpp/corpus.cpp",
+  "line": 39,
+  "start": 10,
+  "comp": "cpp.op.overload.decl",
+  "mode": "S-cpptools",
+  "pred_ss": "#8D96BE",
+  "pred_lic": "#8FA2B5 bold",
+  "licorice": false
+ },
+ {
+  "n": 8,
+  "file": "cpp/corpus.cpp",
+  "line": 109,
+  "start": 53,
+  "comp": "cpp.this.use",
+  "mode": "S-cpptools",
+  "pred_ss": "#C2B7DB italic",
+  "pred_lic": "#B9BCBF italic",
+  "licorice": false
+ },
+ {
+  "n": 9,
+  "file": "rust/corpus.rs",
+  "line": 33,
+  "start": 5,
+  "comp": "rs.kw.struct",
+  "mode": "S-rust",
+  "pred_ss": "#E59B5B",
+  "pred_lic": "#8E9296 bold",
+  "licorice": false
+ },
+ {
+  "n": 10,
+  "file": "rust/corpus.rs",
+  "line": 36,
+  "start": 9,
+  "comp": "rs.type.prim.u8",
+  "mode": "S-rust",
+  "pred_ss": "#5EA0CD",
+  "pred_lic": "#A6AAAE",
+  "licorice": false
+ },
+ {
+  "n": 11,
+  "file": "rust/corpus.rs",
+  "line": 127,
+  "start": 25,
+  "comp": "rs.const.use",
+  "mode": "S-rust",
+  "pred_ss": "#D5C984",
+  "pred_lic": "#DDDFE1",
+  "licorice": false
+ },
+ {
+  "n": 12,
+  "file": "rust/corpus.rs",
+  "line": 21,
+  "start": 20,
+  "comp": "rs.static.decl",
+  "mode": "S-rust",
+  "pred_ss": "#ADC6A8",
+  "pred_lic": "#C0C3C6",
+  "licorice": false
+ },
+ {
+  "n": 13,
+  "file": "python/corpus.py",
+  "line": 16,
+  "start": 2,
+  "comp": "py.decorator.name",
+  "mode": "S-servers",
+  "pred_ss": "#AB81AD",
+  "pred_lic": "#808488",
+  "licorice": false
+ },
+ {
+  "n": 14,
+  "file": "python/corpus.py",
+  "line": 37,
+  "start": 6,
+  "comp": "py.decorator.builtin",
+  "mode": "S-servers",
+  "pred_ss": "#AB81AD",
+  "pred_lic": "#808488",
+  "licorice": false
+ },
+ {
+  "n": 15,
+  "file": "python/corpus.py",
+  "line": 64,
+  "start": 5,
+  "comp": "py.fn.builtin",
+  "mode": "S-servers",
+  "pred_ss": "#8D96BE",
+  "pred_lic": "#8FA2B5",
+  "licorice": false
+ },
+ {
+  "n": 16,
+  "file": "python/corpus.py",
+  "line": 34,
+  "start": 14,
+  "comp": "py.attr.use",
+  "mode": "S-servers",
+  "pred_ss": "#7DABB0",
+  "pred_lic": "#B3B6B9",
+  "licorice": false
+ },
+ {
+  "n": 21,
+  "file": "dts/corpus.dts",
+  "line": 13,
+  "start": 9,
+  "comp": "dts.label.def",
+  "mode": "T",
+  "pred_ss": "#B5A4FF italic",
+  "pred_lic": "#94B9DA italic",
+  "licorice": false
+ },
+ {
+  "n": 18,
+  "file": "kconfig/Kconfig",
+  "line": 8,
+  "start": 1,
+  "comp": "kc.config",
+  "mode": "T",
+  "pred_ss": "#E59B5B",
+  "pred_lic": "#8E9296 bold",
+  "licorice": true
+ }
+]

@@ -1,0 +1,724 @@
+{
+ "reasons": {
+  "NS": "no distinguishing scope: the token is unscoped or carries only container scopes shared by other roles",
+  "ID": "the grammar encodes the identifier text in the scope (variable.other.unknown.<name>); a rule would match one spelling, not the role",
+  "SS": "the grammar gives this token the same innermost scope as a token of another role; only containers differ, and they do not separate the roles",
+  "GE": "the grammar does not tokenize this construct at all",
+  "SV": "the language server labels this token the same as a token of another role, or emits nothing for it",
+  "DV": "the servers disagree; by P3 the server verdict stands, so the colour depends on the server in use",
+  "ENV": "environment limit E-01 (rust-analyzer cannot resolve std macros on this toolchain)"
+ },
+ "entries": [
+  {
+   "cp": "CP-A4-001",
+   "lang": "cpp",
+   "modes": [
+    "S-clangd",
+    "S-cpptools",
+    "T"
+   ],
+   "selector": "storage.type.built-in.primitive.cpp",
+   "now": "prim|typeparam",
+   "expect": "keyword",
+   "components": [
+    "cpp.kw.auto",
+    "cpp.type.auto"
+   ],
+   "reason": "SS",
+   "evidence": "`auto` has the same scope as `void`, `int` (storage.type.built-in.primitive.cpp). clangd fixes it with type.deduced."
+  },
+  {
+   "cp": "CP-A4-002",
+   "lang": "c",
+   "modes": [
+    "S-clangd",
+    "S-cpptools"
+   ],
+   "selector": "entity.name.function.c",
+   "now": "function",
+   "expect": "keyword",
+   "components": [
+    "c.kw.static_assert.macro",
+    "c.kw.typeof"
+   ],
+   "reason": "SV",
+   "evidence": "cpptools and clangd emit no semantic token for `static_assert` / `typeof`; the TextMate fallback is the function-call scope."
+  },
+  {
+   "cp": "CP-A4-003",
+   "lang": "cpp",
+   "modes": [
+    "S-clangd",
+    "S-cpptools",
+    "T"
+   ],
+   "selector": "meta.function.definition.parameters",
+   "now": "variable",
+   "expect": "punct",
+   "components": [
+    "cpp.vararg"
+   ],
+   "reason": "NS",
+   "evidence": "`...` in a parameter list gets only meta.function.definition.parameters."
+  },
+  {
+   "cp": "CP-A4-004",
+   "lang": "cpp",
+   "modes": [
+    "S-clangd",
+    "S-cpptools",
+    "T"
+   ],
+   "selector": "punctuation.section.attribute.begin.cpp",
+   "now": "punct",
+   "expect": "keyword",
+   "components": [
+    "cpp.kw.alignas"
+   ],
+   "reason": "SS",
+   "evidence": "`alignas` is scoped as the opening punctuation of an attribute, same as `[[`."
+  },
+  {
+   "cp": "CP-A4-005",
+   "lang": "cpp",
+   "modes": [
+    "S-clangd",
+    "S-cpptools",
+    "T"
+   ],
+   "selector": "variable.other.unknown.x.cpp",
+   "now": "variable",
+   "expect": "param",
+   "components": [
+    "cpp.macro.arg.use"
+   ],
+   "reason": "ID",
+   "evidence": "macro argument uses get variable.other.unknown.<name>."
+  },
+  {
+   "cp": "CP-A4-006",
+   "lang": "cpp",
+   "modes": [
+    "S-cpptools"
+   ],
+   "selector": "semantic memberOperatorOverload.",
+   "now": "libfn",
+   "expect": "function",
+   "components": [
+    "cpp.op.overload.decl",
+    "cpp.scope.opover.def"
+   ],
+   "reason": "SV",
+   "evidence": "cpptools gives operator-overload declarations and overloaded operator uses the same type with no modifiers; uses keep the library-function colour."
+  },
+  {
+   "cp": "CP-A4-007",
+   "lang": "rust",
+   "modes": [
+    "S-rust"
+   ],
+   "selector": "semantic unresolvedReference.",
+   "now": "error",
+   "expect": "macro",
+   "components": [
+    "rs.macro.call",
+    "rs.macro.call.println"
+   ],
+   "reason": "ENV",
+   "evidence": "`println!` / `write!` unresolved; Rosin shows unresolvedReference as error."
+  },
+  {
+   "cp": "CP-A4-008",
+   "lang": "c",
+   "modes": [
+    "S-clangd",
+    "S-cpptools"
+   ],
+   "selector": "meta.block.c",
+   "now": "variable",
+   "expect": "qualifier",
+   "components": [
+    "c.kw.noreturn"
+   ],
+   "reason": "NS",
+   "evidence": "`_Noreturn` gets only meta.block.c."
+  },
+  {
+   "cp": "CP-A4-009",
+   "lang": "c",
+   "modes": [
+    "S-clangd",
+    "S-cpptools"
+   ],
+   "selector": "meta.conditional.case.c",
+   "now": "variable",
+   "expect": "punct",
+   "components": [
+    "c.case.range"
+   ],
+   "reason": "NS",
+   "evidence": "GNU case range `...` gets only meta.conditional.case.c."
+  },
+  {
+   "cp": "CP-A4-010",
+   "lang": "c",
+   "modes": [
+    "S-clangd",
+    "T"
+   ],
+   "selector": "meta.function-call.c",
+   "now": "variable",
+   "expect": "function",
+   "components": [
+    "c.asm.goto.label"
+   ],
+   "reason": "NS",
+   "evidence": "asm goto label operand gets only meta.function-call.c."
+  },
+  {
+   "cp": "CP-A4-011",
+   "lang": "cpp",
+   "modes": [
+    "S-cpptools",
+    "T"
+   ],
+   "selector": "keyword.operator.arithmetic.cpp",
+   "now": "quietop",
+   "expect": "hazard",
+   "components": [
+    "cpp.op.deref"
+   ],
+   "reason": "SS",
+   "evidence": "unary `*` (deref) and binary `*` (multiply) share keyword.operator.arithmetic.cpp."
+  },
+  {
+   "cp": "CP-A4-012",
+   "lang": "rust",
+   "modes": [
+    "S-rust",
+    "T"
+   ],
+   "selector": "keyword.operator.logical.rust",
+   "now": "keyword",
+   "expect": "quietop",
+   "components": [
+    "rs.closure.pipe"
+   ],
+   "reason": "SS",
+   "evidence": "closure `|` shares keyword.operator.logical.rust with `^ || && << >> !` (grammar source)."
+  },
+  {
+   "cp": "CP-A4-013",
+   "lang": "shell",
+   "modes": [
+    "T"
+   ],
+   "selector": "(no scope)",
+   "now": "unmapped:",
+   "expect": "quietop",
+   "components": [
+    "sh.tilde",
+    "sh.tilde.cd"
+   ],
+   "reason": "NS",
+   "evidence": "`~` in shell is unscoped."
+  },
+  {
+   "cp": "CP-A4-014",
+   "lang": "shell",
+   "modes": [
+    "T"
+   ],
+   "selector": "string.quoted.single.dollar.shell",
+   "now": "string",
+   "expect": "escape",
+   "components": [
+    "sh.escape.hex",
+    "sh.escape.octal"
+   ],
+   "reason": "GE",
+   "evidence": "escapes inside bash $'...' strings are not tokenized."
+  },
+  {
+   "cp": "CP-A4-015",
+   "lang": "cpp",
+   "modes": [
+    "S-cpptools"
+   ],
+   "selector": "semantic function.",
+   "now": "function",
+   "expect": "variable",
+   "components": [
+    "cpp.lambda.call"
+   ],
+   "reason": "DV",
+   "evidence": "cpptools calls a lambda through a variable a function; clangd calls it a variable."
+  },
+  {
+   "cp": "CP-A4-016",
+   "lang": "cpp",
+   "modes": [
+    "S-cpptools"
+   ],
+   "selector": "semantic method.static",
+   "now": "method",
+   "expect": "function",
+   "components": [
+    "cpp.scope.static.call"
+   ],
+   "reason": "DV",
+   "evidence": "cpptools calls `V::f()` a static method; clangd a function."
+  },
+  {
+   "cp": "CP-A4-017",
+   "lang": "rust",
+   "modes": [
+    "S-rust"
+   ],
+   "selector": "semantic operator.mutable",
+   "now": "quietop",
+   "expect": "hazard",
+   "components": [
+    "rs.op.bitxor"
+   ],
+   "reason": "SV",
+   "evidence": "rust-analyzer marks every compound assignment (`+=`, `^=`) operator.mutable; without it `^=` shares keyword.operator.assignment.rust with `=`."
+  },
+  {
+   "cp": "CP-A4-018",
+   "lang": "asm",
+   "modes": [
+    "T"
+   ],
+   "selector": "(no scope)",
+   "now": "variable",
+   "expect": "directive",
+   "components": [
+    "asm.equ"
+   ],
+   "reason": "NS",
+   "evidence": "ARM `.equ` directive is unscoped in this grammar."
+  },
+  {
+   "cp": "CP-A4-019",
+   "lang": "c",
+   "modes": [
+    "T"
+   ],
+   "selector": "constant.language.c",
+   "now": "number",
+   "expect": "macro",
+   "components": [
+    "c.macro.use.stdlib"
+   ],
+   "reason": "SS",
+   "evidence": "`NULL` and `true` share constant.language.c."
+  },
+  {
+   "cp": "CP-A4-020",
+   "lang": "c",
+   "modes": [
+    "S-clangd"
+   ],
+   "selector": "keyword.operator.c",
+   "now": "quietop",
+   "expect": "hazard",
+   "components": [
+    "c.ptr.declarator"
+   ],
+   "reason": "SS",
+   "evidence": "pointer declarator `*` shares keyword.operator.c with multiply; clangd sends no token for it."
+  },
+  {
+   "cp": "CP-A4-021",
+   "lang": "cmake",
+   "modes": [
+    "T"
+   ],
+   "selector": "(no scope)",
+   "now": "variable",
+   "expect": "globalvar",
+   "components": [
+    "cm.var.name"
+   ],
+   "reason": "NS",
+   "evidence": "CMake variable name in set() is unscoped."
+  },
+  {
+   "cp": "CP-A4-022",
+   "lang": "config",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.block-mapping.yaml",
+   "now": "variable",
+   "expect": "punct",
+   "components": [
+    "yaml.explicit.key"
+   ],
+   "reason": "NS",
+   "evidence": "YAML explicit-key `?` gets only meta.block-mapping.yaml."
+  },
+  {
+   "cp": "CP-A4-023",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "entity.name.scope-resolution.cpp",
+   "now": "variable",
+   "expect": "composite",
+   "components": [
+    "cpp.enum.type.use"
+   ],
+   "reason": "SS",
+   "evidence": "entity.name.scope-resolution.cpp covers enum types, namespaces and destructor owners alike."
+  },
+  {
+   "cp": "CP-A4-024",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "entity.name.scope-resolution.cpp",
+   "now": "variable",
+   "expect": "namespace",
+   "components": [
+    "cpp.ns.use"
+   ],
+   "reason": "SS",
+   "evidence": "entity.name.scope-resolution.cpp, as above."
+  },
+  {
+   "cp": "CP-A4-025",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "entity.name.scope-resolution.function.call.cpp",
+   "now": "variable",
+   "expect": "composite",
+   "components": [
+    "cpp.ool.ctor.owner"
+   ],
+   "reason": "SS",
+   "evidence": "`Led2::Led2()` is scoped as a qualified call (entity.name.scope-resolution.function.call.cpp), the same as `ns::f()`."
+  },
+  {
+   "cp": "CP-A4-026",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.head.struct.cpp",
+   "now": "variable",
+   "expect": "composite",
+   "components": [
+    "cpp.class.base.use"
+   ],
+   "reason": "NS",
+   "evidence": "base class name in `struct D : Base` gets only meta.head.struct.cpp."
+  },
+  {
+   "cp": "CP-A4-027",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "support.type.built-in.posix-reserved.cpp",
+   "now": "prim|typeparam",
+   "expect": "composite",
+   "components": [
+    "cpp.posix.user.type"
+   ],
+   "reason": "SS",
+   "evidence": "any name ending in `_t` gets support.type.posix-reserved.cpp, so a user typedef `led2_t` looks like `pid_t`. Servers fix it."
+  },
+  {
+   "cp": "CP-A4-028",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.assignment.cpp",
+   "now": "variable",
+   "expect": "member",
+   "components": [
+    "cpp.member.init.decl"
+   ],
+   "reason": "SS",
+   "evidence": "`int v = 0;` in a class body has the same scope as an assignment to a local variable."
+  },
+  {
+   "cp": "CP-A4-029",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.unknown.On.cpp",
+   "now": "variable",
+   "expect": "number",
+   "components": [
+    "cpp.enum.member.use"
+   ],
+   "reason": "ID",
+   "evidence": "variable.other.unknown.On.cpp"
+  },
+  {
+   "cp": "CP-A4-030",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.unknown.Small.cpp",
+   "now": "variable",
+   "expect": "composite",
+   "components": [
+    "cpp.concept.name"
+   ],
+   "reason": "ID",
+   "evidence": "variable.other.unknown.Small.cpp (clangd fixes it with concept)."
+  },
+  {
+   "cp": "CP-A4-031",
+   "lang": "cpp",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.unknown.count.cpp",
+   "now": "variable",
+   "expect": "staticvar",
+   "components": [
+    "cpp.member.static.decl"
+   ],
+   "reason": "ID",
+   "evidence": "variable.other.unknown.count.cpp"
+  },
+  {
+   "cp": "CP-A4-032",
+   "lang": "ld",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.ld",
+   "now": "variable",
+   "expect": "hazard",
+   "components": [
+    "ld.location.counter"
+   ],
+   "reason": "SS",
+   "evidence": "the location counter `.` is a bare variable.other.ld, the same scope as every other linker-script name."
+  },
+  {
+   "cp": "CP-A4-033",
+   "lang": "ld",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.ld",
+   "now": "variable",
+   "expect": "qualifier",
+   "components": [
+    "ld.region.attr"
+   ],
+   "reason": "SS",
+   "evidence": "memory attributes (rx) and input-section patterns (.text*) share section.input.ld variable.other.ld; a rule was tried in E2 and reverted."
+  },
+  {
+   "cp": "CP-A4-034",
+   "lang": "make",
+   "modes": [
+    "T"
+   ],
+   "selector": "(no scope)",
+   "now": "variable",
+   "expect": "member",
+   "components": [
+    "mk.recipe.flag"
+   ],
+   "reason": "NS",
+   "evidence": "Make recipe flags (-Wall) are unscoped."
+  },
+  {
+   "cp": "CP-A4-035",
+   "lang": "markdown",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.paragraph.markdown",
+   "now": "variable",
+   "expect": "function",
+   "components": [
+    "md.setext1"
+   ],
+   "reason": "NS",
+   "evidence": "a setext heading line is a paragraph until the underline on the next line; TextMate cannot look ahead."
+  },
+  {
+   "cp": "CP-A4-036",
+   "lang": "python",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.attribute.python",
+   "now": "variable",
+   "expect": "member",
+   "components": [
+    "py.attr.use"
+   ],
+   "reason": "NS",
+   "evidence": "attribute access without Pylance gets only meta.attribute.python."
+  },
+  {
+   "cp": "CP-A4-037",
+   "lang": "python",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.function-call.generic.python",
+   "now": "function",
+   "expect": "method",
+   "components": [
+    "py.method.lib"
+   ],
+   "reason": "SS",
+   "evidence": "library method calls and plain calls share meta.function-call.generic.python without Pylance."
+  },
+  {
+   "cp": "CP-A4-038",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "(no scope)",
+   "now": "variable",
+   "expect": "member",
+   "components": [
+    "rs.field.use"
+   ],
+   "reason": "NS",
+   "evidence": "Rust field access is unscoped (rust-analyzer fixes it)."
+  },
+  {
+   "cp": "CP-A4-039",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "comment.line.double-slash.rust",
+   "now": "comment",
+   "expect": "doc",
+   "components": [
+    "rs.doc.inner"
+   ],
+   "reason": "SS",
+   "evidence": "`//!` inner doc comments get comment.line.double-slash.rust, same as `//` (grammar source)."
+  },
+  {
+   "cp": "CP-A4-040",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "entity.name.type.rust",
+   "now": "composite|doctag",
+   "expect": "directive",
+   "components": [
+    "rs.attr.derive.item"
+   ],
+   "reason": "SS",
+   "evidence": "entity.name.type.rust covers derive items, user types, std types, generics."
+  },
+  {
+   "cp": "CP-A4-041",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "keyword.operator.assignment.rust",
+   "now": "quietop",
+   "expect": "hazard",
+   "components": [
+    "rs.op.bitxor"
+   ],
+   "reason": "SV",
+   "evidence": "rust-analyzer marks every compound assignment (`+=`, `^=`) operator.mutable; without it `^=` shares keyword.operator.assignment.rust with `=`."
+  },
+  {
+   "cp": "CP-A4-042",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.use.rust",
+   "now": "variable",
+   "expect": "namespace",
+   "components": [
+    "rs.ns.module"
+   ],
+   "reason": "NS",
+   "evidence": "module names in use paths get only meta.use.rust (rust-analyzer fixes it)."
+  },
+  {
+   "cp": "CP-A4-043",
+   "lang": "rust",
+   "modes": [
+    "T"
+   ],
+   "selector": "variable.other.rust",
+   "now": "variable",
+   "expect": "param",
+   "components": [
+    "rs.param.decl"
+   ],
+   "reason": "SS",
+   "evidence": "parameters, fields and locals share variable.other.rust without rust-analyzer."
+  },
+  {
+   "cp": "CP-A4-044",
+   "lang": "shell",
+   "modes": [
+    "T"
+   ],
+   "selector": "keyword.operator.logical.shell",
+   "now": "keyword",
+   "expect": "member",
+   "components": [
+    "sh.flag.test"
+   ],
+   "reason": "SS",
+   "evidence": "`-f` test flags share keyword.operator.logical.shell with `&& == !=` (grammar source)."
+  },
+  {
+   "cp": "CP-A4-045",
+   "lang": "shell",
+   "modes": [
+    "T"
+   ],
+   "selector": "meta.argument.shell",
+   "now": "variable",
+   "expect": "punct",
+   "components": [
+    "sh.arith.single"
+   ],
+   "reason": "NS",
+   "evidence": "`$[ ]` arithmetic is unscoped."
+  },
+  {
+   "cp": "E2-trade-UDL",
+   "lang": "cpp",
+   "modes": [
+    "S-cpptools"
+   ],
+   "selector": "semantic numberLiteral / stringLiteral",
+   "now": "unit",
+   "expect": "function",
+   "components": [
+    "cpp.udl.op.decl",
+    "cpp.udl.suffix.decl"
+   ],
+   "reason": "SV",
+   "evidence": "cpptools gives the operator\"\"_x declaration the same type as the literal use (250_ms); uses are far more common, so both take the unit colour."
+  }
+ ]
+}

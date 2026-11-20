@@ -1,6 +1,7 @@
 """Build the README assets: images/preview.png, colour swatches and the colour tables.
 
-Usage:  python tools/readme_assets.py
+Usage:  python tools/readme_assets.py [--tables-only]
+--tables-only rewrites only the README colour tables (adds any missing swatch) and leaves the preview alone.
 Writes images/preview.png and images/swatches/*.png, and rewrites the block between
 <!-- colours:start --> and <!-- colours:end --> in README.md.
 Needs Pillow, plus DejaVu Sans Mono and Inter (falls back to DejaVu Sans).
@@ -12,6 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 IMAGES = os.path.join(ROOT, 'images')
 
+ARGS = sys.argv[1:]   # read before gen.py is run with a clean argv
 sys.argv = ['gen.py']
 G = runpy.run_path(os.path.join(HERE, 'gen.py'))
 REPORT, NEW, mix = G['REPORT'], G['NEW'], G['mix']
@@ -101,21 +103,22 @@ def role_rows(name, r):
         ('Selection', '', ui['selection']),
         ('UI accent', '', ui['accent']),
         ('Text / variable', '`count` `buf`', syn['variable']),
-        ('Keyword / control flow', '`if` `for` `return`', syn['keyword']),
+        ('Keyword / control flow', '`if` `return` `struct` `fn`', syn['keyword']),
         ('Qualifier', '`const` `static` `extern`', syn['qualifier']),
         ('Function', '`led_set()`', syn['function']),
         ('Method', '`.write()`', syn['method']),
-        ('Library / builtin function', '`printf` `memcpy`', syn['libfn']),
-        ('Macro (bold)', '`LED_PIN` `println!`', syn['macro']),
+        ('Library / builtin function', '`print` `echo` `printf`', syn['libfn']),
+        ('Macro (bold)', '`LED_PIN` `BIT(n)`', syn['macro']),
         ('Preprocessor / attribute', '`#include` `#[derive]`', syn['directive']),
         ('Namespace / module', '`std` `core::ptr`', syn['scope']),
-        ('Primitive type', '`int` `uint8_t` `u32`', syn['prim']),
-        ('User type / type keyword', '`struct` `led_t` `trait`', syn['composite']),
+        ('Primitive type', '`int` `u32` `str`', syn['prim']),
+        ('User type', '`led_t` `Led`', syn['composite']),
         ('Parameter / self (italic)', '`len` `self`', syn['param']),
         ('Member / key / CLI flag', '`.pin` `name:` `--baud`', syn['member']),
         ('Global / config variable', '`g_ticks` `$(CC)`', syn['globalvar']),
         ('Static variable', '`s_state`', syn['staticvar']),
-        ('Number / constant / enum', '`42` `0xFF` `true`', syn['number']),
+        ('Number / constant / enum', '`42` `true` `None`', syn['number']),
+        ('Unit: number prefix / suffix', '`0x` `UL` `_ms`', syn['unit']),
         ('String', '`"hello"`', syn['string']),
         ('Escape', '`\\n` `&amp;`', syn['escape']),
         ('Hazard: pointer / bits / format', '`*` `->` `<<` `%d`', syn['hazard']),
@@ -150,7 +153,21 @@ def tables():
         out.append('')
     return '\n'.join(out)
 
-if __name__ == '__main__':
+def write_tables():
+    md = tables()
+    readme = os.path.join(ROOT, 'README.md')
+    raw = open(readme, 'rb').read().decode('utf-8')
+    crlf = '\r\n' in raw
+    text = raw.replace('\r\n', '\n')
+    a, b = text.index('<!-- colours:start -->'), text.index('<!-- colours:end -->')
+    text = text[:a] + '<!-- colours:start -->\n' + md + '\n' + text[b:]
+    open(readme, 'wb').write((text.replace('\n', '\r\n') if crlf else text).encode('utf-8'))
+
+if __name__ == '__main__' and '--tables-only' in ARGS:
+    os.makedirs(os.path.join(IMAGES, 'swatches'), exist_ok=True)
+    write_tables()
+    print('README tables updated (images untouched)')
+elif __name__ == '__main__':
     os.makedirs(os.path.join(IMAGES, 'swatches'), exist_ok=True)
     for f in os.listdir(os.path.join(IMAGES, 'swatches')):
         os.remove(os.path.join(IMAGES, 'swatches', f))
@@ -164,10 +181,5 @@ if __name__ == '__main__':
         ImageDraw.Draw(m).rounded_rectangle((0, 0, ww - 1, wh - 1), radius=10 * S, fill=255)
         canvas.paste(wimg, (pad + (i % cols) * (ww + gap), pad + (i // cols) * (wh + gap)), m)
     canvas.save(os.path.join(IMAGES, 'preview.png'), optimize=True)
-    md = tables()
-    readme = os.path.join(ROOT, 'README.md')
-    text = open(readme, encoding='utf-8').read()
-    a, b = text.index('<!-- colours:start -->'), text.index('<!-- colours:end -->')
-    text = text[:a] + '<!-- colours:start -->\n' + md + '\n' + text[b:]
-    open(readme, 'w', encoding='utf-8').write(text)
+    write_tables()
     print('preview, %d swatches, README tables updated' % len(os.listdir(os.path.join(IMAGES, 'swatches'))))

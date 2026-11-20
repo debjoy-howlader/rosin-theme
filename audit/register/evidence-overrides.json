@@ -1,0 +1,4 @@
+{
+ "cpp.kw.auto|S-clangd": "clangd emits no token for `auto` when the deduced type is a lambda (`auto twice = [&](int x) {...}`), so the grammar's primitive-type scope shows; for other deduced types clangd's type.deduced fixes it",
+ "cpp.ns.use|T": "`hal` in `hal::init()` gets entity.name.scope-resolution.cpp, the scope the grammar also gives enum types, class names and destructor owners"
+}

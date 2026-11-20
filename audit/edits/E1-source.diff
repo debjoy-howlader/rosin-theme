@@ -1,0 +1,125 @@
+diff --git a/tools/gen.py b/tools/gen.py
+index c6dfa5c..7ffaa60 100644
+--- a/tools/gen.py
++++ b/tools/gen.py
+@@ -12,7 +12,7 @@ BASE = os.path.join(HERE, 'base')               # Sweet C 1.0.1 sources
+ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
+ KEYS = json.load(open(os.path.join(BASE, 'vscode-color-keys.json')))['all']
+ 
+-from token_rules import R, extra_rules, extra_semantic
++from token_rules import R, extra_rules, extra_semantic, base_edits, e1_rules
+ 
+ # ---------------------------------------------------------------- colour helpers
+ def rgb(h): h = h.lstrip('#'); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+@@ -201,7 +201,11 @@ NEW = {
+                  qualifier='#868A8E', member='#B3B6B9', function='#94B9DA', method='#A7C6E2', libfn='#8FA2B5',
+                  variable='#CACCCE', param='#B9BCBF', directive='#808488', macro='#E4E6E8', punct='#66696D', error='#D9827A',
+                  globalvar='#E8E9EA', staticvar='#C0C3C6'),
+-        style={'Keywords & control flow (amber)': 'bold', 'Compile-time keywords (typedef sizeof alignof)': 'bold italic'},
++        style={'Keywords & control flow (amber)': 'bold', 'Compile-time keywords (typedef sizeof alignof)': 'bold italic',
++               # E1: rules that now carry the keyword colour keep Licorice's bold keywords
++               'Type-declaring keywords (class interface type enum namespace)': 'bold', 'E1 Rust declaration keywords (storage.type.rust innermost)': 'bold',
++               'E1 C/C++ inline asm keyword': 'bold', 'E1 C++ template and typename keywords (P1)': 'bold', 'E1 Kconfig keywords': 'bold', 'E1 Make .PHONY and special targets': 'bold',
++               'E1 Shell && and ||': 'bold', 'E1 Git commit subject': 'bold'},
+         ui_over=dict(button='#3E5468', buttonHover='#4A6379', badge='#2E3A46', selection='#2A3540')),
+ }
+ 
+@@ -255,10 +259,11 @@ for name, (ui, syn0) in ROLE.items():
+     colors = {k: v for k, v in colors.items()}
+     tokens = render(T_TOKENS, ui, syn)
+     style = NEW.get(name, {}).get('style', {})
+-    for r in tokens:
++    tokens = base_edits(tokens)
++    extras = extra_rules(syn) + e1_rules(syn)
++    for r in tokens + extras:
+         if r.get('name') in style:
+             r['settings']['fontStyle'] = style[r['name']]
+-    extras = extra_rules(syn)
+     tags, tagcols = tag_rules(ui, syn)
+     sem = render(T_SEM, ui, syn)
+     for k, v in extra_semantic(syn).items():
+diff --git a/tools/token_rules.py b/tools/token_rules.py
+index 73a8bf0..02abeed 100644
+--- a/tools/token_rules.py
++++ b/tools/token_rules.py
+@@ -7,6 +7,61 @@ def R(name, scopes, fg=None, style=None):
+     if style is not None: s['fontStyle'] = style
+     return {'name': name, 'scope': scopes, 'settings': s}
+ 
++# E1 (audit edit phase 1): scopes removed from the Sweet C base rules. Each entry names the base rule and why.
++BASE_REMOVALS = {
++    'Members / keys / properties': ['punctuation.definition.begin.bracket.square', 'punctuation.definition.end.bracket.square',  # CP: every [ ] took the member colour
++                                    'support.variable.magic'],                                                                    # CP: Python dunders took the member colour
++    'Composite-type keywords & user types (turquoise)': ['storage.type.struct', 'storage.type.union', 'storage.type.enum', 'storage.type.class',
++                                    'storage.type.namespace', 'storage.type.template', 'storage.type.template.argument'],         # P1
++    'Macro names & macro parameters': ['variable.parameter.preprocessor'],                                                        # P6
++    'Keywords & control flow (amber)': ['keyword.other.operator.overload'],                                                       # CP: operator names are functions
++    'Markup': ['markup.inline.raw'],                                                                                              # P15
++    'Links': ['string.other.link'],                                                                                               # P15
++}
++BASE_DROP = ['volatile (C++ only; C grammar has no scope for it)']                                                                # P16: volatile is a qualifier
++
++def base_edits(tokens):
++    out = []
++    for r in tokens:
++        if r.get('name') in BASE_DROP:
++            continue
++        rm = BASE_REMOVALS.get(r.get('name'))
++        if rm:
++            r = dict(r, scope=[x for x in (r['scope'] if isinstance(r['scope'], list) else [r['scope']]) if x not in rm])
++        out.append(r)
++    return out
++
++def e1_rules(p):
++    """Rules added in edit phase E1 (audit report A1). Appended last so they win ties."""
++    return [
++        R('E1 Rust declaration keywords (storage.type.rust innermost)', ['storage.type.rust'], p['keyword'], ''),
++        R('E1 Rust primitive types', ['entity.name.type.numeric.rust', 'entity.name.type.primitive.rust'], p['prim'], ''),
++        R('E1 Rust numeric suffix (7u8)', ['constant.numeric entity.name.type.numeric.rust'], p['unit'], ''),
++        R('E1 Rust format placeholders {}', ['meta.interpolation.rust punctuation.definition.interpolation.rust', 'meta.interpolation.rust'], p['hazard'], ''),
++        R('E1 C/C++ inline asm keyword', ['storage.type.asm'], p['keyword'], ''),
++        R('E1 C++ template and typename keywords (P1)', ['storage.type.template', 'storage.type.template.argument'], p['keyword'], ''),
++        R('E1 C++ operator-overload names', ['keyword.other.operator.overload'], p['function'], ''),
++        R('E1 C++ template parameter names', ['entity.name.type.template'], p['typeparam'], 'italic'),
++        R('E1 this (same as self: parameter)', ['variable.language.this'], p['param'], 'italic'),
++        R('E1 Doc-comment delimiters', ['comment.block.documentation punctuation.definition.comment', 'comment.line.documentation punctuation.definition.comment'], p['doc'], 'italic'),
++        R('E1 Python decorator names that are builtins', ['meta.function.decorator support.type.python', 'meta.function.decorator support.function'], p['directive'], ''),
++        R('E1 Kconfig keywords', ['variable.language.kconfig', 'storage.modifier.kconfig', 'storage.type.kconfig'], p['keyword'], ''),
++        R('E1 Devicetree node names (this grammar)', ['entity.name.function.dts'], p['composite'], ''),
++        R('E1 Devicetree labels (this grammar)', ['entity.name.type.dts'], p['function'], 'italic'),
++        R('E1 ARM registers', ['storage.register.arm'], p['hazard'], ''),
++        R('E1 ARM label definitions', ['routine.arm'], p['function'], 'italic'),  # variable.named.arm covers every identifier: left plain
++        R('E1 Make variable delimiters $( ) take the variable colour', ['string.interpolated.makefile punctuation.definition.variable.makefile'], p['globalvar'], ''),
++        R('E1 Make assignment operators', ['punctuation.separator.key-value.makefile'], p['quietop'], ''),
++        R('E1 Make .PHONY and special targets', ['support.function.target.PHONY.makefile', 'support.function.target'], p['keyword'], ''),
++        R('E1 CMake variable delimiters ${ } take the variable colour', ['variable.other.cmake punctuation.section.variable', 'punctuation.section.variable.begin.cmake', 'punctuation.section.variable.end.cmake'], p['globalvar'], ''),
++        R('E1 CMake keyword arguments (PRIVATE VERSION)', ['support.type.property.cmake'], p['qualifier'], 'italic'),
++        R('E1 CMake bracket arguments', ['variable.parameter.cmake'], p['string'], ''),
++        R('E1 Shell && and ||', ['punctuation.separator.statement.and.shell', 'punctuation.separator.statement.or.shell'], p['keyword'], ''),
++        R('E1 Git commit subject', ['meta.scope.subject.git-commit'], p['keyword'], ''),
++        R('E1 Markdown inline code', ['markup.inline.raw'], p['string'], ''),
++        R('E1 Markdown link text reads as body text (P15)', ['string.other.link.title.markdown', 'string.other.link.description.markdown', 'string.other.link.description.title.markdown'], p['variable'], ''),
++    ]
++
+ def extra_rules(p):
+     return [
+         # ---------- comments ----------
+@@ -19,7 +74,7 @@ def extra_rules(p):
+         R('Rust self / Python self,cls / Lua self', ['variable.language.self', 'variable.language.self.rust', 'variable.language.self.lua', 'variable.language.special.self', 'variable.language.special.cls'], p['param'], 'italic'),
+         R('Macro invocations (Rust println!, Elixir, Julia @)', ['entity.name.function.macro', 'support.macro', 'meta.macro.rust entity.name.function'], p['macro'], 'bold'),
+         # ---------- JS / TS / C# / Java declaration keywords ----------
+-        R('Type-declaring keywords (class interface type enum namespace)', ['storage.type.class', 'storage.type.interface', 'storage.type.type', 'storage.type.enum', 'storage.type.namespace', 'storage.type.struct', 'storage.type.union', 'storage.type.trait', 'storage.type.module', 'keyword.declaration.struct', 'keyword.declaration.enum', 'keyword.declaration.trait', 'keyword.declaration.type', 'keyword.declaration.impl', 'keyword.other.struct', 'keyword.other.enum', 'keyword.other.trait', 'keyword.other.type', 'keyword.other.impl'], p['composite'], ''),
++        R('Type-declaring keywords (class interface type enum namespace)', ['storage.type.class', 'storage.type.interface', 'storage.type.type', 'storage.type.enum', 'storage.type.namespace', 'storage.type.struct', 'storage.type.union', 'storage.type.trait', 'storage.type.module', 'keyword.declaration.struct', 'keyword.declaration.enum', 'keyword.declaration.trait', 'keyword.declaration.type', 'keyword.declaration.impl', 'keyword.other.struct', 'keyword.other.enum', 'keyword.other.trait', 'keyword.other.type', 'keyword.other.impl'], p['keyword'], ''),  # E1: P1
+         R('Modules / packages / imports', ['entity.name.type.module', 'entity.name.package', 'entity.name.import', 'entity.name.namespace', 'support.other.namespace', 'entity.name.module'], p['namespace'], ''),
+         R('JSX / component tags', ['support.class.component', 'entity.name.tag.tsx support.class', 'entity.name.tag.jsx support.class'], p['composite'], ''),
+         R('Regular expressions', ['string.regexp', 'source.regexp'], p['escape'], ''),
+@@ -111,6 +166,9 @@ def extra_semantic(p):
+         'module': p['namespace'],
+         'decorator': p['directive'],
+         'builtinConstant': p['number'],
++        # E1: rust-analyzer const/static items, Pylance modifiers
++        'const': p['number'], 'static': p['staticvar'],
++        '*.decorator': p['directive'], 'function.decorator': p['directive'], 'class.decorator': p['directive'], 'function.decorator.builtin': p['directive'], 'class.decorator.builtin': p['directive'], 'magicFunction': p['method'], 'magicFunction.builtin': p['method'], 'function.builtin': p['libfn'], 'variable.classMember': p['member'], 'class.builtin': p['prim'],
+         # Generic
+         'regexp': p['escape'],
+         'comment.documentation': {'foreground': p['doc'], 'italic': True},

@@ -1,0 +1,35 @@
+{
+  "workbench.colorTheme": "Rosin · Sea Salt",
+  "editor.semanticHighlighting.enabled": true,
+  "C_Cpp.enhancedColorization": "enabled",
+  "editor.bracketPairColorization.enabled": false,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "security.workspace.trust.enabled": false,
+  "extensions.autoUpdate": "off",
+  "extensions.autoCheckUpdates": false,
+  "extensions.ignoreRecommendations": true,
+  "update.mode": "none",
+  "telemetry.telemetryLevel": "off",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.enableExperiments": false,
+  "settingsSync.keybindingsPerPlatform": true,
+  "git.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.codeLens": false,
+  "rust-analyzer.checkOnSave": false,
+  "idf.showOnboardingOnInit": false,
+  "clangd.checkUpdates": false,
+  "window.restoreWindows": "none",
+  "files.associations": {
+    "*.ld": "linkerscript",
+    "*.dts": "dts",
+    "*.dtsi": "dts",
+    "Kconfig*": "kconfig"
+  },
+  "clangd.path": "C:\\Users\\howla\\Desktop\\test-code\\rosin-audit-env\\tools\\clangd_23.1.0\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--log=error"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+ "label": "servers (Pylance, Even Better TOML, YAML, Bash IDE, CMake Tools, Makefile Tools, devicetree, ESP-IDF, linker, ARM)",
+ "out": "../dumps/servers",
+ "quit": true,
+ "timeoutMs": 150000,
+ "pollMs": 2500,
+ "emptyOkAfterMs": 15000,
+ "files": [
+  "python/corpus.py",
+  "config/corpus.toml",
+  "config/corpus.yaml",
+  "config/corpus.json",
+  "config/corpus.ini",
+  "shell/corpus.sh",
+  "make/Makefile",
+  "cmake/CMakeLists.txt",
+  "kconfig/Kconfig",
+  "dts/corpus.dts",
+  "ld/corpus.ld",
+  "asm/corpus.S",
+  "markdown/corpus.md",
+  "logs/corpus.log",
+  "diff/corpus.diff",
+  "git/COMMIT_EDITMSG",
+  "config/corpus.jsonc",
+  "diff/corpus.ctx.diff"
+ ]
+}

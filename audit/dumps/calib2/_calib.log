@@ -1,0 +1,63 @@
+1795182734610 warmup
+1795182807638 step 1 Rosin · Sea Salt toml.table.header
+1795182816331 step 2 Rosin · Sea Salt toml.key
+1795182824776 step 3 Rosin · Sea Salt cm.kwarg.public
+1795182833451 step 4 Rosin · Sea Salt cm.var.use
+1795182842120 step 5 Rosin · Sea Salt cm.bracket.arg
+1795182850587 step 6 Rosin · Sea Salt kc.config
+1795182859281 step 7 Rosin · Sea Salt kc.depends
+1795182867719 step 8 Rosin · Sea Salt dts.node.name
+1795182876407 step 9 Rosin · Sea Salt dts.label.def
+1795182884858 step 10 Rosin · Sea Salt asm.register
+1795182893543 step 11 Rosin · Sea Salt asm.label.def
+1795182902000 step 12 Rosin · Sea Salt ld.region.name
+1795182910706 step 13 Rosin · Sea Salt ld.keep
+1795182919178 step 14 Rosin · Sea Salt yaml.key
+1795182927856 step 15 Rosin · Sea Salt yaml.date
+1795182936555 step 16 Rosin · Sea Salt yaml.anchor
+1795182945029 step 17 Rosin · Sea Salt sh.var.use
+1795182953716 step 18 Rosin · Sea Salt sh.flag.long
+1795182962405 step 19 Rosin · Sea Salt sh.op.and
+1795182970862 step 20 Rosin · Sea Salt mk.var.use.recipe
+1795182979529 step 21 Rosin · Sea Salt mk.phony
+1795182988215 step 22 Rosin · Sea Salt mk.assign.op
+1795182996729 step 23 Rosin · Sea Salt md.heading.text
+1795183005410 step 24 Rosin · Sea Salt md.code.inline
+1795183014089 step 25 Rosin · Sea Salt md.link.text
+1795183022539 step 26 Rosin · Sea Salt log.zephyr.err
+1795183031219 step 27 Rosin · Sea Salt log.espidf.tag
+1795183039683 step 28 Rosin · Sea Salt git.subject
+1795183048132 step 29 Rosin · Sea Salt diff.range
+1795183056609 step 30 Rosin · Sea Salt json.key.quote
+1795183065093 step 31 Rosin · Sea Salt py.decorator.name
+1795183073778 step 32 Rosin · Sea Salt py.fn.builtin
+1795183082453 step 33 Rosin · Sea Salt py.attr.use
+1795183091145 step 34 Rosin · Sea Salt py.dunder.decl
+1795183099830 step 35 Rosin · Sea Salt py.const.upper
+1795183108496 step 36 Rosin · Sea Salt py.self.use
+1795183116958 step 37 Rosin · Sea Salt rs.const.use
+1795183125638 step 38 Rosin · Sea Salt rs.kw.struct
+1795183134315 step 39 Rosin · Sea Salt rs.type.prim.u8
+1795183142981 step 40 Rosin · Sea Salt rs.macro.call.println
+1795183151663 step 41 Rosin · Sea Salt rs.borrow.mut
+1795183160347 step 42 Rosin · Sea Salt rs.lifetime.decl
+1795183168815 step 43 Rosin · Sea Salt c.type.stdint
+1795183177493 step 44 Rosin · Sea Salt c.op.xor
+1795183186174 step 45 Rosin · Sea Salt c.kw.asm
+1795183194858 step 46 Rosin · Sea Salt c.macro.fn.use
+1795183203556 step 47 Rosin · Sea Salt c.var.const.global
+1795183212019 step 48 Rosin · Sea Salt cpp.op.xor
+1795183220712 step 49 Rosin · Sea Salt cpp.tparam.decl
+1795183231836 step 1 Rosin · Licorice toml.table.header
+1795183240291 step 6 Rosin · Licorice kc.config
+1795183248740 step 17 Rosin · Licorice sh.var.use
+1795183257213 step 20 Rosin · Licorice mk.var.use.recipe
+1795183265658 step 23 Rosin · Licorice md.heading.text
+1795183274112 step 26 Rosin · Licorice log.zephyr.err
+1795183282577 step 31 Rosin · Licorice py.decorator.name
+1795183291256 step 36 Rosin · Licorice py.self.use
+1795183299714 step 38 Rosin · Licorice rs.kw.struct
+1795183308412 step 41 Rosin · Licorice rs.borrow.mut
+1795183316869 step 43 Rosin · Licorice c.type.stdint
+1795183325549 step 44 Rosin · Licorice c.op.xor
+1795183333648 done

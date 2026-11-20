@@ -1,0 +1,11 @@
+{
+  "name": "rosin-audit-probe",
+  "displayName": "Rosin audit probe (dev only)",
+  "version": "0.0.1",
+  "publisher": "rosin-audit",
+  "private": true,
+  "engines": { "vscode": "^1.90.0" },
+  "main": "./extension.js",
+  "activationEvents": ["onStartupFinished"],
+  "contributes": { "commands": [{ "command": "rosinProbe.dump", "title": "Rosin probe: dump semantic tokens" }] }
+}

@@ -1,0 +1,12 @@
+Only in a: extra.c
+*** a/old.c
+--- b/new.c
+***************
+*** 1,2 ****
+! int x = 1;
+--- 1,2 ----
+! int x = 2;
+1c1
+< old line
+---
+> new line

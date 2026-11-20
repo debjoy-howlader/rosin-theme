@@ -1,0 +1,729 @@
+{
+ "grammar": {
+  "source.arm": {
+   "files": [
+    "asm/corpus.S"
+   ],
+   "produced": 18,
+   "reachable": 22,
+   "pct": 82,
+   "missing": [
+    "comment.nop.arm",
+    "keyword.control.cpu.arm",
+    "keyword.control.define.arm",
+    "keyword.control.evaluation"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.char.arm",
+     "invalid.illegal.condition.arm",
+     "invalid.illegal.string.arm"
+    ]
+   }
+  },
+  "source.c": {
+   "files": [
+    "c/corpus.c"
+   ],
+   "produced": 145,
+   "reachable": 164,
+   "pct": 88,
+   "missing": [
+    "comment.block.preprocessor.elif-branch.in-block.c",
+    "comment.block.preprocessor.else-branch.c",
+    "comment.block.preprocessor.else-branch.in-block.c",
+    "constant.numeric.preprocessor.c",
+    "markup.inline.raw.string.c",
+    "meta.encoding.c",
+    "meta.initialization.c",
+    "meta.tail.switch.c",
+    "punctuation.range-based.c",
+    "punctuation.section.parens.begin.bracket.round.initialization.c",
+    "punctuation.section.parens.end.bracket.round.initialization.c",
+    "punctuation.separator.constant.numeric",
+    "string.unquoted.single.c",
+    "support.type.pthread.c",
+    "support.type.stdint.c",
+    "support.type.sys-types.c",
+    "variable.other.asm.label.c",
+    "variable.other.c",
+    "variable.parameter.c"
+   ],
+   "unreachable": {
+    "legacy Mac/GTK conventions outside the embedded scope": [
+     "constant.other.variable.mac-classic.c",
+     "storage.type.class.gtkdoc",
+     "support.constant.mac-classic.c",
+     "support.type.mac-classic.c",
+     "variable.other.readwrite.global.mac-classic.c",
+     "variable.other.readwrite.static.mac-classic.c"
+    ],
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.constant.numeric",
+     "invalid.illegal.macro-name.c",
+     "invalid.illegal.placeholder.c"
+    ]
+   }
+  },
+  "source.cmake": {
+   "files": [
+    "cmake/CMakeLists.txt"
+   ],
+   "produced": 33,
+   "reachable": 35,
+   "pct": 94,
+   "missing": [
+    "support.function.commandProperty.cmake",
+    "support.type.variable.cmake"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.deprecated.cmake"
+    ]
+   }
+  },
+  "source.ini": {
+   "files": [
+    "config/corpus.ini"
+   ],
+   "produced": 11,
+   "reachable": 13,
+   "pct": 85,
+   "missing": [
+    "constant.character.escape.ini",
+    "punctuation.whitespace.comment.leading.ini"
+   ],
+   "unreachable": {}
+  },
+  "source.json": {
+   "files": [
+    "config/corpus.json"
+   ],
+   "produced": 20,
+   "reachable": 23,
+   "pct": 87,
+   "missing": [
+    "comment.block.documentation.json",
+    "comment.block.json",
+    "punctuation.definition.comment.json"
+   ],
+   "unreachable": {
+    "belongs to an embedded grammar, audited in that language": [
+     "comment.line.double-slash.js"
+    ],
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.expected-array-separator.json",
+     "invalid.illegal.expected-dictionary-separator.json",
+     "invalid.illegal.unrecognized-string-escape.json"
+    ]
+   }
+  },
+  "source.json.comments": {
+   "files": [
+    "config/corpus.jsonc"
+   ],
+   "produced": 24,
+   "reachable": 24,
+   "pct": 100,
+   "missing": [],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.expected-array-separator.json.comments",
+     "invalid.illegal.expected-dictionary-separator.json.comments",
+     "invalid.illegal.unrecognized-string-escape.json.comments"
+    ]
+   }
+  },
+  "source.toml": {
+   "files": [
+    "config/corpus.toml"
+   ],
+   "produced": 35,
+   "reachable": 37,
+   "pct": 95,
+   "missing": [
+    "meta.preprocessor.toml",
+    "punctuation.definition.meta.preprocessor.toml"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.escape.toml"
+    ]
+   }
+  },
+  "source.yaml": {
+   "files": [
+    "config/corpus.yaml"
+   ],
+   "produced": 57,
+   "reachable": 58,
+   "pct": 98,
+   "missing": [
+    "string.unquoted.directive-parameter.yaml"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.character.anchor.yaml",
+     "invalid.illegal.expected-comment-or-newline.yaml",
+     "invalid.illegal.expected-newline.yaml",
+     "invalid.illegal.tag-handle.yaml",
+     "invalid.illegal.unrecognized.yaml"
+    ]
+   }
+  },
+  "source.cpp": {
+   "files": [
+    "cpp/corpus.cpp"
+   ],
+   "produced": 358,
+   "reachable": 456,
+   "pct": 79,
+   "missing": [
+    "comment.line.banner.cpp",
+    "constant.character.escape",
+    "constant.other.placeholder",
+    "entity.name.label.cpp",
+    "entity.name.operator.type.array.cpp",
+    "entity.name.operator.type.pointer.cpp",
+    "entity.name.operator.type.reference.cpp",
+    "entity.name.other.preprocessor.macro.predefined.DLLEXPORT.cpp",
+    "entity.name.scope-resolution.constructor.cpp",
+    "entity.name.scope-resolution.destructor.cpp",
+    "entity.name.scope-resolution.operator-overload.cpp",
+    "entity.name.scope-resolution.template.call.cpp",
+    "entity.name.scope-resolution.template.definition.cpp",
+    "entity.name.scope-resolution.type.cpp",
+    "entity.name.type.alias.cpp",
+    "entity.name.type.class.parameter.cpp",
+    "entity.name.type.constructor.cpp",
+    "entity.name.type.destructor.cpp",
+    "entity.name.type.enum.parameter.cpp",
+    "entity.name.type.struct.parameter.cpp",
+    "entity.name.type.union.parameter.cpp",
+    "keyword.operator.assignment.compound.bitwise.cpp",
+    "keyword.operator.minus.exponent.hexadecimal.cpp",
+    "keyword.operator.plus.exponent.decimal.cpp",
+    "keyword.operator.typeid.cpp",
+    "keyword.other.delete.destructor.cpp",
+    "keyword.other.suffix.literal.user-defined.reserved.character.cpp",
+    "keyword.other.suffix.literal.user-defined.reserved.string.cpp",
+    "keyword.other.typename.cpp",
+    "markup.inline.raw.string.cpp",
+    "meta.arguments.operator.typeid",
+    "meta.binding.cpp",
+    "meta.bracket.square.array.cpp",
+    "meta.declaration.type.alias.value.unknown.cpp",
+    "meta.encoding",
+    "meta.function.definition.parameters.special.member.destructor",
+    "meta.initialization.cpp",
+    "meta.initialization.parameter.cpp",
+    "meta.string.quoted.double.raw.glsl.cpp",
+    "meta.tail.class.cpp",
+    "meta.tail.enum.cpp",
+    "meta.tail.function.definition.cpp",
+    "meta.tail.function.definition.special.constructor.cpp",
+    "meta.tail.function.definition.special.member.destructor.cpp",
+    "meta.tail.function.definition.special.operator-overload.cpp",
+    "meta.tail.namespace.cpp",
+    "meta.tail.struct.cpp",
+    "meta.tail.switch.cpp",
+    "meta.tail.union.cpp",
+    "meta.toc-list.banner.block.cpp",
+    "meta.type.cpp",
+    "punctuation.accessor.attribute.cpp",
+    "punctuation.accessor.initializer.cpp",
+    "punctuation.cpp",
+    "punctuation.definition.begin.bracket.square.binding.cpp",
+    "punctuation.definition.begin.bracket.square.cpp",
+    "punctuation.definition.end.bracket.square.binding.cpp",
+    "punctuation.definition.end.bracket.square.cpp",
+    "punctuation.section.arguments.begin.bracket.curly.initializer.cpp",
+    "punctuation.section.arguments.begin.bracket.round.initializer.cpp",
+    "punctuation.section.arguments.begin.bracket.round.operator.typeid.cpp",
+    "punctuation.section.arguments.end.bracket.curly.initializer.cpp",
+    "punctuation.section.arguments.end.bracket.round.initializer.cpp",
+    "punctuation.section.arguments.end.bracket.round.operator.typeid.cpp",
+    "punctuation.section.parens.begin.bracket.round.assembly.inner.cpp",
+    "punctuation.section.parens.end.bracket.round.assembly.inner.cpp",
+    "punctuation.separator.attribute.cpp",
+    "punctuation.separator.delimiter.colon.assembly.cpp",
+    "punctuation.separator.delimiter.comma.inheritance.cpp",
+    "punctuation.separator.delimiter.comma.template.argument.cpp",
+    "punctuation.separator.label.cpp",
+    "punctuation.separator.scope-resolution.constructor.cpp",
+    "punctuation.separator.scope-resolution.destructor.cpp",
+    "punctuation.separator.scope-resolution.operator-overload.cpp",
+    "punctuation.separator.scope-resolution.template.call.cpp",
+    "punctuation.separator.scope-resolution.template.definition.cpp",
+    "punctuation.separator.scope-resolution.type.cpp",
+    "punctuation.vararg-ellipses.cpp",
+    "punctuation.vararg-ellipses.variable.parameter.preprocessor.cpp",
+    "storage.modifier.const.cpp",
+    "storage.modifier.specifier.parameter.cpp",
+    "storage.type.class.declare.cpp",
+    "storage.type.class.parameter.cpp",
+    "storage.type.enum.declare.cpp",
+    "storage.type.enum.parameter.cpp",
+    "storage.type.modifier.calling-convention.cpp",
+    "storage.type.struct.declare.cpp",
+    "storage.type.struct.parameter.cpp",
+    "storage.type.union.declare.cpp",
+    "storage.type.union.parameter.cpp",
+    "string.unquoted.cpp",
+    "variable.camel-case.cpp",
+    "variable.other.asm.label.cpp",
+    "variable.other.for.cpp",
+    "variable.other.macro.argument.cpp",
+    "variable.other.object.declare.cpp",
+    "variable.other.object.property.cpp",
+    "variable.parameter.initializer.cpp"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.illegal.constant.numeric.cpp",
+     "invalid.illegal.delimiter-too-long",
+     "invalid.illegal.reference-type.cpp",
+     "invalid.illegal.unexpected.punctuation.definition.comment.end.cpp",
+     "invalid.illegal.unknown-escape",
+     "invalid.illegal.unknown-escape.cpp"
+    ],
+    "legacy Mac/GTK conventions outside the embedded scope": [
+     "storage.type.class.gtkdoc.cpp"
+    ]
+   }
+  },
+  "source.diff": {
+   "files": [
+    "diff/corpus.ctx.diff",
+    "diff/corpus.diff"
+   ],
+   "produced": 20,
+   "reachable": 26,
+   "pct": 77,
+   "missing": [
+    "comment.line.number-sign.diff",
+    "meta.diff.header.command",
+    "meta.diff.index",
+    "meta.toc-list.file-name.diff",
+    "punctuation.definition.comment.diff",
+    "punctuation.separator.key-value.diff"
+   ],
+   "unreachable": {}
+  },
+  "source.dts": {
+   "files": [
+    "dts/corpus.dts"
+   ],
+   "produced": 14,
+   "reachable": 15,
+   "pct": 93,
+   "missing": [
+    "constant.character.escape.dts"
+   ],
+   "unreachable": {}
+  },
+  "text.git-commit": {
+   "files": [
+    "git/COMMIT_EDITMSG"
+   ],
+   "produced": 9,
+   "reachable": 11,
+   "pct": 82,
+   "missing": [
+    "keyword.other.file-type.git-commit",
+    "string.unquoted.filename.git-commit"
+   ],
+   "unreachable": {
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.deprecated.line-too-long.git-commit",
+     "invalid.illegal.line-too-long.git-commit"
+    ]
+   }
+  },
+  "source.kconfig": {
+   "files": [
+    "kconfig/Kconfig"
+   ],
+   "produced": 6,
+   "reachable": 9,
+   "pct": 67,
+   "missing": [
+    "constant.character.escape.kconfig",
+    "support.type.kconfig",
+    "variable.other.kconfig"
+   ],
+   "unreachable": {}
+  },
+  "source.ld": {
+   "files": [
+    "ld/corpus.ld"
+   ],
+   "produced": 13,
+   "reachable": 18,
+   "pct": 72,
+   "missing": [
+    "datatypes.ld",
+    "keyword.control.ld",
+    "memory.config.ld",
+    "support.type.ld",
+    "support.variable.ld"
+   ],
+   "unreachable": {}
+  },
+  "text.log": {
+   "files": [
+    "logs/corpus.log"
+   ],
+   "produced": 18,
+   "reachable": 21,
+   "pct": 86,
+   "missing": [
+    "log.exception",
+    "markup.changed",
+    "string.key,"
+   ],
+   "unreachable": {}
+  },
+  "source.makefile": {
+   "files": [
+    "make/Makefile"
+   ],
+   "produced": 22,
+   "reachable": 23,
+   "pct": 96,
+   "missing": [
+    "punctuation.whitespace.comment.leading.makefile"
+   ],
+   "unreachable": {}
+  },
+  "text.html.markdown": {
+   "files": [
+    "markdown/corpus.md"
+   ],
+   "produced": 81,
+   "reachable": 88,
+   "pct": 92,
+   "missing": [
+    "comment.frontmatter",
+    "fenced_code.block.language",
+    "meta.embedded.block.git_commit",
+    "meta.embedded.block.markdown",
+    "meta.link.reference.literal.markdown",
+    "meta.other.valid-ampersand.markdown",
+    "meta.other.valid-bracket.markdown"
+   ],
+   "unreachable": {
+    "fenced block for a language outside the audited set": [
+     "meta.embedded.block.abap",
+     "meta.embedded.block.bibtex",
+     "meta.embedded.block.clojure",
+     "meta.embedded.block.coffee",
+     "meta.embedded.block.csharp",
+     "meta.embedded.block.css",
+     "meta.embedded.block.dart",
+     "meta.embedded.block.dockerfile",
+     "meta.embedded.block.dosbatch",
+     "meta.embedded.block.elixir",
+     "meta.embedded.block.erlang",
+     "meta.embedded.block.fsharp",
+     "meta.embedded.block.git_rebase",
+     "meta.embedded.block.groovy",
+     "meta.embedded.block.handlebars",
+     "meta.embedded.block.html",
+     "meta.embedded.block.ignore",
+     "meta.embedded.block.java",
+     "meta.embedded.block.javascript",
+     "meta.embedded.block.js_regexp",
+     "meta.embedded.block.jsonl",
+     "meta.embedded.block.julia",
+     "meta.embedded.block.latex",
+     "meta.embedded.block.less",
+     "meta.embedded.block.lua",
+     "meta.embedded.block.objc",
+     "meta.embedded.block.perl",
+     "meta.embedded.block.perl6",
+     "meta.embedded.block.php",
+     "meta.embedded.block.powershell",
+     "meta.embedded.block.pug",
+     "meta.embedded.block.r",
+     "meta.embedded.block.regexp_python",
+     "meta.embedded.block.restructuredtext",
+     "meta.embedded.block.ruby",
+     "meta.embedded.block.scala",
+     "meta.embedded.block.scss",
+     "meta.embedded.block.sql",
+     "meta.embedded.block.swift",
+     "meta.embedded.block.twig",
+     "meta.embedded.block.typescript",
+     "meta.embedded.block.typescriptreact",
+     "meta.embedded.block.vs_net",
+     "meta.embedded.block.xml",
+     "meta.embedded.block.xsl",
+     "meta.embedded.block.yang"
+    ],
+    "belongs to an embedded grammar, audited in that language": [
+     "meta.embedded.block.go"
+    ]
+   }
+  },
+  "source.python": {
+   "files": [
+    "python/corpus.py"
+   ],
+   "produced": 122,
+   "reachable": 132,
+   "pct": 92,
+   "missing": [
+    "constant.numeric.python",
+    "keyword.illegal.name.python",
+    "keyword.operator.python",
+    "string.quoted.docstring.raw.single.python",
+    "string.quoted.docstring.single.python",
+    "string.quoted.raw.binary.multi.python",
+    "string.quoted.raw.binary.single.python",
+    "string.quoted.raw.multi.python",
+    "string.quoted.raw.single.python",
+    "variable.legacy.builtin.python"
+   ],
+   "unreachable": {
+    "belongs to an embedded grammar, audited in that language": [
+     "comment.regexp",
+     "constant.character.set.regexp",
+     "constant.character.unicode.regexp",
+     "constant.other.set.regexp",
+     "entity.name.tag.backreference.regexp",
+     "entity.name.tag.named.backreference.regexp",
+     "keyword.operator.conditional.negative.regexp",
+     "keyword.operator.conditional.regexp",
+     "keyword.operator.disjunction.regexp",
+     "keyword.operator.lookahead.negative.regexp",
+     "keyword.operator.lookbehind.negative.regexp",
+     "keyword.operator.lookbehind.regexp",
+     "keyword.operator.negation.regexp",
+     "meta.backreference.named.regexp",
+     "meta.backreference.regexp",
+     "meta.character.set.regexp",
+     "punctuation.character.set.begin.regexp",
+     "punctuation.character.set.end.regexp",
+     "punctuation.comment.begin.regexp",
+     "punctuation.comment.end.regexp",
+     "punctuation.parenthesis.backreference.named.begin.regexp",
+     "punctuation.parenthesis.backreference.named.end.regexp",
+     "punctuation.parenthesis.begin.regexp",
+     "punctuation.parenthesis.conditional.begin.regexp",
+     "punctuation.parenthesis.conditional.end.regexp",
+     "punctuation.parenthesis.end.regexp",
+     "punctuation.parenthesis.lookbehind.begin.regexp",
+     "punctuation.parenthesis.lookbehind.end.regexp",
+     "punctuation.parenthesis.non-capturing.begin.regexp",
+     "punctuation.parenthesis.non-capturing.end.regexp",
+     "storage.modifier.flag.regexp",
+     "support.other.match.any.regexp",
+     "support.other.match.begin.regexp",
+     "support.other.match.end.regexp"
+    ],
+    "error markup for malformed code, styled by the Invalid rule": [
+     "invalid.deprecated.backtick.python",
+     "invalid.deprecated.prefix.python",
+     "invalid.deprecated.semicolon.python",
+     "invalid.illegal.annotation.python",
+     "invalid.illegal.brace.python",
+     "invalid.illegal.dec.python",
+     "invalid.illegal.decorator.python",
+     "invalid.illegal.line.continuation.python",
+     "invalid.illegal.name.python",
+     "invalid.illegal.newline.python",
+     "invalid.illegal.operator.python",
+     "invalid.illegal.prefix.python"
+    ]
+   }
+  },
+  "source.rust": {
+   "files": [
+    "rust/corpus.rs",
+    "rust-min/corpus.rs"
+   ],
+   "produced": 92,
+   "reachable": 97,
+   "pct": 95,
+   "missing": [
+    "entity.name.type.macro.rust",
+    "entity.name.type.metavariable.rust",
+    "keyword.operator.borrow.rust",
+    "meta.import.rust",
+    "meta.macro.metavariable.type.rust"
+   ],
+   "unreachable": {}
+  },
+  "source.shell": {
+   "files": [
+    "shell/corpus.sh"
+   ],
+   "produced": 117,
+   "reachable": 157,
+   "pct": 75,
+   "missing": [
+    "constant.character.escape.control-char.shell",
+    "constant.character.escape.hex.shell",
+    "constant.character.escape.octal.shell",
+    "constant.numeric.decimal.shell",
+    "constant.numeric.other.shell",
+    "entity.other.attribute-name.bracket.shell",
+    "entity.other.attribute-name.shell",
+    "keyword.control.while.shell",
+    "keyword.operator.alternation.ruby.shell",
+    "keyword.operator.at.shell",
+    "keyword.operator.extglob.shell",
+    "keyword.operator.glob.shell",
+    "keyword.operator.orvariable.language.special.or.shell",
+    "keyword.operator.quantifier.plus.shell",
+    "keyword.operator.quantifier.question.shell",
+    "keyword.operator.redirect.stdout.shell",
+    "keyword.operator.tilde.shell",
+    "keyword.other.shell",
+    "meta.parenthese.shell",
+    "meta.scope.for-in-loop.shell",
+    "meta.structure.extglob.shell",
+    "meta.while.shell",
+    "punctuation.definition.assignment.shell",
+    "punctuation.definition.bracket.named-array.shell",
+    "punctuation.definition.character-class.shell",
+    "punctuation.definition.extglob.shell",
+    "punctuation.definition.regex.alternation.shell",
+    "punctuation.definition.regex.at.shell",
+    "punctuation.definition.regex.group.shell",
+    "punctuation.definition.string.shell",
+    "punctuation.separator.regex.alternation.shell",
+    "punctuation.separator.statement.or.shell",
+    "punctuation.whitespace.comment.leading.shell",
+    "string.quoted.single",
+    "string.regexp.character-class.shell",
+    "string.unquoted.herestring.shell",
+    "variable.language.special.at.shell",
+    "variable.language.special.quantifier.plus.shell",
+    "variable.language.special.quantifier.question.shell",
+    "variable.other.assignment.array.shell"
+   ],
+   "unreachable": {}
+  }
+ },
+ "legend": {
+  "cpptools:c": {
+   "types": "8/23",
+   "mods": "2/3",
+   "missingTypes": [
+    "referenceType",
+    "valueType",
+    "method",
+    "cliProperty",
+    "event",
+    "genericType",
+    "templateFunction",
+    "templateType",
+    "namespace",
+    "customLiteral",
+    "numberLiteral",
+    "stringLiteral",
+    "operatorOverload",
+    "memberOperatorOverload",
+    "newOperator"
+   ]
+  },
+  "cpptools:cpp": {
+   "types": "16/23",
+   "mods": "3/3",
+   "missingTypes": [
+    "referenceType",
+    "valueType",
+    "cliProperty",
+    "event",
+    "genericType",
+    "customLiteral",
+    "operatorOverload"
+   ]
+  },
+  "clangd:c": {
+   "types": "11/20",
+   "mods": "10/18",
+   "missingTypes": [
+    "method",
+    "interface",
+    "unknown",
+    "namespace",
+    "typeParameter",
+    "concept",
+    "modifier",
+    "bracket",
+    "comment"
+   ]
+  },
+  "clangd:cpp": {
+   "types": "17/20",
+   "mods": "13/18",
+   "missingTypes": [
+    "interface",
+    "unknown",
+    "comment"
+   ]
+  },
+  "rust:rust": {
+   "types": "34/58",
+   "mods": "19/23",
+   "missingTypes": [
+    "type",
+    "angle",
+    "arithmetic",
+    "attribute",
+    "bitwise",
+    "brace",
+    "bracket",
+    "colon",
+    "comma",
+    "comparison",
+    "constParameter",
+    "deriveHelper",
+    "dot",
+    "formatSpecifier",
+    "invalidEscapeSequence",
+    "logical",
+    "macroBang",
+    "negation",
+    "parenthesis",
+    "procMacro",
+    "selfTypeKeyword",
+    "semicolon",
+    "toolModule",
+    "union"
+   ]
+  },
+  "servers:toml": {
+   "types": "2/2",
+   "mods": "0/1",
+   "missingTypes": []
+  },
+  "servers:python": {
+   "types": "11/29",
+   "mods": "12/18",
+   "missingTypes": [
+    "comment",
+    "keyword",
+    "operator",
+    "number",
+    "regexp",
+    "type",
+    "interface",
+    "enum",
+    "enumMember",
+    "typeParameter",
+    "property",
+    "intrinsic",
+    "parenthesis",
+    "curlybrace",
+    "bracket",
+    "colon",
+    "semicolon",
+    "arrow"
+   ]
+  }
+ }
+}

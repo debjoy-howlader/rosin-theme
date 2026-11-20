@@ -1,0 +1,39 @@
+{
+ "vscode": "1.147.0",
+ "extensions": [
+  "dan-c-underwood.arm@1.7.4",
+  "espressif.esp-idf-extension@2.3.0",
+  "mads-hartmann.bash-ide-vscode@1.43.2",
+  "ms-python.debugpy@2026.6.0",
+  "ms-python.python@2026.10.0",
+  "ms-python.vscode-pylance@2026.4.1",
+  "ms-python.vscode-python-envs@1.44.0",
+  "ms-vscode.cmake-tools@1.25.10",
+  "ms-vscode.cpptools@1.35.6",
+  "ms-vscode.makefile-tools@0.12.17",
+  "plorefice.devicetree@0.1.1",
+  "redhat.vscode-yaml@2.0.0",
+  "rust-lang.rust-analyzer@0.3.3121",
+  "tamasfe.even-better-toml@0.21.2",
+  "ZixuanWang.linkerscript@1.0.4",
+  "rosin-audit.rosin-audit-probe@0.0.1",
+  "debjoy-howlader.rosin-theme@1.0.2"
+ ],
+ "theme": "Rosin · Sea Salt",
+ "semanticHighlighting": true,
+ "request": {
+  "label": "A5 readiness (long legend wait: Bash IDE, YAML server; Pylance and Even Better TOML as positive controls)",
+  "out": "../dumps/a5-readiness",
+  "quit": true,
+  "timeoutMs": 200000,
+  "pollMs": 3000,
+  "legendWaitMs": 90000,
+  "emptyOkAfterMs": 20000,
+  "files": [
+   "python/corpus.py",
+   "config/corpus.toml",
+   "shell/corpus.sh",
+   "config/corpus.yaml"
+  ]
+ }
+}

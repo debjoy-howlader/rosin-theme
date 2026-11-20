@@ -1,0 +1,118 @@
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/token_rules.e1.py	2026-11-20 15:35:37.899999069 +0000
++++ tools/token_rules.py	2026-11-20 15:56:59.105994000 +0000
+@@ -62,6 +62,55 @@
+         R('E1 Markdown link text reads as body text (P15)', ['string.other.link.title.markdown', 'string.other.link.description.markdown', 'string.other.link.description.title.markdown'], p['variable'], ''),
+     ]
+ 
++def e2_rules(p):
++    """Rules added in edit phase E2 (audit report A2). Appended after E1."""
++    return [
++        R('E2 C++ extern linkage', ['storage.type.extern.cpp'], p['qualifier'], ''),
++        R('E2 C++ keywords the grammar scopes as types or operators (decltype noexcept requires)', ['keyword.other.decltype.cpp', 'storage.type.decltype.cpp', 'keyword.operator.noexcept.cpp', 'variable.other.unknown.requires.cpp'], p['keyword'], ''),
++        R('E2 Python global / nonlocal', ['storage.modifier.declaration.python'], p['keyword'], ''),
++        R('E2 C __VA_ARGS__ is a macro parameter', ['entity.name.other.preprocessor.macro.predefined.probably.VA_ARGS'], p['param'], 'italic'),
++        R('E2 Words inside inline-asm strings stay string', ['meta.embedded.assembly.c variable.named.arm', 'meta.embedded.assembly.cpp variable.named.arm'], p['string'], ''),
++        R('E2 C/C++ standard attributes [[nodiscard]]', ['support.other.attribute entity.other.attribute'], p['directive'], ''),
++        R('E2 C++ string encoding prefix u8 L u U', ['meta.encoding.cpp'], p['string'], ''),
++        R('E2 C++ user-defined literal suffixes', ['keyword.other.suffix.literal.user-defined'], p['unit'], ''),
++        R('E2 Linker script section and region names', ['section.output.prepart.ld variable.other.ld', 'section.output.postpart.ld variable.other.ld', 'section.discard.ld variable.other.ld'], p['composite'], ''),
++        R('E2 Linker script symbols in expressions', ['expression.ld variable.other.ld'], p['globalvar'], ''),
++        R('E2 Diff file-header markers --- +++ ***', ['meta.diff.header punctuation.definition.from-file.diff', 'meta.diff.header punctuation.definition.to-file.diff'], p['comment'], 'italic'),
++        R('E2 Diff "Only in" lines', ['meta.diff.only-in'], p['comment'], 'italic'),
++        R('E2 Diff hunk-range markers @@', ['meta.diff.range punctuation.definition.range.diff'], p['directive'], ''),
++        R('E2 Devicetree label references &label', ['variable.name.dts'], p['function'], ''),
++        R('E2 Python line continuation backslash', ['punctuation.separator.continuation.line.python'], p['escape'], ''),
++        R('E2 Python imaginary suffix j', ['storage.type.imaginary.number.python'], p['unit'], ''),
++        R('E2 Regex escapes keep the escape colour inside raw strings', ['string.regexp support.other.escape.special.regexp', 'string.regexp constant.character.escape'], p['escape'], ''),
++        R('E2 Python raw-string body reads as string', ['string.regexp.quoted.single.python', 'string.regexp.quoted.double.python', 'string.regexp.quoted.multi.python'], p['string'], ''),
++        R('E2 Shell $\'...\' and <( ) delimiters', ['string.quoted.single.dollar.shell punctuation.definition.string', 'string.interpolated.process-substitution.shell punctuation.definition.string'], p['string'], ''),
++        R('E2 ARM memory and register-list brackets', ['storage.memaddress.arm', 'storage.stack.arm'], p['punct'], ''),
++        R('E2 CMake generator-expression delimiters $< >', ['punctuation.definition.generator-expression.begin.cmake', 'punctuation.definition.generator-expression.end.cmake'], p['hazard'], ''),
++        R('E2 YAML document markers --- ...', ['entity.other.document.begin.yaml', 'entity.other.document.end.yaml'], p['punct'], ''),
++        R('E2 YAML merge key <<', ['keyword.operator.yaml'], p['member'], ''),
++        R('E2 YAML list dash (same as list bullets)', ['punctuation.definition.block.sequence.item.yaml'], p['keyword'], ''),
++        R('E2 C++ class member declarations', ['meta.body.class.cpp variable.other.declare.cpp', 'meta.body.struct.cpp variable.other.declare.cpp'], p['member'], ''),
++        R('E2 Git status words in commit comments (new file, deleted)', ['comment.line.number-sign.git-commit markup.deleted.git-commit', 'comment.line.number-sign.git-commit markup.inserted.git-commit', 'comment.line.number-sign.git-commit markup.changed.git-commit'], p['keyword'], ''),
++        R('E2 Make prerequisites are targets', ['meta.scope.prerequisites.makefile'], p['function'], ''),
++        R('E2 Python dunder methods (def __init__, __post_init__)', ['meta.function.python support.function.magic.python', 'meta.function.python support.variable.magic.python'], p['method'], ''),
++        R('E2 Python metaclass= keyword argument', ['support.type.metaclass.python'], p['param'], 'italic'),
++        R('E2 Rust macro_rules!', ['entity.name.function.macro.rules.rust'], p['keyword'], ''),
++        R('E2 Rust Option / Result variants (Some None Ok Err)', ['entity.name.type.option.rust', 'entity.name.type.result.rust'], p['number'], ''),
++        R('E2 Rust float exponent', ['constant.numeric keyword.operator.exponent.rust', 'constant.numeric keyword.operator.exponent.sign.rust'], p['unit'], ''),
++        R('E2 Rust path separator :: (same as C++)', ['keyword.operator.namespace.rust'], p['namespace'], ''),
++        R('E2 Rust static and super keywords', ['storage.modifier.rust', 'variable.language.super.rust'], p['keyword'], ''),
++        R('E2 Shell =~ operator', ['keyword.operator.logical.regex.shell'], p['quietop'], ''),
++        R('E2 Shell alias keyword', ['storage.type.alias.shell'], p['keyword'], ''),
++        R('E2 C++ qualified namespace names (a::b in namespace, alias, using)', ['entity.name.scope-resolution.namespace.block.cpp', 'entity.name.scope-resolution.namespace.alias.cpp', 'entity.name.scope-resolution.namespace.using.cpp'], p['namespace'], ''),
++        R('E2 C++ owner type of an out-of-line definition (Led::get, Led::operator==)', ['entity.name.scope-resolution.function.definition.cpp', 'entity.name.scope-resolution.operator.cpp', 'entity.name.scope-resolution.operator-overload.cpp'], p['composite'], ''),
++        R('E2 Shell for-loop variable', ['variable.other.for.shell'], p['globalvar'], ''),
++        R('E2 C/C++ exponent sign belongs to the exponent (same as Rust)', ['keyword.operator.plus.exponent', 'keyword.operator.minus.exponent'], p['unit'], ''),
++        R('E2 C++ digit separator 1\'000 stays in the number', ['punctuation.separator.constant.numeric'], p['number'], ''),
++        R('E2 Rust macro metavariables $name take one colour (P8)', ['meta.macro.metavariable.rust keyword.operator.macro.dollar.rust', 'variable.other.metavariable.name.rust'], p['param'], 'italic'),
++        R('E2 Rust macro fragment specifiers (expr ty ident)', ['variable.other.metavariable.specifier.rust'], p['keyword'], ''),
++        R('E2 Shell alias names', ['meta.expression.assignment.alias.shell variable.other.assignment.shell'], p['function'], ''),
++    ]
++
+ def extra_rules(p):
+     return [
+         # ---------- comments ----------
+@@ -169,8 +218,19 @@
+         # E1: rust-analyzer const/static items, Pylance modifiers
+         'const': p['number'], 'static': p['staticvar'],
+         '*.decorator': p['directive'], 'function.decorator': p['directive'], 'class.decorator': p['directive'], 'function.decorator.builtin': p['directive'], 'class.decorator.builtin': p['directive'], 'magicFunction': p['method'], 'magicFunction.builtin': p['method'], 'function.builtin': p['libfn'], 'variable.classMember': p['member'], 'class.builtin': p['prim'],
++        # E2
++        'type.deduced': p['keyword'], 'class.constructorOrDestructor': p['function'], 'stringLiteral': p['unit'], 'numberLiteral': p['unit'], 'customLiteral': p['unit'],
++        'tomlArrayKey': p['member'], 'concept': p['composite'], 'enum.defaultLibrary': p['prim'], 'struct.defaultLibrary': p['prim'], 'function.library': p['libfn'], 'function.decorator.library': p['directive'], 'class.decorator.library': p['directive'],
+         # Generic
+         'regexp': p['escape'],
+         'comment.documentation': {'foreground': p['doc'], 'italic': True},
+     }
+ 
++
++
++def semantic_overrides(p):
++    """Semantic keys that REPLACE a base-theme entry (extra_semantic only adds missing keys)."""
++    return {
++        # E2: clangd marks file-scope (internal linkage, i.e. static) variables with fileScope; extern globals get globalScope.
++        'variable.fileScope': p['staticvar'],
++    }
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/gen.e1.py	2026-11-20 15:35:37.904999069 +0000
++++ tools/gen.py	2026-11-20 15:56:59.109466000 +0000
+@@ -12,7 +12,7 @@
+ OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
+ KEYS = json.load(open(os.path.join(BASE, 'vscode-color-keys.json')))['all']
+ 
+-from token_rules import R, extra_rules, extra_semantic, base_edits, e1_rules
++from token_rules import R, extra_rules, extra_semantic, base_edits, e1_rules, e2_rules, semantic_overrides
+ 
+ # ---------------------------------------------------------------- colour helpers
+ def rgb(h): h = h.lstrip('#'); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+@@ -205,7 +205,10 @@
+                # E1: rules that now carry the keyword colour keep Licorice's bold keywords
+                'Type-declaring keywords (class interface type enum namespace)': 'bold', 'E1 Rust declaration keywords (storage.type.rust innermost)': 'bold',
+                'E1 C/C++ inline asm keyword': 'bold', 'E1 C++ template and typename keywords (P1)': 'bold', 'E1 Kconfig keywords': 'bold', 'E1 Make .PHONY and special targets': 'bold',
+-               'E1 Shell && and ||': 'bold', 'E1 Git commit subject': 'bold'},
++               'E1 Shell && and ||': 'bold', 'E1 Git commit subject': 'bold',
++               # E2 keyword-coloured rules
++               'E2 C++ keywords the grammar scopes as types or operators (decltype noexcept requires)': 'bold', 'E2 Python global / nonlocal': 'bold', 'E2 YAML list dash (same as list bullets)': 'bold',
++               'E2 Git status words in commit comments (new file, deleted)': 'bold', 'E2 Rust macro_rules!': 'bold', 'E2 Rust static and super keywords': 'bold', 'E2 Shell alias keyword': 'bold', 'E2 Rust macro fragment specifiers (expr ty ident)': 'bold'},
+         ui_over=dict(button='#3E5468', buttonHover='#4A6379', badge='#2E3A46', selection='#2A3540')),
+ }
+ 
+@@ -260,7 +263,7 @@
+     tokens = render(T_TOKENS, ui, syn)
+     style = NEW.get(name, {}).get('style', {})
+     tokens = base_edits(tokens)
+-    extras = extra_rules(syn) + e1_rules(syn)
++    extras = extra_rules(syn) + e1_rules(syn) + e2_rules(syn)
+     for r in tokens + extras:
+         if r.get('name') in style:
+             r['settings']['fontStyle'] = style[r['name']]
+@@ -268,6 +271,7 @@
+     sem = render(T_SEM, ui, syn)
+     for k, v in extra_semantic(syn).items():
+         sem.setdefault(k, v)
++    sem.update(semantic_overrides(syn))
+     theme = {
+         '$schema': 'vscode://schemas/color-theme',
+         'name': LABEL(name), 'type': 'dark', 'semanticHighlighting': True,

@@ -1,0 +1,2 @@
+{ "label": "clangd", "out": "../dumps/clangd", "quit": true, "timeoutMs": 150000, "pollMs": 2500, "emptyOkAfterMs": 15000,
+  "files": ["c/corpus.c", "cpp/corpus.cpp"] }

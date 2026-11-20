@@ -1,0 +1,18 @@
+Fix GPIO debounce on boot
+
+Body text explains why.
+# Please enter the commit message for your changes.
+# On branch main
+# Changes to be committed:
+#	modified:   src/main.c
+#	new file:   src/btn.c
+#	deleted:    src/old.c
+#
+# ------------------------ >8 ------------------------
+diff --git a/src/main.c b/src/main.c
+index 1111111..2222222 100644
+--- a/src/main.c
++++ b/src/main.c
+@@ -1 +1 @@
+-int a;
++int b;

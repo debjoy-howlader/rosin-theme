@@ -1,0 +1,37 @@
+//@ dts.directive directive /dts-v1/
+/dts-v1/;
+//@ dts.include directive #include
+#include <dt-bindings/gpio/gpio.h>
+
+/ {
+    //@ dts.node.name composite leds
+    leds {
+        //@ dts.prop member compatible
+        //@ dts.string string gpio-leds
+        compatible = "gpio-leds";
+        //@ dts.label.def function led0
+        //@ dts.node.unit composite led_0
+        led0: led_0 {
+            //@ dts.phandle function &gpio0
+            //@ dts.macro macro GPIO_ACTIVE_HIGH
+            //@ dts.number number 13
+            gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+            //@ dts.prop.hash member #address-cells
+            #address-cells = <1>;
+        };
+    };
+};
+
+//@ dts.ref.node function &led0
+&led0 {
+    //@ dts.status.value string okay
+    status = "okay";
+};
+
+/* block comment */
+/ {
+    //@ dts.escape escape ~\n
+    label = "a\nb";
+    //@ dts.bracket.square punct [
+    mac = [00 11 22];
+};

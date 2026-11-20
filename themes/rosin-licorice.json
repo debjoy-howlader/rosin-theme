@@ -12,7 +12,7 @@
     "variable.readonly.static": "#DDDFE1",
     "variable.global": "#E8E9EA",
     "variable.globalScope": "#E8E9EA",
-    "variable.fileScope": "#E8E9EA",
+    "variable.fileScope": "#C0C3C6",
     "variable.static": "#C0C3C6",
     "variable.static.fileScope": "#C0C3C6",
     "variable.static.functionScope": "#C0C3C6",
@@ -117,6 +117,30 @@
     "module": "#7F8387",
     "decorator": "#808488",
     "builtinConstant": "#DDDFE1",
+    "const": "#DDDFE1",
+    "static": "#C0C3C6",
+    "*.decorator": "#808488",
+    "function.decorator": "#808488",
+    "class.decorator": "#808488",
+    "function.decorator.builtin": "#808488",
+    "class.decorator.builtin": "#808488",
+    "magicFunction": "#A7C6E2",
+    "magicFunction.builtin": "#A7C6E2",
+    "function.builtin": "#8FA2B5",
+    "variable.classMember": "#B3B6B9",
+    "class.builtin": "#A6AAAE",
+    "type.deduced": "#8E9296",
+    "class.constructorOrDestructor": "#94B9DA",
+    "stringLiteral": "#A3A6A9",
+    "numberLiteral": "#A3A6A9",
+    "customLiteral": "#A3A6A9",
+    "tomlArrayKey": "#B3B6B9",
+    "concept": "#D6D8DA",
+    "enum.defaultLibrary": "#A6AAAE",
+    "struct.defaultLibrary": "#A6AAAE",
+    "function.library": "#8FA2B5",
+    "function.decorator.library": "#808488",
+    "class.decorator.library": "#808488",
     "regexp": "#C3C7CA",
     "comment.documentation": {
       "foreground": "#8F9397",
@@ -1111,7 +1135,6 @@
     {
       "name": "Doc comments",
       "scope": [
-        "comment.block.documentation",
         "comment.block.javadoc",
         "string.quoted.docstring"
       ],
@@ -1213,7 +1236,6 @@
         "keyword.operator.logical",
         "keyword.operator.ternary",
         "keyword.operator.wordlike",
-        "keyword.other.operator.overload",
         "storage.type.function",
         "storage.type.js",
         "storage.type.ts",
@@ -1320,13 +1342,6 @@
     {
       "name": "Composite-type keywords & user types (turquoise)",
       "scope": [
-        "storage.type.struct",
-        "storage.type.union",
-        "storage.type.enum",
-        "storage.type.class",
-        "storage.type.namespace",
-        "storage.type.template",
-        "storage.type.template.argument",
         "entity.name.type",
         "entity.name.class",
         "entity.name.struct",
@@ -1362,21 +1377,10 @@
       }
     },
     {
-      "name": "volatile (C++ only; C grammar has no scope for it)",
-      "scope": [
-        "storage.modifier.specifier.volatile"
-      ],
-      "settings": {
-        "foreground": "#D9827A",
-        "fontStyle": "italic"
-      }
-    },
-    {
       "name": "Functions (iris)",
       "scope": [
         "entity.name.function",
         "meta.function-call.generic",
-        "entity.name.label",
         "entity.name.operator",
         "entity.name.command"
       ],
@@ -1410,9 +1414,7 @@
     {
       "name": "Parameters",
       "scope": [
-        "variable.parameter",
-        "variable.language.special.self",
-        "variable.language.special.cls"
+        "variable.parameter"
       ],
       "settings": {
         "foreground": "#B9BCBF",
@@ -1429,10 +1431,7 @@
         "punctuation.support.type.property-name",
         "meta.object-literal.key",
         "entity.name.tag.yaml",
-        "keyword.other.definition.ini",
-        "punctuation.definition.begin.bracket.square",
-        "punctuation.definition.end.bracket.square",
-        "support.variable.magic"
+        "keyword.other.definition.ini"
       ],
       "settings": {
         "foreground": "#B3B6B9",
@@ -1442,10 +1441,7 @@
     {
       "name": "this / self-like language variables, registers",
       "scope": [
-        "variable.language",
-        "variable.other.register",
-        "support.constant.register",
-        "storage.type.register"
+        "variable.language"
       ],
       "settings": {
         "foreground": "#D9827A",
@@ -1472,8 +1468,7 @@
       "scope": [
         "entity.name.function.preprocessor",
         "entity.name.other.preprocessor.macro",
-        "variable.other.macro",
-        "variable.parameter.preprocessor"
+        "variable.other.macro"
       ],
       "settings": {
         "foreground": "#E4E6E8",
@@ -1509,10 +1504,7 @@
     {
       "name": "Assembly (extension-dependent)",
       "scope": [
-        "support.function.mnemonic",
-        "keyword.other.mnemonic",
-        "entity.name.function.mnemonic",
-        "keyword.mnemonic"
+        "entity.name.function.mnemonic"
       ],
       "settings": {
         "foreground": "#8E9296",
@@ -1543,7 +1535,6 @@
       "name": "Sections (INI/TOML/Markdown)",
       "scope": [
         "entity.name.section",
-        "markup.heading",
         "punctuation.definition.heading"
       ],
       "settings": {
@@ -1554,7 +1545,6 @@
     {
       "name": "Markup",
       "scope": [
-        "markup.inline.raw",
         "markup.fenced_code"
       ],
       "settings": {
@@ -1565,8 +1555,7 @@
     {
       "name": "Links",
       "scope": [
-        "markup.underline.link",
-        "string.other.link"
+        "markup.underline.link"
       ],
       "settings": {
         "foreground": "#D6D8DA",
@@ -1764,8 +1753,8 @@
         "keyword.other.impl"
       ],
       "settings": {
-        "foreground": "#D6D8DA",
-        "fontStyle": ""
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
       }
     },
     {
@@ -1955,16 +1944,6 @@
       "settings": {
         "foreground": "#868A8E",
         "fontStyle": "italic"
-      }
-    },
-    {
-      "name": "CMake properties",
-      "scope": [
-        "support.type.property.cmake"
-      ],
-      "settings": {
-        "foreground": "#B3B6B9",
-        "fontStyle": ""
       }
     },
     {
@@ -2168,7 +2147,6 @@
     {
       "name": "Devicetree nodes",
       "scope": [
-        "entity.name.type.dts",
         "entity.name.tag.dts",
         "entity.name.type.node"
       ],
@@ -2180,7 +2158,6 @@
     {
       "name": "Devicetree properties",
       "scope": [
-        "variable.name.dts",
         "support.type.property-name.dts",
         "entity.other.attribute-name.dts"
       ],
@@ -2195,8 +2172,7 @@
         "keyword.directive.dts",
         "keyword.other.dts",
         "keyword.control.kconfig",
-        "keyword.other.kconfig",
-        "storage.type.kconfig"
+        "keyword.other.kconfig"
       ],
       "settings": {
         "foreground": "#808488",
@@ -2206,7 +2182,6 @@
     {
       "name": "Devicetree labels & phandles",
       "scope": [
-        "entity.name.function.dts",
         "variable.other.phandle",
         "entity.name.label.dts"
       ],
@@ -2412,6 +2387,746 @@
       ],
       "settings": {
         "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "name": "E1 Rust declaration keywords (storage.type.rust innermost)",
+      "scope": [
+        "storage.type.rust"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 Rust primitive types",
+      "scope": [
+        "entity.name.type.numeric.rust",
+        "entity.name.type.primitive.rust"
+      ],
+      "settings": {
+        "foreground": "#A6AAAE",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Rust numeric suffix (7u8)",
+      "scope": [
+        "constant.numeric entity.name.type.numeric.rust"
+      ],
+      "settings": {
+        "foreground": "#A3A6A9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Rust format placeholders {}",
+      "scope": [
+        "meta.interpolation.rust punctuation.definition.interpolation.rust",
+        "meta.interpolation.rust"
+      ],
+      "settings": {
+        "foreground": "#D9827A",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 C/C++ inline asm keyword",
+      "scope": [
+        "storage.type.asm"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 C++ template and typename keywords (P1)",
+      "scope": [
+        "storage.type.template",
+        "storage.type.template.argument"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 C++ operator-overload names",
+      "scope": [
+        "keyword.other.operator.overload"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 C++ template parameter names",
+      "scope": [
+        "entity.name.type.template"
+      ],
+      "settings": {
+        "foreground": "#A6AAAE",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 this (same as self: parameter)",
+      "scope": [
+        "variable.language.this"
+      ],
+      "settings": {
+        "foreground": "#B9BCBF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 Doc-comment delimiters",
+      "scope": [
+        "comment.block.documentation punctuation.definition.comment",
+        "comment.line.documentation punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#8F9397",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 Python decorator names that are builtins",
+      "scope": [
+        "meta.function.decorator support.type.python",
+        "meta.function.decorator support.function"
+      ],
+      "settings": {
+        "foreground": "#808488",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Kconfig keywords",
+      "scope": [
+        "variable.language.kconfig",
+        "storage.modifier.kconfig",
+        "storage.type.kconfig"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 Devicetree node names (this grammar)",
+      "scope": [
+        "entity.name.function.dts"
+      ],
+      "settings": {
+        "foreground": "#D6D8DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Devicetree labels (this grammar)",
+      "scope": [
+        "entity.name.type.dts"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 ARM registers",
+      "scope": [
+        "storage.register.arm"
+      ],
+      "settings": {
+        "foreground": "#D9827A",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 ARM label definitions",
+      "scope": [
+        "routine.arm"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 Make variable delimiters $( ) take the variable colour",
+      "scope": [
+        "string.interpolated.makefile punctuation.definition.variable.makefile"
+      ],
+      "settings": {
+        "foreground": "#E8E9EA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Make assignment operators",
+      "scope": [
+        "punctuation.separator.key-value.makefile"
+      ],
+      "settings": {
+        "foreground": "#8A8E92",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Make .PHONY and special targets",
+      "scope": [
+        "support.function.target.PHONY.makefile",
+        "support.function.target"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 CMake variable delimiters ${ } take the variable colour",
+      "scope": [
+        "variable.other.cmake punctuation.section.variable",
+        "punctuation.section.variable.begin.cmake",
+        "punctuation.section.variable.end.cmake"
+      ],
+      "settings": {
+        "foreground": "#E8E9EA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 CMake keyword arguments (PRIVATE VERSION)",
+      "scope": [
+        "support.type.property.cmake"
+      ],
+      "settings": {
+        "foreground": "#868A8E",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E1 CMake bracket arguments",
+      "scope": [
+        "variable.parameter.cmake"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Shell && and ||",
+      "scope": [
+        "punctuation.separator.statement.and.shell",
+        "punctuation.separator.statement.or.shell"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 Git commit subject",
+      "scope": [
+        "meta.scope.subject.git-commit"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E1 Markdown inline code",
+      "scope": [
+        "markup.inline.raw"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E1 Markdown link text reads as body text (P15)",
+      "scope": [
+        "string.other.link.title.markdown",
+        "string.other.link.description.markdown",
+        "string.other.link.description.title.markdown"
+      ],
+      "settings": {
+        "foreground": "#CACCCE",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ extern linkage",
+      "scope": [
+        "storage.type.extern.cpp"
+      ],
+      "settings": {
+        "foreground": "#868A8E",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ keywords the grammar scopes as types or operators (decltype noexcept requires)",
+      "scope": [
+        "keyword.other.decltype.cpp",
+        "storage.type.decltype.cpp",
+        "keyword.operator.noexcept.cpp",
+        "variable.other.unknown.requires.cpp"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 Python global / nonlocal",
+      "scope": [
+        "storage.modifier.declaration.python"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 C __VA_ARGS__ is a macro parameter",
+      "scope": [
+        "entity.name.other.preprocessor.macro.predefined.probably.VA_ARGS"
+      ],
+      "settings": {
+        "foreground": "#B9BCBF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E2 Words inside inline-asm strings stay string",
+      "scope": [
+        "meta.embedded.assembly.c variable.named.arm",
+        "meta.embedded.assembly.cpp variable.named.arm"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C/C++ standard attributes [[nodiscard]]",
+      "scope": [
+        "support.other.attribute entity.other.attribute"
+      ],
+      "settings": {
+        "foreground": "#808488",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ string encoding prefix u8 L u U",
+      "scope": [
+        "meta.encoding.cpp"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ user-defined literal suffixes",
+      "scope": [
+        "keyword.other.suffix.literal.user-defined"
+      ],
+      "settings": {
+        "foreground": "#A3A6A9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Linker script section and region names",
+      "scope": [
+        "section.output.prepart.ld variable.other.ld",
+        "section.output.postpart.ld variable.other.ld",
+        "section.discard.ld variable.other.ld"
+      ],
+      "settings": {
+        "foreground": "#D6D8DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Linker script symbols in expressions",
+      "scope": [
+        "expression.ld variable.other.ld"
+      ],
+      "settings": {
+        "foreground": "#E8E9EA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Diff file-header markers --- +++ ***",
+      "scope": [
+        "meta.diff.header punctuation.definition.from-file.diff",
+        "meta.diff.header punctuation.definition.to-file.diff"
+      ],
+      "settings": {
+        "foreground": "#7A7E82",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E2 Diff \"Only in\" lines",
+      "scope": [
+        "meta.diff.only-in"
+      ],
+      "settings": {
+        "foreground": "#7A7E82",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E2 Diff hunk-range markers @@",
+      "scope": [
+        "meta.diff.range punctuation.definition.range.diff"
+      ],
+      "settings": {
+        "foreground": "#808488",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Devicetree label references &label",
+      "scope": [
+        "variable.name.dts"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Python line continuation backslash",
+      "scope": [
+        "punctuation.separator.continuation.line.python"
+      ],
+      "settings": {
+        "foreground": "#C3C7CA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Python imaginary suffix j",
+      "scope": [
+        "storage.type.imaginary.number.python"
+      ],
+      "settings": {
+        "foreground": "#A3A6A9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Regex escapes keep the escape colour inside raw strings",
+      "scope": [
+        "string.regexp support.other.escape.special.regexp",
+        "string.regexp constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#C3C7CA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Python raw-string body reads as string",
+      "scope": [
+        "string.regexp.quoted.single.python",
+        "string.regexp.quoted.double.python",
+        "string.regexp.quoted.multi.python"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Shell $'...' and <( ) delimiters",
+      "scope": [
+        "string.quoted.single.dollar.shell punctuation.definition.string",
+        "string.interpolated.process-substitution.shell punctuation.definition.string"
+      ],
+      "settings": {
+        "foreground": "#A7BDA2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 ARM memory and register-list brackets",
+      "scope": [
+        "storage.memaddress.arm",
+        "storage.stack.arm"
+      ],
+      "settings": {
+        "foreground": "#66696D",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 CMake generator-expression delimiters $< >",
+      "scope": [
+        "punctuation.definition.generator-expression.begin.cmake",
+        "punctuation.definition.generator-expression.end.cmake"
+      ],
+      "settings": {
+        "foreground": "#D9827A",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 YAML document markers --- ...",
+      "scope": [
+        "entity.other.document.begin.yaml",
+        "entity.other.document.end.yaml"
+      ],
+      "settings": {
+        "foreground": "#66696D",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 YAML merge key <<",
+      "scope": [
+        "keyword.operator.yaml"
+      ],
+      "settings": {
+        "foreground": "#B3B6B9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 YAML list dash (same as list bullets)",
+      "scope": [
+        "punctuation.definition.block.sequence.item.yaml"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 C++ class member declarations",
+      "scope": [
+        "meta.body.class.cpp variable.other.declare.cpp",
+        "meta.body.struct.cpp variable.other.declare.cpp"
+      ],
+      "settings": {
+        "foreground": "#B3B6B9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Git status words in commit comments (new file, deleted)",
+      "scope": [
+        "comment.line.number-sign.git-commit markup.deleted.git-commit",
+        "comment.line.number-sign.git-commit markup.inserted.git-commit",
+        "comment.line.number-sign.git-commit markup.changed.git-commit"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 Make prerequisites are targets",
+      "scope": [
+        "meta.scope.prerequisites.makefile"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Python dunder methods (def __init__, __post_init__)",
+      "scope": [
+        "meta.function.python support.function.magic.python",
+        "meta.function.python support.variable.magic.python"
+      ],
+      "settings": {
+        "foreground": "#A7C6E2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Python metaclass= keyword argument",
+      "scope": [
+        "support.type.metaclass.python"
+      ],
+      "settings": {
+        "foreground": "#B9BCBF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E2 Rust macro_rules!",
+      "scope": [
+        "entity.name.function.macro.rules.rust"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 Rust Option / Result variants (Some None Ok Err)",
+      "scope": [
+        "entity.name.type.option.rust",
+        "entity.name.type.result.rust"
+      ],
+      "settings": {
+        "foreground": "#DDDFE1",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Rust float exponent",
+      "scope": [
+        "constant.numeric keyword.operator.exponent.rust",
+        "constant.numeric keyword.operator.exponent.sign.rust"
+      ],
+      "settings": {
+        "foreground": "#A3A6A9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Rust path separator :: (same as C++)",
+      "scope": [
+        "keyword.operator.namespace.rust"
+      ],
+      "settings": {
+        "foreground": "#7F8387",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Rust static and super keywords",
+      "scope": [
+        "storage.modifier.rust",
+        "variable.language.super.rust"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 Shell =~ operator",
+      "scope": [
+        "keyword.operator.logical.regex.shell"
+      ],
+      "settings": {
+        "foreground": "#8A8E92",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Shell alias keyword",
+      "scope": [
+        "storage.type.alias.shell"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 C++ qualified namespace names (a::b in namespace, alias, using)",
+      "scope": [
+        "entity.name.scope-resolution.namespace.block.cpp",
+        "entity.name.scope-resolution.namespace.alias.cpp",
+        "entity.name.scope-resolution.namespace.using.cpp"
+      ],
+      "settings": {
+        "foreground": "#7F8387",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ owner type of an out-of-line definition (Led::get, Led::operator==)",
+      "scope": [
+        "entity.name.scope-resolution.function.definition.cpp",
+        "entity.name.scope-resolution.operator.cpp",
+        "entity.name.scope-resolution.operator-overload.cpp"
+      ],
+      "settings": {
+        "foreground": "#D6D8DA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Shell for-loop variable",
+      "scope": [
+        "variable.other.for.shell"
+      ],
+      "settings": {
+        "foreground": "#E8E9EA",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C/C++ exponent sign belongs to the exponent (same as Rust)",
+      "scope": [
+        "keyword.operator.plus.exponent",
+        "keyword.operator.minus.exponent"
+      ],
+      "settings": {
+        "foreground": "#A3A6A9",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 C++ digit separator 1'000 stays in the number",
+      "scope": [
+        "punctuation.separator.constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#DDDFE1",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "E2 Rust macro metavariables $name take one colour (P8)",
+      "scope": [
+        "meta.macro.metavariable.rust keyword.operator.macro.dollar.rust",
+        "variable.other.metavariable.name.rust"
+      ],
+      "settings": {
+        "foreground": "#B9BCBF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "E2 Rust macro fragment specifiers (expr ty ident)",
+      "scope": [
+        "variable.other.metavariable.specifier.rust"
+      ],
+      "settings": {
+        "foreground": "#8E9296",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "E2 Shell alias names",
+      "scope": [
+        "meta.expression.assignment.alias.shell variable.other.assignment.shell"
+      ],
+      "settings": {
+        "foreground": "#94B9DA",
+        "fontStyle": ""
       }
     },
     {

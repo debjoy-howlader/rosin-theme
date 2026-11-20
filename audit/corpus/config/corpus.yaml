@@ -1,0 +1,66 @@
+#@ yaml.comment comment comment
+# comment
+#@ yaml.key member board
+#@ yaml.value.plain string esp32
+board: esp32
+#@ yaml.anchor directive base
+defaults: &base
+  #@ yaml.key.nested member baud
+  #@ yaml.number number 115200
+  baud: 115200
+  #@ yaml.bool number true
+  debug: true
+dev:
+  #@ yaml.merge.key member <<
+  #@ yaml.alias directive base
+  <<: *base
+  #@ yaml.string.quoted string flash
+  cmd: "flash"
+  #@ yaml.tag directive !!str
+  version: !!str 1.0
+  pins:
+    #@ yaml.list.dash keyword -
+    - 2
+  #@ yaml.block.indicator keyword |
+  script: |
+    #@ yaml.block.body string idf
+    idf.py build
+  #@ yaml.date number 2026-11-20
+  built: 2026-11-20
+  #@ yaml.null number null
+  extra: null
+#@ yaml.directive directive %YAML
+%YAML 1.2
+#@ yaml.doc.begin punct ---
+---
+#@ yaml.flow.map punct {
+#@ yaml.flow.key member a
+flow: { a: 1, b: [x, y] }
+#@ yaml.single.string string single
+quoted: 'single'
+#@ yaml.escape escape \n
+esc: "line\n"
+#@ yaml.folded keyword >-
+folded: >-
+  #@ yaml.folded.body string folded
+  folded text
+#@ yaml.explicit.key punct ?
+? complex
+: value
+#@ yaml.tag.local directive !local
+loc: !local thing
+#@ yaml.doc.end punct ...
+...
+%FOO reserved
+%TAG !e! tag:example.com,2000:
+---
+#@ yaml.escape.newline escape ~\
+dq: "line one \
+  continued"
+#@ yaml.escape.single escape ''
+sq: 'it''s'
+#@ yaml.indent.indicator keyword ~|2
+ind: |2
+    two
+#@ yaml.flow.explicit punct ?
+fp: { ? k : v }

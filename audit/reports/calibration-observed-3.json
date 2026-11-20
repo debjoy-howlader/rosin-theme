@@ -1,0 +1,390 @@
+{
+ "readings": [
+  {
+   "n": 1,
+   "comp": "c.array.decl.size",
+   "flavour": "Sea Salt",
+   "observed": "#6A727D",
+   "predicted": "#6A727D",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 2,
+   "comp": "c.type.struct.kw",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 2,
+   "comp": "c.type.struct.kw",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 3,
+   "comp": "c.kw.asm",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 4,
+   "comp": "c.macro.param.def",
+   "flavour": "Sea Salt",
+   "observed": "#C2B7DB italic",
+   "predicted": "#C2B7DB italic",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 5,
+   "comp": "c.doc.block",
+   "flavour": "Sea Salt",
+   "observed": "#AE9B7F italic",
+   "predicted": "#AE9B7F italic",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 6,
+   "comp": "cpp.kw.template",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 7,
+   "comp": "cpp.op.overload.decl",
+   "flavour": "Sea Salt",
+   "observed": "#8D96BE",
+   "predicted": "#8D96BE",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 9,
+   "comp": "rs.kw.struct",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 9,
+   "comp": "rs.kw.struct",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 10,
+   "comp": "rs.type.prim.u8",
+   "flavour": "Sea Salt",
+   "observed": "#5EA0CD",
+   "predicted": "#5EA0CD",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 11,
+   "comp": "rs.const.use",
+   "flavour": "Sea Salt",
+   "observed": "#D5C984",
+   "predicted": "#D5C984",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 12,
+   "comp": "rs.static.decl",
+   "flavour": "Sea Salt",
+   "observed": "#ADC6A8",
+   "predicted": "#ADC6A8",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 13,
+   "comp": "py.decorator.name",
+   "flavour": "Sea Salt",
+   "observed": "#AB81AD",
+   "predicted": "#AB81AD",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 14,
+   "comp": "py.decorator.builtin",
+   "flavour": "Sea Salt",
+   "observed": "#AB81AD",
+   "predicted": "#AB81AD",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 15,
+   "comp": "py.fn.builtin",
+   "flavour": "Sea Salt",
+   "observed": "#8D96BE",
+   "predicted": "#8D96BE",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 16,
+   "comp": "py.attr.use",
+   "flavour": "Sea Salt",
+   "observed": "#7DABB0",
+   "predicted": "#7DABB0",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 17,
+   "comp": "py.kw.class",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 18,
+   "comp": "kc.config",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 18,
+   "comp": "kc.config",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 19,
+   "comp": "kc.depends",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 20,
+   "comp": "dts.node.name",
+   "flavour": "Sea Salt",
+   "observed": "#75CCC4",
+   "predicted": "#75CCC4",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 21,
+   "comp": "dts.label.def",
+   "flavour": "Sea Salt",
+   "observed": "#B5A4FF italic",
+   "predicted": "#B5A4FF italic",
+   "match": true,
+   "run": "calib4"
+  },
+  {
+   "n": 22,
+   "comp": "asm.register",
+   "flavour": "Sea Salt",
+   "observed": "#E2726B",
+   "predicted": "#E2726B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 23,
+   "comp": "asm.label.def",
+   "flavour": "Sea Salt",
+   "observed": "#B5A4FF italic",
+   "predicted": "#B5A4FF italic",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 24,
+   "comp": "mk.var.use.recipe",
+   "flavour": "Sea Salt",
+   "observed": "#DEAF97",
+   "predicted": "#DEAF97",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 25,
+   "comp": "mk.assign.op",
+   "flavour": "Sea Salt",
+   "observed": "#8A939E",
+   "predicted": "#8A939E",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 26,
+   "comp": "mk.phony",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 26,
+   "comp": "mk.phony",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 27,
+   "comp": "cm.var.use",
+   "flavour": "Sea Salt",
+   "observed": "#DEAF97",
+   "predicted": "#DEAF97",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 28,
+   "comp": "cm.kwarg.public",
+   "flavour": "Sea Salt",
+   "observed": "#9CADCB italic",
+   "predicted": "#9CADCB italic",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 29,
+   "comp": "cm.bracket.arg",
+   "flavour": "Sea Salt",
+   "observed": "#75C290",
+   "predicted": "#75C290",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 30,
+   "comp": "sh.op.and",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 30,
+   "comp": "sh.op.and",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 31,
+   "comp": "git.subject",
+   "flavour": "Sea Salt",
+   "observed": "#E59B5B",
+   "predicted": "#E59B5B",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 31,
+   "comp": "git.subject",
+   "flavour": "Licorice",
+   "observed": "#8E9296 bold",
+   "predicted": "#8E9296 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 32,
+   "comp": "md.code.inline",
+   "flavour": "Sea Salt",
+   "observed": "#75C290",
+   "predicted": "#75C290",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 33,
+   "comp": "md.link.text",
+   "flavour": "Sea Salt",
+   "observed": "#C6CDD4",
+   "predicted": "#C6CDD4",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 34,
+   "comp": "sh.var.use",
+   "flavour": "Sea Salt",
+   "observed": "#DEAF97",
+   "predicted": "#DEAF97",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 35,
+   "comp": "toml.key",
+   "flavour": "Sea Salt",
+   "observed": "#7DABB0",
+   "predicted": "#7DABB0",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 36,
+   "comp": "log.espidf.error",
+   "flavour": "Sea Salt",
+   "observed": "#E97074 bold",
+   "predicted": "#E97074 bold",
+   "match": true,
+   "run": "calib3"
+  },
+  {
+   "n": 36,
+   "comp": "log.espidf.error",
+   "flavour": "Licorice",
+   "observed": "#D9827A bold",
+   "predicted": "#D9827A bold",
+   "match": true,
+   "run": "calib3"
+  }
+ ],
+ "unread": [
+  {
+   "n": 8,
+   "comp": "cpp.this.use",
+   "flavour": "Sea Salt",
+   "note": "not captured in either run; predicted #C2B7DB italic"
+  }
+ ]
+}

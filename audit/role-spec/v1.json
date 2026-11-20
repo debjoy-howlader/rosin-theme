@@ -1,0 +1,3965 @@
+{
+ "version": "1",
+ "flavours": [
+  "Sea Salt",
+  "Black Cherry",
+  "Matcha",
+  "Espresso",
+  "Licorice",
+  "OLED"
+ ],
+ "roles": {
+  "comment": {
+   "hex": {
+    "Sea Salt": "#7A8696",
+    "Black Cherry": "#957D8C",
+    "Matcha": "#7E8D82",
+    "Espresso": "#918376",
+    "Licorice": "#7A7E82",
+    "OLED": "#7A8696"
+   },
+   "readme": [
+    [
+     "Comment (italic)",
+     "`// note`"
+    ]
+   ],
+   "tm_rules": [
+    0,
+    39,
+    94,
+    99,
+    104,
+    106
+   ],
+   "sem_rules": []
+  },
+  "composite": {
+   "hex": {
+    "Sea Salt": "#75CCC4",
+    "Black Cherry": "#74CCCB",
+    "Matcha": "#7CCBB4",
+    "Espresso": "#86C2B2",
+    "Licorice": "#D6D8DA",
+    "OLED": "#75CCC4"
+   },
+   "readme": [
+    [
+     "User type / type keyword",
+     "`struct` `led_t` `trait`"
+    ]
+   ],
+   "tm_rules": [
+    2,
+    17,
+    36,
+    52,
+    54,
+    74,
+    84,
+    88
+   ],
+   "sem_rules": [
+    "type",
+    "class",
+    "struct",
+    "enum",
+    "selfTypeKeyword",
+    "interface",
+    "typeAlias"
+   ]
+  },
+  "directive": {
+   "hex": {
+    "Sea Salt": "#AB81AD",
+    "Black Cherry": "#A184BB",
+    "Matcha": "#B49AC0",
+    "Espresso": "#BB91AC",
+    "Licorice": "#808488",
+    "OLED": "#AB81AD"
+   },
+   "readme": [
+    [
+     "Preprocessor / attribute",
+     "`#include` `#[derive]`"
+    ]
+   ],
+   "tm_rules": [
+    27,
+    29,
+    46,
+    63,
+    71,
+    76,
+    80,
+    86,
+    100
+   ],
+   "sem_rules": [
+    "attribute",
+    "builtinAttribute",
+    "derive",
+    "deriveHelper",
+    "decorator"
+   ]
+  },
+  "doc": {
+   "hex": {
+    "Sea Salt": "#AE9B7F",
+    "Black Cherry": "#B39982",
+    "Matcha": "#AEA382",
+    "Espresso": "#B7A487",
+    "Licorice": "#8F9397",
+    "OLED": "#AE9B7F"
+   },
+   "readme": [
+    [
+     "Doc comment (italic)",
+     "`/// returns`"
+    ]
+   ],
+   "tm_rules": [
+    1,
+    45
+   ],
+   "sem_rules": [
+    "comment.documentation"
+   ]
+  },
+  "doctag": {
+   "hex": {
+    "Sea Salt": "#75CCC4",
+    "Black Cherry": "#74CCCB",
+    "Matcha": "#7CCBB4",
+    "Espresso": "#86C2B2",
+    "Licorice": "#D6D8DA",
+    "OLED": "#75CCC4"
+   },
+   "readme": [
+    [
+     "User type / type keyword",
+     "`struct` `led_t` `trait`"
+    ]
+   ],
+   "tm_rules": [
+    2,
+    17,
+    36,
+    52,
+    54,
+    74,
+    84,
+    88
+   ],
+   "sem_rules": [
+    "type",
+    "class",
+    "struct",
+    "enum",
+    "selfTypeKeyword",
+    "interface",
+    "typeAlias"
+   ]
+  },
+  "error": {
+   "hex": {
+    "Sea Salt": "#E97074",
+    "Black Cherry": "#E97074",
+    "Matcha": "#EC7A7A",
+    "Espresso": "#EA7070",
+    "Licorice": "#D9827A",
+    "OLED": "#E97074"
+   },
+   "readme": [
+    [
+     "Error / log error",
+     "`ERROR`"
+    ]
+   ],
+   "tm_rules": [
+    42,
+    44,
+    90,
+    97
+   ],
+   "sem_rules": [
+    "unresolvedReference"
+   ]
+  },
+  "escape": {
+   "hex": {
+    "Sea Salt": "#CB8871",
+    "Black Cherry": "#C89164",
+    "Matcha": "#D9A274",
+    "Espresso": "#D8A26C",
+    "Licorice": "#C3C7CA",
+    "OLED": "#CB8871"
+   },
+   "readme": [
+    [
+     "Escape",
+     "`\\n` `&amp;`"
+    ]
+   ],
+   "tm_rules": [
+    4,
+    55,
+    72
+   ],
+   "sem_rules": [
+    "escapeSequence",
+    "regexp"
+   ]
+  },
+  "function": {
+   "hex": {
+    "Sea Salt": "#B5A4FF",
+    "Black Cherry": "#DAB663",
+    "Matcha": "#A8D17E",
+    "Espresso": "#E8B565",
+    "Licorice": "#94B9DA",
+    "OLED": "#B5A4FF"
+   },
+   "readme": [
+    [
+     "Function",
+     "`led_set()`"
+    ]
+   ],
+   "tm_rules": [
+    21,
+    34,
+    59,
+    64,
+    66,
+    69,
+    82,
+    87,
+    103
+   ],
+   "sem_rules": [
+    "function",
+    "label",
+    "function.unsafe"
+   ]
+  },
+  "globalvar": {
+   "hex": {
+    "Sea Salt": "#DEAF97",
+    "Black Cherry": "#DEB49B",
+    "Matcha": "#E2C39E",
+    "Espresso": "#E7C4A1",
+    "Licorice": "#E8E9EA",
+    "OLED": "#DEAF97"
+   },
+   "readme": [
+    [
+     "Global / config variable",
+     "`g_ticks` `$(CC)`"
+    ]
+   ],
+   "tm_rules": [
+    60
+   ],
+   "sem_rules": [
+    "variable.global",
+    "variable.globalScope",
+    "variable.fileScope"
+   ]
+  },
+  "hazard": {
+   "hex": {
+    "Sea Salt": "#E2726B",
+    "Black Cherry": "#E3814A",
+    "Matcha": "#E57A6E",
+    "Espresso": "#E3785E",
+    "Licorice": "#D9827A",
+    "OLED": "#E2726B"
+   },
+   "readme": [
+    [
+     "Hazard: pointer / bits / format",
+     "`*` `->` `<<` `%d`"
+    ]
+   ],
+   "tm_rules": [
+    5,
+    6,
+    12,
+    13,
+    14,
+    20,
+    26,
+    48,
+    49,
+    56,
+    61,
+    81
+   ],
+   "sem_rules": [
+    "formatSpecifier",
+    "keyword.unsafe",
+    "operator.unsafe"
+   ]
+  },
+  "info": {
+   "hex": {
+    "Sea Salt": "#5EA0CD",
+    "Black Cherry": "#649FCB",
+    "Matcha": "#7FB2DB",
+    "Espresso": "#88B0D4",
+    "Licorice": "#94B9DA",
+    "OLED": "#5EA0CD"
+   },
+   "readme": [
+    [
+     "Primitive type",
+     "`int` `uint8_t` `u32`"
+    ]
+   ],
+   "tm_rules": [],
+   "sem_rules": []
+  },
+  "keyword": {
+   "hex": {
+    "Sea Salt": "#E59B5B",
+    "Black Cherry": "#DB7489",
+    "Matcha": "#E8A0AA",
+    "Espresso": "#DE8C6C",
+    "Licorice": "#8E9296",
+    "OLED": "#E59B5B"
+   },
+   "readme": [
+    [
+     "Keyword / control flow",
+     "`if` `for` `return`"
+    ],
+    [
+     "Warning / log warning",
+     "`WARN`"
+    ]
+   ],
+   "tm_rules": [
+    9,
+    10,
+    31,
+    40,
+    43,
+    75,
+    79,
+    89,
+    101
+   ],
+   "sem_rules": [
+    "newOperator"
+   ]
+  },
+  "libfn": {
+   "hex": {
+    "Sea Salt": "#8D96BE",
+    "Black Cherry": "#AA966E",
+    "Matcha": "#93A88C",
+    "Espresso": "#B59D7A",
+    "Licorice": "#8FA2B5",
+    "OLED": "#8D96BE"
+   },
+   "readme": [
+    [
+     "Library / builtin function",
+     "`printf` `memcpy`"
+    ]
+   ],
+   "tm_rules": [
+    22,
+    65,
+    93
+   ],
+   "sem_rules": [
+    "operator.userDefined",
+    "function.defaultLibrary",
+    "method.defaultLibrary",
+    "operatorOverload",
+    "memberOperatorOverload"
+   ]
+  },
+  "macro": {
+   "hex": {
+    "Sea Salt": "#E497CE",
+    "Black Cherry": "#D297E5",
+    "Matcha": "#DFA2D6",
+    "Espresso": "#DA9DC6",
+    "Licorice": "#E4E6E8",
+    "OLED": "#E497CE"
+   },
+   "readme": [
+    [
+     "Macro (bold)",
+     "`LED_PIN` `println!`"
+    ]
+   ],
+   "tm_rules": [
+    28,
+    51
+   ],
+   "sem_rules": [
+    "macro",
+    "procMacro"
+   ]
+  },
+  "member": {
+   "hex": {
+    "Sea Salt": "#7DABB0",
+    "Black Cherry": "#7DABB0",
+    "Matcha": "#A3B9C8",
+    "Espresso": "#AABAC5",
+    "Licorice": "#B3B6B9",
+    "OLED": "#7DABB0"
+   },
+   "readme": [
+    [
+     "Member / key / CLI flag",
+     "`.pin` `name:` `--baud`"
+    ]
+   ],
+   "tm_rules": [
+    19,
+    25,
+    58,
+    68,
+    78,
+    85,
+    98
+   ],
+   "sem_rules": [
+    "property"
+   ]
+  },
+  "method": {
+   "hex": {
+    "Sea Salt": "#C0B2FF",
+    "Black Cherry": "#DCC27B",
+    "Matcha": "#B8DA92",
+    "Espresso": "#EEC47F",
+    "Licorice": "#A7C6E2",
+    "OLED": "#C0B2FF"
+   },
+   "readme": [
+    [
+     "Method",
+     "`.write()`"
+    ]
+   ],
+   "tm_rules": [],
+   "sem_rules": [
+    "method",
+    "method.unsafe"
+   ]
+  },
+  "namespace": {
+   "hex": {
+    "Sea Salt": "#6F9895",
+    "Black Cherry": "#6F9896",
+    "Matcha": "#73A08E",
+    "Espresso": "#8AA59C",
+    "Licorice": "#7F8387",
+    "OLED": "#6F9895"
+   },
+   "readme": [
+    [
+     "Namespace / module",
+     "`std` `core::ptr`"
+    ]
+   ],
+   "tm_rules": [
+    15,
+    53
+   ],
+   "sem_rules": [
+    "namespace",
+    "toolModule",
+    "crateRoot",
+    "module"
+   ]
+  },
+  "number": {
+   "hex": {
+    "Sea Salt": "#D5C984",
+    "Black Cherry": "#ECB0C6",
+    "Matcha": "#B9B8EE",
+    "Espresso": "#C7B5E4",
+    "Licorice": "#DDDFE1",
+    "OLED": "#D5C984"
+   },
+   "readme": [
+    [
+     "Number / constant / enum",
+     "`42` `0xFF` `true`"
+    ]
+   ],
+   "tm_rules": [
+    7,
+    33,
+    35,
+    70,
+    77,
+    83,
+    95,
+    102
+   ],
+   "sem_rules": [
+    "variable.readonly",
+    "variable.readonly.global",
+    "variable.readonly.globalScope",
+    "variable.readonly.fileScope",
+    "variable.readonly.static",
+    "variable.readonly.static.fileScope",
+    "variable.readonly.static.globalScope",
+    "variable.readonly.static.functionScope",
+    "property.readonly",
+    "enumMember",
+    "boolean",
+    "builtinConstant"
+   ]
+  },
+  "param": {
+   "hex": {
+    "Sea Salt": "#C2B7DB",
+    "Black Cherry": "#C1B7DC",
+    "Matcha": "#C8BFDA",
+    "Espresso": "#CEC0D8",
+    "Licorice": "#B9BCBF",
+    "OLED": "#C2B7DB"
+   },
+   "readme": [
+    [
+     "Parameter / self (italic)",
+     "`len` `self`"
+    ]
+   ],
+   "tm_rules": [
+    24,
+    50
+   ],
+   "sem_rules": [
+    "parameter",
+    "selfKeyword",
+    "selfParameter",
+    "clsParameter"
+   ]
+  },
+  "prim": {
+   "hex": {
+    "Sea Salt": "#5EA0CD",
+    "Black Cherry": "#649FCB",
+    "Matcha": "#7FB8D6",
+    "Espresso": "#8DB2CD",
+    "Licorice": "#A6AAAE",
+    "OLED": "#5EA0CD"
+   },
+   "readme": [
+    [
+     "Primitive type",
+     "`int` `uint8_t` `u32`"
+    ]
+   ],
+   "tm_rules": [
+    16,
+    32,
+    47
+   ],
+   "sem_rules": [
+    "type.defaultLibrary",
+    "typeParameter",
+    "lifetime",
+    "builtinType"
+   ]
+  },
+  "punct": {
+   "hex": {
+    "Sea Salt": "#6A727D",
+    "Black Cherry": "#7C6C76",
+    "Matcha": "#6C796F",
+    "Espresso": "#7C7066",
+    "Licorice": "#66696D",
+    "OLED": "#6A727D"
+   },
+   "readme": [
+    [
+     "Punctuation",
+     "`;` `,` `{}`"
+    ]
+   ],
+   "tm_rules": [
+    30,
+    62,
+    73
+   ],
+   "sem_rules": []
+  },
+  "qualifier": {
+   "hex": {
+    "Sea Salt": "#9CADCB",
+    "Black Cherry": "#A1ABCC",
+    "Matcha": "#A2B8AE",
+    "Espresso": "#B5ACBA",
+    "Licorice": "#868A8E",
+    "OLED": "#9CADCB"
+   },
+   "readme": [
+    [
+     "Qualifier",
+     "`const` `static` `extern`"
+    ]
+   ],
+   "tm_rules": [
+    18,
+    67
+   ],
+   "sem_rules": []
+  },
+  "quietop": {
+   "hex": {
+    "Sea Salt": "#8A939E",
+    "Black Cherry": "#9D8C97",
+    "Matcha": "#8E9C92",
+    "Espresso": "#A2968C",
+    "Licorice": "#8A8E92",
+    "OLED": "#8A939E"
+   },
+   "readme": [
+    [
+     "Operator",
+     "`=` `+` `==`"
+    ]
+   ],
+   "tm_rules": [
+    11
+   ],
+   "sem_rules": []
+  },
+  "scope": {
+   "hex": {
+    "Sea Salt": "#6F9895",
+    "Black Cherry": "#6F9896",
+    "Matcha": "#73A08E",
+    "Espresso": "#8AA59C",
+    "Licorice": "#7F8387",
+    "OLED": "#6F9895"
+   },
+   "readme": [
+    [
+     "Namespace / module",
+     "`std` `core::ptr`"
+    ]
+   ],
+   "tm_rules": [
+    15,
+    53
+   ],
+   "sem_rules": [
+    "namespace",
+    "toolModule",
+    "crateRoot",
+    "module"
+   ]
+  },
+  "staticvar": {
+   "hex": {
+    "Sea Salt": "#ADC6A8",
+    "Black Cherry": "#ADC6A8",
+    "Matcha": "#B9D0A8",
+    "Espresso": "#BDC9A5",
+    "Licorice": "#C0C3C6",
+    "OLED": "#ADC6A8"
+   },
+   "readme": [
+    [
+     "Static variable",
+     "`s_state`"
+    ]
+   ],
+   "tm_rules": [],
+   "sem_rules": [
+    "variable.static",
+    "variable.static.fileScope",
+    "variable.static.functionScope",
+    "variable.static.globalScope",
+    "property.static"
+   ]
+  },
+  "string": {
+   "hex": {
+    "Sea Salt": "#75C290",
+    "Black Cherry": "#79C49C",
+    "Matcha": "#D8C38A",
+    "Espresso": "#A9C48E",
+    "Licorice": "#A7BDA2",
+    "OLED": "#75C290"
+   },
+   "readme": [
+    [
+     "String",
+     "`\"hello\"`"
+    ],
+    [
+     "Diff added / removed",
+     "`+` / `-`"
+    ]
+   ],
+   "tm_rules": [
+    3,
+    41,
+    92,
+    96
+   ],
+   "sem_rules": [
+    "character"
+   ]
+  },
+  "typeparam": {
+   "hex": {
+    "Sea Salt": "#5EA0CD",
+    "Black Cherry": "#649FCB",
+    "Matcha": "#7FB8D6",
+    "Espresso": "#8DB2CD",
+    "Licorice": "#A6AAAE",
+    "OLED": "#5EA0CD"
+   },
+   "readme": [
+    [
+     "Primitive type",
+     "`int` `uint8_t` `u32`"
+    ]
+   ],
+   "tm_rules": [
+    16,
+    32,
+    47
+   ],
+   "sem_rules": [
+    "type.defaultLibrary",
+    "typeParameter",
+    "lifetime",
+    "builtinType"
+   ]
+  },
+  "unit": {
+   "hex": {
+    "Sea Salt": "#AEA581",
+    "Black Cherry": "#B693A0",
+    "Matcha": "#B9A08A",
+    "Espresso": "#BEA18A",
+    "Licorice": "#A3A6A9",
+    "OLED": "#AEA581"
+   },
+   "readme": [],
+   "tm_rules": [
+    8
+   ],
+   "sem_rules": []
+  },
+  "variable": {
+   "hex": {
+    "Sea Salt": "#C6CDD4",
+    "Black Cherry": "#D4C8CF",
+    "Matcha": "#CBD4CB",
+    "Espresso": "#DDD2C6",
+    "Licorice": "#CACCCE",
+    "OLED": "#C6CDD4"
+   },
+   "readme": [
+    [
+     "Text / variable",
+     "`count` `buf`"
+    ]
+   ],
+   "tm_rules": [
+    23,
+    57
+   ],
+   "sem_rules": [
+    "variable"
+   ]
+  },
+  "warning": {
+   "hex": {
+    "Sea Salt": "#E59B5B",
+    "Black Cherry": "#DAB663",
+    "Matcha": "#E0B070",
+    "Espresso": "#E3C46F",
+    "Licorice": "#C9A66B",
+    "OLED": "#E59B5B"
+   },
+   "readme": [
+    [
+     "Keyword / control flow",
+     "`if` `for` `return`"
+    ],
+    [
+     "Warning / log warning",
+     "`WARN`"
+    ]
+   ],
+   "tm_rules": [
+    91
+   ],
+   "sem_rules": []
+  }
+ },
+ "tm_rules": [
+  {
+   "idx": 0,
+   "name": "Comments",
+   "scopes": [
+    "comment",
+    "punctuation.definition.comment"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 1,
+   "name": "Doc comments",
+   "scopes": [
+    "comment.block.documentation",
+    "comment.block.javadoc",
+    "string.quoted.docstring"
+   ],
+   "roles": [
+    "doc"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 2,
+   "name": "Doc tags (@brief @param)",
+   "scopes": [
+    "storage.type.class.doxygen",
+    "storage.type.class.jsdoc",
+    "punctuation.definition.keyword.doxygen",
+    "keyword.other.documentation"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 3,
+   "name": "Strings & chars (emerald)",
+   "scopes": [
+    "string",
+    "string.quoted.other.lt-gt.include"
+   ],
+   "roles": [
+    "string"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 4,
+   "name": "Escapes",
+   "scopes": [
+    "constant.character.escape"
+   ],
+   "roles": [
+    "escape"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 5,
+   "name": "printf specifiers (hazard: type must match)",
+   "scopes": [
+    "constant.other.placeholder"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 6,
+   "name": "Format placeholders / template exprs",
+   "scopes": [
+    "constant.character.format.placeholder",
+    "storage.type.format",
+    "punctuation.definition.template-expression"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 7,
+   "name": "Numbers & literal constants (gold)",
+   "scopes": [
+    "constant.numeric",
+    "constant.language",
+    "variable.other.enummember",
+    "constant.other.color",
+    "constant.other.caps"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 8,
+   "name": "Number prefix/suffix (0x, UL, f)",
+   "scopes": [
+    "keyword.other.unit",
+    "storage.type.number"
+   ],
+   "roles": [
+    "unit"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 9,
+   "name": "Keywords & control flow (amber)",
+   "scopes": [
+    "keyword",
+    "keyword.control",
+    "keyword.operator.new",
+    "keyword.operator.delete",
+    "keyword.operator.cast",
+    "keyword.operator.expression",
+    "keyword.operator.logical",
+    "keyword.operator.ternary",
+    "keyword.operator.wordlike",
+    "keyword.other.operator.overload",
+    "storage.type.function",
+    "storage.type.js",
+    "storage.type.ts",
+    "storage.type.jsx",
+    "storage.type.tsx"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "bold",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 10,
+   "name": "Compile-time keywords (typedef sizeof alignof)",
+   "scopes": [
+    "keyword.operator.sizeof",
+    "keyword.operator.alignof",
+    "keyword.operator.alignas",
+    "keyword.other.typedef",
+    "storage.type.typedef"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "bold italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 11,
+   "name": "Quiet operators (arith, compare, assign, ++)",
+   "scopes": [
+    "keyword.operator",
+    "keyword.operator.assignment",
+    "keyword.operator.arithmetic",
+    "keyword.operator.comparison",
+    "keyword.operator.relational",
+    "keyword.operator.increment",
+    "keyword.operator.decrement",
+    "punctuation.separator.dot-access",
+    "punctuation.accessor"
+   ],
+   "roles": [
+    "quietop"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 12,
+   "name": "Bit ops & shifts (coral = touches bits)",
+   "scopes": [
+    "keyword.operator.bitwise",
+    "keyword.operator.assignment.compound.bitwise"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 13,
+   "name": "Pointer/ref declarators",
+   "scopes": [
+    "storage.modifier.pointer",
+    "storage.modifier.reference",
+    "punctuation.definition.pointer",
+    "punctuation.definition.reference",
+    "keyword.operator.address",
+    "keyword.operator.dereference"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 14,
+   "name": "Arrow ->",
+   "scopes": [
+    "punctuation.separator.pointer-access",
+    "punctuation.accessor.arrow"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 15,
+   "name": "Scope resolution ::",
+   "scopes": [
+    "punctuation.separator.scope-resolution",
+    "punctuation.separator.namespace"
+   ],
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 16,
+   "name": "Primitive & library types (sky)",
+   "scopes": [
+    "storage.type",
+    "support.type",
+    "support.class"
+   ],
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 17,
+   "name": "Composite-type keywords & user types (turquoise)",
+   "scopes": [
+    "storage.type.struct",
+    "storage.type.union",
+    "storage.type.enum",
+    "storage.type.class",
+    "storage.type.namespace",
+    "storage.type.template",
+    "storage.type.template.argument",
+    "entity.name.type",
+    "entity.name.class",
+    "entity.name.struct",
+    "entity.name.union",
+    "entity.name.enum",
+    "entity.other.inherited-class",
+    "support.type.posix-reserved"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 18,
+   "name": "Qualifiers (const volatile static extern inline, public:)",
+   "scopes": [
+    "storage.modifier",
+    "storage.type.modifier"
+   ],
+   "roles": [
+    "qualifier"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 19,
+   "name": "Empty array brackets [] (C grammar scopes them as storage.modifier)",
+   "scopes": [
+    "storage.modifier.array"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 20,
+   "name": "volatile (C++ only; C grammar has no scope for it)",
+   "scopes": [
+    "storage.modifier.specifier.volatile"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 21,
+   "name": "Functions (iris)",
+   "scopes": [
+    "entity.name.function",
+    "meta.function-call.generic",
+    "entity.name.label",
+    "entity.name.operator",
+    "entity.name.command"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 22,
+   "name": "Library / builtin functions",
+   "scopes": [
+    "support.function"
+   ],
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 23,
+   "name": "Variables",
+   "scopes": [
+    "variable",
+    "variable.other",
+    "variable.other.readwrite"
+   ],
+   "roles": [
+    "variable"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 24,
+   "name": "Parameters",
+   "scopes": [
+    "variable.parameter",
+    "variable.language.special.self",
+    "variable.language.special.cls"
+   ],
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 25,
+   "name": "Members / keys / properties",
+   "scopes": [
+    "variable.other.member",
+    "variable.other.property",
+    "variable.other.object.property",
+    "support.type.property-name",
+    "punctuation.support.type.property-name",
+    "meta.object-literal.key",
+    "entity.name.tag.yaml",
+    "keyword.other.definition.ini",
+    "punctuation.definition.begin.bracket.square",
+    "punctuation.definition.end.bracket.square",
+    "support.variable.magic"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 26,
+   "name": "this / self-like language variables, registers",
+   "scopes": [
+    "variable.language",
+    "variable.other.register",
+    "support.constant.register",
+    "storage.type.register"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 27,
+   "name": "Preprocessor directives",
+   "scopes": [
+    "keyword.control.directive",
+    "meta.preprocessor",
+    "punctuation.definition.directive",
+    "entity.other.attribute-name.pragma",
+    "entity.name.function.decorator",
+    "punctuation.definition.decorator"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 28,
+   "name": "Macro names & macro parameters",
+   "scopes": [
+    "entity.name.function.preprocessor",
+    "entity.name.other.preprocessor.macro",
+    "variable.other.macro",
+    "variable.parameter.preprocessor"
+   ],
+   "roles": [
+    "macro"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 29,
+   "name": "Macro parameter-list parens (tinted)",
+   "scopes": [
+    "meta.preprocessor.macro punctuation.definition.parameters",
+    "meta.preprocessor punctuation.section.parameters"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 30,
+   "name": "Punctuation ; , : { }",
+   "scopes": [
+    "punctuation",
+    "punctuation.terminator",
+    "punctuation.separator",
+    "punctuation.section",
+    "punctuation.definition.parameters",
+    "punctuation.definition.arguments"
+   ],
+   "roles": [
+    "punct"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 31,
+   "name": "Assembly (extension-dependent)",
+   "scopes": [
+    "support.function.mnemonic",
+    "keyword.other.mnemonic",
+    "entity.name.function.mnemonic",
+    "keyword.mnemonic"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 32,
+   "name": "Tags (HTML/XML)",
+   "scopes": [
+    "entity.name.tag"
+   ],
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 33,
+   "name": "Attributes",
+   "scopes": [
+    "entity.other.attribute-name"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 34,
+   "name": "Sections (INI/TOML/Markdown)",
+   "scopes": [
+    "entity.name.section",
+    "markup.heading",
+    "punctuation.definition.heading"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 35,
+   "name": "Markup",
+   "scopes": [
+    "markup.inline.raw",
+    "markup.fenced_code"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 36,
+   "name": "Links",
+   "scopes": [
+    "markup.underline.link",
+    "string.other.link"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 37,
+   "name": "Bold/italic/quote",
+   "scopes": [
+    "markup.bold"
+   ],
+   "roles": [
+    "(none)"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 38,
+   "name": "Italic",
+   "scopes": [
+    "markup.italic"
+   ],
+   "roles": [
+    "(none)"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 39,
+   "name": "Quote",
+   "scopes": [
+    "markup.quote"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 40,
+   "name": "List bullets",
+   "scopes": [
+    "punctuation.definition.list.begin"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 41,
+   "name": "Diff +",
+   "scopes": [
+    "markup.inserted"
+   ],
+   "roles": [
+    "string"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 42,
+   "name": "Diff -",
+   "scopes": [
+    "markup.deleted"
+   ],
+   "roles": [
+    "error"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 43,
+   "name": "Diff ~",
+   "scopes": [
+    "markup.changed"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 44,
+   "name": "Invalid",
+   "scopes": [
+    "invalid",
+    "invalid.illegal"
+   ],
+   "roles": [
+    "error"
+   ],
+   "style": {
+    "Sea Salt": "underline",
+    "Black Cherry": "underline",
+    "Matcha": "underline",
+    "Espresso": "underline",
+    "Licorice": "underline",
+    "OLED": "underline"
+   }
+  },
+  {
+   "idx": 45,
+   "name": "Doc comments (line-style: Rust ///, C++ ///, C# ///)",
+   "scopes": [
+    "comment.line.documentation",
+    "comment.line.double-slash.documentation",
+    "comment.line.triple-slash",
+    "comment.block.documentation",
+    "comment.line.doc",
+    "comment.block.doc"
+   ],
+   "roles": [
+    "doc"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 46,
+   "name": "Rust attributes #[..] (same family as C preprocessor)",
+   "scopes": [
+    "meta.attribute.rust",
+    "punctuation.definition.attribute.rust",
+    "meta.attribute.rust entity.name.function.macro.rust"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 47,
+   "name": "Rust lifetimes",
+   "scopes": [
+    "entity.name.type.lifetime",
+    "storage.modifier.lifetime",
+    "punctuation.definition.lifetime"
+   ],
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 48,
+   "name": "Rust unsafe (hazard)",
+   "scopes": [
+    "keyword.other.unsafe",
+    "storage.modifier.unsafe"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 49,
+   "name": "Rust borrow & (same as C address-of)",
+   "scopes": [
+    "keyword.operator.borrow",
+    "keyword.operator.borrow.and",
+    "keyword.operator.borrow.rust"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 50,
+   "name": "Rust self / Python self,cls / Lua self",
+   "scopes": [
+    "variable.language.self",
+    "variable.language.self.rust",
+    "variable.language.self.lua",
+    "variable.language.special.self",
+    "variable.language.special.cls"
+   ],
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 51,
+   "name": "Macro invocations (Rust println!, Elixir, Julia @)",
+   "scopes": [
+    "entity.name.function.macro",
+    "support.macro",
+    "meta.macro.rust entity.name.function"
+   ],
+   "roles": [
+    "macro"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 52,
+   "name": "Type-declaring keywords (class interface type enum namespace)",
+   "scopes": [
+    "storage.type.class",
+    "storage.type.interface",
+    "storage.type.type",
+    "storage.type.enum",
+    "storage.type.namespace",
+    "storage.type.struct",
+    "storage.type.union",
+    "storage.type.trait",
+    "storage.type.module",
+    "keyword.declaration.struct",
+    "keyword.declaration.enum",
+    "keyword.declaration.trait",
+    "keyword.declaration.type",
+    "keyword.declaration.impl",
+    "keyword.other.struct",
+    "keyword.other.enum",
+    "keyword.other.trait",
+    "keyword.other.type",
+    "keyword.other.impl"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 53,
+   "name": "Modules / packages / imports",
+   "scopes": [
+    "entity.name.type.module",
+    "entity.name.package",
+    "entity.name.import",
+    "entity.name.namespace",
+    "support.other.namespace",
+    "entity.name.module"
+   ],
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 54,
+   "name": "JSX / component tags",
+   "scopes": [
+    "support.class.component",
+    "entity.name.tag.tsx support.class",
+    "entity.name.tag.jsx support.class"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 55,
+   "name": "Regular expressions",
+   "scopes": [
+    "string.regexp",
+    "source.regexp"
+   ],
+   "roles": [
+    "escape"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 56,
+   "name": "Regex operators / classes",
+   "scopes": [
+    "keyword.operator.quantifier.regexp",
+    "constant.other.character-class.regexp",
+    "keyword.control.anchor.regexp",
+    "punctuation.definition.group.regexp",
+    "constant.character.character-class.regexp",
+    "keyword.operator.or.regexp"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 57,
+   "name": "Shell plain arguments (not strings)",
+   "scopes": [
+    "string.unquoted.argument.shell",
+    "string.unquoted.cmake"
+   ],
+   "roles": [
+    "variable"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 58,
+   "name": "CLI options / flags (--port -Wall)",
+   "scopes": [
+    "constant.other.option",
+    "constant.other.option.dash",
+    "string.unquoted.argument.shell constant.other.option",
+    "variable.parameter.option",
+    "support.constant.option"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 59,
+   "name": "Shell function definitions",
+   "scopes": [
+    "entity.name.function.shell",
+    "meta.function.shell entity.name.function"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 60,
+   "name": "Build/config variables: shell $VAR, Make $(VAR), CMake ${VAR}, env (share C-global colour)",
+   "scopes": [
+    "variable.other.normal.shell",
+    "variable.other.bracket.shell",
+    "variable.other.assignment.shell",
+    "punctuation.definition.variable.shell",
+    "variable.other.makefile",
+    "variable.other.cmake",
+    "variable.other.env.cmake",
+    "variable.other.cache.cmake",
+    "support.type.variable.cmake",
+    "variable.other.env",
+    "variable.other.readwrite.powershell",
+    "support.variable.automatic.powershell",
+    "variable.other.dockerfile",
+    "variable.other.env.dockerfile"
+   ],
+   "roles": [
+    "globalvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 61,
+   "name": "Positional / special shell params ($1 $@ $?), Make automatic vars ($@ $< $^)",
+   "scopes": [
+    "variable.parameter.positional.shell",
+    "variable.parameter.positional.all.shell",
+    "variable.language.special.shell",
+    "variable.language.makefile"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 62,
+   "name": "Variable sigils ($ in PowerShell)",
+   "scopes": [
+    "punctuation.definition.variable.powershell"
+   ],
+   "roles": [
+    "punct"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 63,
+   "name": "Heredoc delimiters",
+   "scopes": [
+    "keyword.control.heredoc-token.shell",
+    "punctuation.definition.string.heredoc"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 64,
+   "name": "Make targets",
+   "scopes": [
+    "entity.name.function.target.makefile",
+    "entity.name.function.target"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 65,
+   "name": "Make/CMake built-in functions (wildcard, patsubst)",
+   "scopes": [
+    "support.function.makefile"
+   ],
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 66,
+   "name": "CMake commands",
+   "scopes": [
+    "support.function.cmake",
+    "entity.name.function.cmake",
+    "support.function.commandProperty.cmake"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 67,
+   "name": "CMake keywords (PRIVATE PUBLIC VERSION REQUIRED)",
+   "scopes": [
+    "keyword.other.cmake"
+   ],
+   "roles": [
+    "qualifier"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 68,
+   "name": "CMake properties",
+   "scopes": [
+    "support.type.property.cmake"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 69,
+   "name": "TOML / INI table headers",
+   "scopes": [
+    "support.type.property-name.table.toml",
+    "support.type.property-name.array.toml",
+    "punctuation.definition.table.toml",
+    "punctuation.definition.array.table.toml",
+    "entity.other.attribute-name.table.toml",
+    "entity.name.section.group-title.ini",
+    "punctuation.definition.entity.ini"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 70,
+   "name": "Dates & times (TOML/YAML)",
+   "scopes": [
+    "constant.other.time",
+    "constant.other.date",
+    "constant.other.timestamp"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 71,
+   "name": "YAML anchors / aliases / tags",
+   "scopes": [
+    "entity.name.type.anchor.yaml",
+    "variable.other.alias.yaml",
+    "punctuation.definition.anchor.yaml",
+    "punctuation.definition.alias.yaml",
+    "storage.type.tag-handle.yaml"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 72,
+   "name": "HTML entities (&amp;)",
+   "scopes": [
+    "constant.character.entity",
+    "punctuation.definition.entity.html"
+   ],
+   "roles": [
+    "escape"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 73,
+   "name": "Tag brackets < > </ />",
+   "scopes": [
+    "punctuation.definition.tag"
+   ],
+   "roles": [
+    "punct"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 74,
+   "name": "CSS class selectors",
+   "scopes": [
+    "entity.other.attribute-name.class.css",
+    "entity.other.attribute-name.class.scss",
+    "entity.other.attribute-name.class.less"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 75,
+   "name": "CSS id selectors",
+   "scopes": [
+    "entity.other.attribute-name.id.css",
+    "entity.other.attribute-name.id"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 76,
+   "name": "CSS pseudo-classes / at-rules",
+   "scopes": [
+    "entity.other.attribute-name.pseudo-class",
+    "entity.other.attribute-name.pseudo-element",
+    "keyword.control.at-rule",
+    "punctuation.definition.keyword.css"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 77,
+   "name": "CSS property values",
+   "scopes": [
+    "support.constant.property-value",
+    "support.constant.font-name",
+    "support.constant.color"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 78,
+   "name": "CSS property names",
+   "scopes": [
+    "support.type.property-name.css",
+    "support.type.vendored.property-name",
+    "meta.property-name"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 79,
+   "name": "ASM instructions / mnemonics",
+   "scopes": [
+    "keyword.opcode",
+    "keyword.instruction",
+    "support.function.instruction",
+    "keyword.other.instruction",
+    "keyword.control.instruction",
+    "support.function.mnemonic",
+    "keyword.other.mnemonic",
+    "keyword.mnemonic"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 80,
+   "name": "ASM assembler directives (.section .global .word)",
+   "scopes": [
+    "support.function.directive",
+    "storage.type.directive",
+    "keyword.directive",
+    "keyword.other.directive",
+    "meta.directive",
+    "keyword.control.directive.asm",
+    "support.function.pseudo",
+    "keyword.control.assembler"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 81,
+   "name": "ASM registers (r0 sp lr a0 x5)",
+   "scopes": [
+    "variable.other.register",
+    "storage.other.register",
+    "support.variable.register",
+    "variable.register",
+    "variable.language.register",
+    "support.constant.register",
+    "storage.type.register",
+    "constant.language.register"
+   ],
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 82,
+   "name": "ASM labels",
+   "scopes": [
+    "entity.name.function.label",
+    "entity.name.label",
+    "meta.label entity.name",
+    "entity.name.tag.label"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 83,
+   "name": "ASM immediates (#5 $0x18)",
+   "scopes": [
+    "constant.numeric.immediate",
+    "punctuation.definition.immediate"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 84,
+   "name": "Devicetree nodes",
+   "scopes": [
+    "entity.name.type.dts",
+    "entity.name.tag.dts",
+    "entity.name.type.node"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 85,
+   "name": "Devicetree properties",
+   "scopes": [
+    "variable.name.dts",
+    "support.type.property-name.dts",
+    "entity.other.attribute-name.dts"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 86,
+   "name": "Devicetree / Kconfig directives",
+   "scopes": [
+    "keyword.directive.dts",
+    "keyword.other.dts",
+    "keyword.control.kconfig",
+    "keyword.other.kconfig",
+    "storage.type.kconfig"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 87,
+   "name": "Devicetree labels & phandles",
+   "scopes": [
+    "entity.name.function.dts",
+    "variable.other.phandle",
+    "entity.name.label.dts"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "idx": 88,
+   "name": "Linker-script sections & regions",
+   "scopes": [
+    "entity.name.section.linkerscript",
+    "entity.name.section.ld",
+    "entity.name.type.memory-region",
+    "support.constant.memory-region"
+   ],
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 89,
+   "name": "Linker-script commands (ENTRY KEEP ORIGIN)",
+   "scopes": [
+    "support.function.linkerscript",
+    "keyword.other.linkerscript",
+    "keyword.control.linkerscript",
+    "support.function.builtin.ld",
+    "keyword.other.ld"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 90,
+   "name": "Log: error",
+   "scopes": [
+    "log.error",
+    "log.exceptiontype"
+   ],
+   "roles": [
+    "error"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 91,
+   "name": "Log: warning",
+   "scopes": [
+    "log.warning"
+   ],
+   "roles": [
+    "warning"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 92,
+   "name": "Log: info",
+   "scopes": [
+    "log.info"
+   ],
+   "roles": [
+    "string"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 93,
+   "name": "Log: debug",
+   "scopes": [
+    "log.debug"
+   ],
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 94,
+   "name": "Log: verbose / timestamps",
+   "scopes": [
+    "log.verbose",
+    "log.date",
+    "log.timestamp"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 95,
+   "name": "Log: constants / numbers / addresses",
+   "scopes": [
+    "log.constant"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 96,
+   "name": "Log: quoted strings",
+   "scopes": [
+    "log.string"
+   ],
+   "roles": [
+    "string"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 97,
+   "name": "Log: exception text",
+   "scopes": [
+    "log.exception"
+   ],
+   "roles": [
+    "error"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 98,
+   "name": "Log: ESP-IDF / Zephyr tag",
+   "scopes": [
+    "log.tag.rosin"
+   ],
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 99,
+   "name": "Diff headers",
+   "scopes": [
+    "meta.diff.header",
+    "meta.diff.header.from-file",
+    "meta.diff.header.to-file",
+    "meta.diff.index"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 100,
+   "name": "Diff hunk ranges @@",
+   "scopes": [
+    "meta.diff.range",
+    "meta.diff.range.unified"
+   ],
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 101,
+   "name": "Git commit subject / rebase commands",
+   "scopes": [
+    "meta.scope.message.git-commit markup.heading",
+    "support.function.git-rebase",
+    "keyword.operator.git-rebase"
+   ],
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 102,
+   "name": "Git SHA",
+   "scopes": [
+    "constant.sha.git-rebase",
+    "constant.other.sha"
+   ],
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 103,
+   "name": "Markdown headings",
+   "scopes": [
+    "markup.heading",
+    "entity.name.section.markdown",
+    "punctuation.definition.heading.markdown"
+   ],
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "idx": 104,
+   "name": "Markdown code fence language",
+   "scopes": [
+    "fenced_code.block.language",
+    "markup.fenced_code.block.markdown punctuation.definition"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "idx": 105,
+   "name": "Markdown strikethrough",
+   "scopes": [
+    "markup.strikethrough"
+   ],
+   "roles": [
+    "(none)"
+   ],
+   "style": {
+    "Sea Salt": "strikethrough",
+    "Black Cherry": "strikethrough",
+    "Matcha": "strikethrough",
+    "Espresso": "strikethrough",
+    "Licorice": "strikethrough",
+    "OLED": "strikethrough"
+   }
+  },
+  {
+   "idx": 106,
+   "name": "Python code tags render as plain comments",
+   "scopes": [
+    "keyword.codetag.notation.python"
+   ],
+   "roles": [
+    "comment"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  }
+ ],
+ "sem_rules": [
+  {
+   "selector": "variable",
+   "roles": [
+    "variable"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.global",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.globalScope",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.fileScope",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.static",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.global",
+   "roles": [
+    "globalvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.globalScope",
+   "roles": [
+    "globalvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.fileScope",
+   "roles": [
+    "globalvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.static",
+   "roles": [
+    "staticvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.static.fileScope",
+   "roles": [
+    "staticvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.static.functionScope",
+   "roles": [
+    "staticvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.static.globalScope",
+   "roles": [
+    "staticvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "property.static",
+   "roles": [
+    "staticvar"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.static.fileScope",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.static.globalScope",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "variable.readonly.static.functionScope",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "operator.userDefined",
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "parameter",
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "property",
+   "roles": [
+    "member"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "property.readonly",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "function",
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "function.defaultLibrary",
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "method",
+   "roles": [
+    "method"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "method.defaultLibrary",
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "macro",
+   "roles": [
+    "macro"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "type",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "type.defaultLibrary",
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "class",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "struct",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "enum",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "typeParameter",
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "enumMember",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "namespace",
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "label",
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "operatorOverload",
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "memberOperatorOverload",
+   "roles": [
+    "libfn"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "newOperator",
+   "roles": [
+    "keyword"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "lifetime",
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "selfKeyword",
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "selfTypeKeyword",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "attribute",
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "builtinAttribute",
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "derive",
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "deriveHelper",
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "formatSpecifier",
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "escapeSequence",
+   "roles": [
+    "escape"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "interface",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "typeAlias",
+   "roles": [
+    "composite",
+    "doctag"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "builtinType",
+   "roles": [
+    "prim",
+    "typeparam"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "boolean",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "character",
+   "roles": [
+    "string"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "toolModule",
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "crateRoot",
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "keyword.unsafe",
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "function.unsafe",
+   "roles": [
+    "function"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "method.unsafe",
+   "roles": [
+    "method"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "operator.unsafe",
+   "roles": [
+    "hazard"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "unresolvedReference",
+   "roles": [
+    "error"
+   ],
+   "style": {
+    "Sea Salt": "underline",
+    "Black Cherry": "underline",
+    "Matcha": "underline",
+    "Espresso": "underline",
+    "Licorice": "underline",
+    "OLED": "underline"
+   }
+  },
+  {
+   "selector": "procMacro",
+   "roles": [
+    "macro"
+   ],
+   "style": {
+    "Sea Salt": "bold",
+    "Black Cherry": "bold",
+    "Matcha": "bold",
+    "Espresso": "bold",
+    "Licorice": "bold",
+    "OLED": "bold"
+   }
+  },
+  {
+   "selector": "selfParameter",
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "clsParameter",
+   "roles": [
+    "param"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  },
+  {
+   "selector": "module",
+   "roles": [
+    "namespace",
+    "scope"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "decorator",
+   "roles": [
+    "directive"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "builtinConstant",
+   "roles": [
+    "number"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "regexp",
+   "roles": [
+    "escape"
+   ],
+   "style": {
+    "Sea Salt": "",
+    "Black Cherry": "",
+    "Matcha": "",
+    "Espresso": "",
+    "Licorice": "",
+    "OLED": ""
+   }
+  },
+  {
+   "selector": "comment.documentation",
+   "roles": [
+    "doc"
+   ],
+   "style": {
+    "Sea Salt": "italic",
+    "Black Cherry": "italic",
+    "Matcha": "italic",
+    "Espresso": "italic",
+    "Licorice": "italic",
+    "OLED": "italic"
+   }
+  }
+ ]
+}

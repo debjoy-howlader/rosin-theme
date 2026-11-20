@@ -1,0 +1,31 @@
+Default host: x86_64-pc-windows-msvc
+rustup home:  C:\Users\howla\.rustup
+
+installed toolchains
+--------------------
+stable-x86_64-pc-windows-msvc (active, default)
+
+active toolchain
+----------------
+name: stable-x86_64-pc-windows-msvc
+active because: it's the default toolchain
+installed targets:
+  x86_64-pc-windows-msvc
+---- 
+cargo-x86_64-pc-windows-msvc
+clippy-x86_64-pc-windows-msvc
+rust-docs-x86_64-pc-windows-msvc
+rust-src
+rust-std-x86_64-pc-windows-msvc
+rustc-x86_64-pc-windows-msvc
+rustfmt-x86_64-pc-windows-msvc
+---- 
+rustc 1.93.1 (01f6ddf75 2026-02-11)
+binary: rustc
+commit-hash: 01f6ddf7588f42ae2d7eb0a2f21d44e8e96674cf
+commit-date: 2026-02-11
+host: x86_64-pc-windows-msvc
+release: 1.93.1
+LLVM version: 21.1.8
+---- 
+C:\Users\howla\.rustup\toolchains\stable-x86_64-pc-windows-msvc

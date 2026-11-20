@@ -1,0 +1,8 @@
+@ diff.header comment diff L1
+@ diff.index comment index L2
+@ diff.from comment --- L3
+@ diff.to comment +++ L4
+@ diff.range directive @@ L5
+@ diff.context variable int L6
+@ diff.removed error return L7
+@ diff.added string return L8

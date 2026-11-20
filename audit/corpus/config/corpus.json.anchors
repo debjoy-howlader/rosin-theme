@@ -1,0 +1,12 @@
+@ json.key.top member name L2
+@ json.key.quote member " L2
+@ json.string string blink L2
+@ json.colon punct : L2
+@ json.number number 3 L3
+@ json.bool number true L4
+@ json.null number null L5
+@ json.array.bracket punct [ L6
+@ json.array.string string gpio L6
+@ json.key.nested member inner L7
+@ json.escape escape ~\u00e9 L7
+@ json.brace punct { L1

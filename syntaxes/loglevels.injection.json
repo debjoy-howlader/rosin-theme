@@ -45,10 +45,24 @@
       }
     },
     {
-      "match": "^([DV]) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "match": "^(D) (\\(\\d+\\)) ([\\w\\-./]+):",
       "captures": {
         "1": {
           "name": "log.debug"
+        },
+        "2": {
+          "name": "log.date"
+        },
+        "3": {
+          "name": "log.tag.rosin"
+        }
+      }
+    },
+    {
+      "match": "^(V) (\\(\\d+\\)) ([\\w\\-./]+):",
+      "captures": {
+        "1": {
+          "name": "log.verbose"
         },
         "2": {
           "name": "log.date"

@@ -1,0 +1,53 @@
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/corpus.cpp	2026-11-20 15:35:55.646999001 +0000
++++ audit/corpus/cpp/corpus.cpp	2026-11-20 15:35:55.677672100 +0000
+@@ -138,7 +138,7 @@
+ //@ cpp.number.sep number ~1'000
+ unsigned long long nums2[] = {0b1010ull, 017ull, 1'000ull};
+ double hexf = 0x1p3;
+-//@ cpp.number.suffix.float unit ~f#2
++//@ cpp.number.suffix.float unit ~f#3
+ float fl = 1.5f;
+ //@ cpp.escape escape \n
+ //@ cpp.char.u8 string ~u8"
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/corpus.rs	2026-11-20 15:35:55.652999001 +0000
++++ audit/corpus/rust/corpus.rs	2026-11-20 15:35:55.709692000 +0000
+@@ -103,7 +103,7 @@
+ }
+ 
+ //@ rs.fn.main function main
+-//@ rs.kw.result prim Result
++//@ rs.kw.result prim/T:composite Result
+ fn main() -> Result<(), String> {
+     //@ rs.kw.let keyword let
+     //@ rs.var.local variable name
+@@ -145,8 +145,8 @@
+     //@ rs.option.some number Some
+     //@ rs.kw.if keyword if
+     if let Some(x) = Some(1) { let _ = x; }
+-    //@ rs.type.string composite String
+-    //@ rs.assocfn.call function new
++    //@ rs.type.string prim/T:composite String
++    //@ rs.assocfn.call libfn/T:function new
+     let s: String = String::new();
+     //@ rs.macro.call.println macro println
+     //@ rs.format.named hazard {name}
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/corpus.py	2026-11-20 15:35:55.659999001 +0000
++++ audit/corpus/python/corpus.py	2026-11-20 15:36:04.847752400 +0000
+@@ -5,7 +5,7 @@
+ import os
+ #@ py.kw.from keyword from
+ #@ py.module.dotted namespace dataclasses
+-#@ py.import.name directive dataclass
++#@ py.import.name libfn/T:directive dataclass
+ from dataclasses import dataclass
+ 
+ #@ py.const.upper number MAX_PINS
+@@ -57,7 +57,7 @@
+     #@ py.percent.format hazard %d
+     old = "pin %d" % pin.number
+     #@ py.escape escape \n
+-    #@ py.raw.string string ~\d
++    #@ py.raw.string escape ~\d
+     raw = r"\d+\n" + "\n"
+     #@ py.bytes string ~bytes
+     b = b"bytes"

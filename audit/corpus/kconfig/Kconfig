@@ -1,0 +1,40 @@
+#@ kc.comment comment comment
+# comment
+#@ kc.menu keyword menu
+#@ kc.menu.title string Blink
+menu "Blink settings"
+
+#@ kc.config keyword config
+#@ kc.symbol.def globalvar BLINK_GPIO
+config BLINK_GPIO
+    #@ kc.type prim int
+    #@ kc.prompt string GPIO
+    int "Blink GPIO number"
+    #@ kc.range keyword range
+    #@ kc.number number 48
+    range 0 48
+    #@ kc.default keyword default
+    default 2
+    #@ kc.depends keyword depends
+    #@ kc.symbol.use globalvar SOC_GPIO
+    depends on SOC_GPIO
+    #@ kc.help keyword help
+    help
+        #@ kc.help.text comment Pin
+        Pin the LED is connected to.
+
+endmenu
+
+config BLINK_NAME
+    #@ kc.type.string prim string
+    #@ kc.escape escape ~\"
+    string "Name \"x\""
+    #@ kc.select keyword select
+    select SOC_GPIO
+
+# ---- pass 1b coverage additions ----
+config EXTRA
+    #@ kc.type.bool prim bool
+    bool "Extra"
+    #@ kc.env.var globalvar ~$(
+    default "$(EXTRA_DEFAULT)"

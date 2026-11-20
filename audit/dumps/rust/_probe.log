@@ -1,0 +1,16 @@
+2026-11-20T11:16:44.518Z start rust-analyzer (long wait)
+2026-11-20T11:16:56.639Z rust/corpus.rs lang=rust tokens=339 kind=document diags=1 waited=12060
+2026-11-20T11:16:56.639Z done
+2026-11-20T13:29:49.993Z start rust-analyzer (long wait)
+2026-11-20T13:31:26.434Z rust/corpus.rs lang=rust tokens=339 kind=document diags=1 waited=96371
+2026-11-20T13:31:26.435Z done
+2026-11-20T13:33:27.685Z start rust-analyzer (long wait)
+2026-11-20T13:34:31.973Z rust-min/corpus.rs lang=rust tokens=9 kind=document diags=0 waited=64233
+2026-11-20T13:35:36.235Z rust/corpus.rs lang=rust tokens=499 kind=document diags=1 waited=64231
+2026-11-20T13:35:36.235Z done
+2026-11-20T13:49:16.261Z start rust-analyzer (long wait)
+2026-11-20T13:50:20.607Z rust/corpus.rs lang=rust tokens=497 kind=document diags=1 waited=64286
+2026-11-20T13:50:20.608Z done
+2026-11-20T15:54:08.569Z start rust-analyzer (long wait)
+2026-11-20T15:55:12.897Z rust/corpus.rs lang=rust tokens=515 kind=document diags=1 waited=64251
+2026-11-20T15:55:12.897Z done

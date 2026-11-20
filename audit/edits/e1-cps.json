@@ -1,0 +1,978 @@
+[
+ {
+  "id": "CP-A1-001",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.class.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.class.kw",
+   "cpp.kw.class.fwd"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-003",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.struct.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.kw.struct",
+   "cpp.struct.fwd"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-004",
+  "mode": "T",
+  "lang": "rust",
+  "selector": "storage.type.rust",
+  "expect": "keyword",
+  "now": "prim|typeparam",
+  "n": 6,
+  "sev": 1,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "rs.kw.enum",
+   "rs.kw.let",
+   "rs.kw.mod",
+   "rs.kw.struct",
+   "rs.kw.trait",
+   "rs.kw.type"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-005",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "keyword.other.operator.overload.cpp",
+  "expect": "function",
+  "now": "keyword",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.op.conversion",
+   "cpp.op.new.overload"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-007",
+  "mode": "T",
+  "lang": "asm",
+  "selector": "storage.register.arm",
+  "expect": "hazard",
+  "now": "variable",
+  "n": 4,
+  "sev": 1,
+  "cause": "missing rule",
+  "kind": "fix",
+  "components": [
+   "asm.pc",
+   "asm.register",
+   "asm.register.sp",
+   "asm.writeback"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-012",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic class.builtin",
+  "expect": "prim",
+  "now": "composite|doctag",
+  "n": 3,
+  "sev": 1,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.class.base",
+   "py.exception.builtin",
+   "py.metaclass.builtin"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-014",
+  "mode": "T",
+  "lang": "c",
+  "selector": "punctuation.definition.begin.bracket.square.c",
+  "expect": "punct",
+  "now": "member",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.array.decl.size"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-015",
+  "mode": "T",
+  "lang": "c",
+  "selector": "punctuation.definition.comment.begin.documentation.c",
+  "expect": "doc",
+  "now": "comment",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.doc.block"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-016",
+  "mode": "T",
+  "lang": "c",
+  "selector": "storage.type.asm.c",
+  "expect": "keyword",
+  "now": "prim|typeparam",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.kw.asm"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-017",
+  "mode": "T",
+  "lang": "c",
+  "selector": "storage.type.enum.c",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.type.enum.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-018",
+  "mode": "T",
+  "lang": "c",
+  "selector": "storage.type.struct.c",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.type.struct.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-019",
+  "mode": "T",
+  "lang": "c",
+  "selector": "storage.type.union.c",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.type.union.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-021",
+  "mode": "T",
+  "lang": "c",
+  "selector": "variable.parameter.preprocessor.c",
+  "expect": "param",
+  "now": "macro",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "c.macro.param.def"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-026",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.enum.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.kw.enumclass"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-027",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.namespace.alias.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.ns.alias.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-028",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.namespace.definition.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.ns.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-029",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.template.argument.typename.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.kw.typename"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-030",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.template.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.kw.template"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-031",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "storage.type.union.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.union.kw"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-032",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "variable.language.this.cpp",
+  "expect": "param",
+  "now": "hazard",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.this.use"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-034",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "variable.parameter.preprocessor.cpp",
+  "expect": "param",
+  "now": "macro",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.macro.param"
+  ],
+  "modes": [
+   "S-clangd",
+   "S-cpptools",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-036",
+  "mode": "T",
+  "lang": "make",
+  "selector": "punctuation.separator.key-value.makefile",
+  "expect": "quietop",
+  "now": "punct",
+  "n": 3,
+  "sev": 1,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "mk.assign.append",
+   "mk.assign.cond",
+   "mk.assign.op"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-040",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic function.builtin",
+  "expect": "libfn",
+  "now": "function",
+  "n": 2,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.fn.builtin",
+   "py.fn.builtin.open"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-046",
+  "mode": "T",
+  "lang": "cmake",
+  "selector": "support.type.property.cmake",
+  "expect": "qualifier",
+  "now": "member",
+  "n": 2,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cm.kwarg",
+   "cm.kwarg.public"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-051",
+  "mode": "T",
+  "lang": "dts",
+  "selector": "entity.name.function.dts",
+  "expect": "composite",
+  "now": "function",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "dts.node.name",
+   "dts.node.unit"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-053",
+  "mode": "T",
+  "lang": "kconfig",
+  "selector": "variable.language.kconfig",
+  "expect": "keyword",
+  "now": "hazard",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "kc.config",
+   "kc.menu"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-054",
+  "mode": "T",
+  "lang": "markdown",
+  "selector": "string.other.link.title.markdown",
+  "expect": "variable",
+  "now": "composite|doctag",
+  "n": 2,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "md.link.text",
+   "md.ref.link"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-056",
+  "mode": "T",
+  "lang": "python",
+  "selector": "storage.type.class.python",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "py.kw.class"
+  ],
+  "modes": [
+   "S-Pylance",
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-060",
+  "mode": "T",
+  "lang": "rust",
+  "selector": "entity.name.type.numeric.rust",
+  "expect": "prim",
+  "now": "composite|doctag",
+  "n": 2,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "rs.type.prim",
+   "rs.type.prim.u8"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-073",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic class.decorator.builtin",
+  "expect": "directive",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.decorator.builtin"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-074",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic class.typeHint.builtin",
+  "expect": "prim",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.typehint.builtin"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-075",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic function.decorator.library",
+  "expect": "directive",
+  "now": "function",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.decorator.name"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-077",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic variable.classMember",
+  "expect": "member",
+  "now": "variable",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.attr.use"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-078",
+  "mode": "S",
+  "lang": "python",
+  "selector": "semantic variable.declaration.classMember",
+  "expect": "member",
+  "now": "variable",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "py.field.decl"
+  ],
+  "modes": [
+   "S-Pylance"
+  ]
+ },
+ {
+  "id": "CP-A1-079",
+  "mode": "S",
+  "lang": "rust",
+  "selector": "semantic const.constant.public",
+  "expect": "number",
+  "now": "variable",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "rs.const.use"
+  ],
+  "modes": [
+   "S-rust"
+  ]
+ },
+ {
+  "id": "CP-A1-080",
+  "mode": "S",
+  "lang": "rust",
+  "selector": "semantic const.declaration.constant.public",
+  "expect": "number",
+  "now": "variable",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "rs.const.decl"
+  ],
+  "modes": [
+   "S-rust"
+  ]
+ },
+ {
+  "id": "CP-A1-084",
+  "mode": "S",
+  "lang": "rust",
+  "selector": "semantic static.declaration.mutable.public.unsafe",
+  "expect": "staticvar",
+  "now": "variable",
+  "n": 1,
+  "sev": 3,
+  "cause": "semantic rule missing or wrong",
+  "kind": "fix",
+  "components": [
+   "rs.static.decl"
+  ],
+  "modes": [
+   "S-rust"
+  ]
+ },
+ {
+  "id": "CP-A1-086",
+  "mode": "T",
+  "lang": "asm",
+  "selector": "routine.arm",
+  "expect": "function",
+  "now": "variable",
+  "n": 1,
+  "sev": 2,
+  "cause": "missing rule",
+  "kind": "fix",
+  "components": [
+   "asm.label.def"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-094",
+  "mode": "T",
+  "lang": "cmake",
+  "selector": "variable.parameter.cmake",
+  "expect": "string",
+  "now": "param",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cm.bracket.arg"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-103",
+  "mode": "T",
+  "lang": "cpp",
+  "selector": "entity.name.type.template.cpp",
+  "expect": "typeparam",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "cpp.tparam.decl"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-113",
+  "mode": "T",
+  "lang": "dts",
+  "selector": "entity.name.type.dts",
+  "expect": "function",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "dts.label.def"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-116",
+  "mode": "T",
+  "lang": "git",
+  "selector": "meta.scope.subject.git-commit",
+  "expect": "keyword",
+  "now": "variable",
+  "n": 1,
+  "sev": 2,
+  "cause": "missing rule",
+  "kind": "fix",
+  "components": [
+   "git.subject"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-122",
+  "mode": "T",
+  "lang": "make",
+  "selector": "support.function.target.PHONY.makefile",
+  "expect": "keyword",
+  "now": "libfn",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "mk.phony"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-123",
+  "mode": "T",
+  "lang": "markdown",
+  "selector": "markup.inline.raw.string.markdown",
+  "expect": "string",
+  "now": "number",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "md.code.inline"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-125",
+  "mode": "T",
+  "lang": "markdown",
+  "selector": "storage.type.class.cpp",
+  "expect": "keyword",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "md.fence.cpp.keyword"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-130",
+  "mode": "T",
+  "lang": "python",
+  "selector": "support.type.python",
+  "expect": "directive",
+  "now": "prim|typeparam",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "py.decorator.builtin"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-131",
+  "mode": "T",
+  "lang": "python",
+  "selector": "support.variable.magic.python",
+  "expect": "method",
+  "now": "member",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "py.dunder.decl"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-135",
+  "mode": "T",
+  "lang": "rust",
+  "selector": "entity.name.type.numeric.rust",
+  "expect": "unit",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 3,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "rs.number.suffix"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-137",
+  "mode": "T",
+  "lang": "rust",
+  "selector": "entity.name.type.primitive.rust",
+  "expect": "prim",
+  "now": "composite|doctag",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "rs.type.str"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-145",
+  "mode": "T",
+  "lang": "rust",
+  "selector": "punctuation.definition.interpolation.rust",
+  "expect": "hazard",
+  "now": "punct",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "rs.format.spec"
+  ],
+  "modes": [
+   "T"
+  ]
+ },
+ {
+  "id": "CP-A1-152",
+  "mode": "T",
+  "lang": "shell",
+  "selector": "punctuation.separator.statement.and.shell",
+  "expect": "keyword",
+  "now": "punct",
+  "n": 1,
+  "sev": 2,
+  "cause": "rule too broad or rule loses",
+  "kind": "fix",
+  "components": [
+   "sh.op.and"
+  ],
+  "modes": [
+   "T"
+  ]
+ }
+]

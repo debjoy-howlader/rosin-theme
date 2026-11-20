@@ -1,0 +1,2 @@
+{ "label": "cpptools (GCC IntelliSense mode)", "out": "../dumps/cpptools", "quit": true, "timeoutMs": 150000, "pollMs": 2500, "emptyOkAfterMs": 20000,
+  "files": ["c/corpus.c", "cpp/corpus.cpp"] }

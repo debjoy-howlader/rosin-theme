@@ -1,0 +1,44 @@
+1795185057501 warmup
+1795185120528 step 1 Rosin · Sea Salt c.array.decl.size
+1795185129197 step 2 Rosin · Sea Salt c.type.struct.kw
+1795185137873 step 3 Rosin · Sea Salt c.kw.asm
+1795185146551 step 4 Rosin · Sea Salt c.macro.param.def
+1795185155228 step 5 Rosin · Sea Salt c.doc.block
+1795185163679 step 6 Rosin · Sea Salt cpp.kw.template
+1795185172343 step 7 Rosin · Sea Salt cpp.op.overload.decl
+1795185181028 step 8 Rosin · Sea Salt cpp.this.use
+1795185189495 step 9 Rosin · Sea Salt rs.kw.struct
+1795185198172 step 10 Rosin · Sea Salt rs.type.prim.u8
+1795185206838 step 11 Rosin · Sea Salt rs.const.use
+1795185215528 step 12 Rosin · Sea Salt rs.static.decl
+1795185223977 step 13 Rosin · Sea Salt py.decorator.name
+1795185232649 step 14 Rosin · Sea Salt py.decorator.builtin
+1795185241327 step 15 Rosin · Sea Salt py.fn.builtin
+1795185250003 step 16 Rosin · Sea Salt py.attr.use
+1795185258694 step 17 Rosin · Sea Salt py.kw.class
+1795185267159 step 18 Rosin · Sea Salt kc.config
+1795185275837 step 19 Rosin · Sea Salt kc.depends
+1795185284281 step 20 Rosin · Sea Salt dts.node.name
+1795185292958 step 21 Rosin · Sea Salt dts.label.def
+1795185301414 step 22 Rosin · Sea Salt asm.register
+1795185310083 step 23 Rosin · Sea Salt asm.label.def
+1795185318564 step 24 Rosin · Sea Salt mk.var.use.recipe
+1795185327248 step 25 Rosin · Sea Salt mk.assign.op
+1795185335938 step 26 Rosin · Sea Salt mk.phony
+1795185344403 step 27 Rosin · Sea Salt cm.var.use
+1795185353080 step 28 Rosin · Sea Salt cm.kwarg.public
+1795185361747 step 29 Rosin · Sea Salt cm.bracket.arg
+1795185370215 step 30 Rosin · Sea Salt sh.op.and
+1795185378669 step 31 Rosin · Sea Salt git.subject
+1795185387224 step 32 Rosin · Sea Salt md.code.inline
+1795185395895 step 33 Rosin · Sea Salt md.link.text
+1795185404359 step 34 Rosin · Sea Salt sh.var.use
+1795185412845 step 35 Rosin · Sea Salt toml.key
+1795185421324 step 36 Rosin · Sea Salt log.espidf.error
+1795185432525 step 2 Rosin · Licorice c.type.struct.kw
+1795185440999 step 9 Rosin · Licorice rs.kw.struct
+1795185449468 step 18 Rosin · Licorice kc.config
+1795185457913 step 26 Rosin · Licorice mk.phony
+1795185466386 step 30 Rosin · Licorice sh.op.and
+1795185474852 step 31 Rosin · Licorice git.subject
+1795185482982 done

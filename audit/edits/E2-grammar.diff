@@ -1,0 +1,39 @@
+--- /sessions/rcw-013z4achdqnfhugua1x8xkl8/w/loglevels.e2.json	2026-11-20 15:47:27.231996363 +0000
++++ syntaxes/loglevels.injection.json	2026-11-20 15:47:27.252751700 +0000
+@@ -45,7 +45,7 @@
+       }
+     },
+     {
+-      "match": "^([DV]) (\\(\\d+\\)) ([\\w\\-./]+):",
++      "match": "^(D) (\\(\\d+\\)) ([\\w\\-./]+):",
+       "captures": {
+         "1": {
+           "name": "log.debug"
+@@ -59,6 +59,20 @@
+       }
+     },
+     {
++      "match": "^(V) (\\(\\d+\\)) ([\\w\\-./]+):",
++      "captures": {
++        "1": {
++          "name": "log.verbose"
++        },
++        "2": {
++          "name": "log.date"
++        },
++        "3": {
++          "name": "log.tag.rosin"
++        }
++      }
++    },
++    {
+       "match": "<(err)>",
+       "captures": {
+         "1": {
+@@ -99,4 +113,4 @@
+       "name": "log.error"
+     }
+   ]
+-}
+\ No newline at end of file
++}

@@ -1,0 +1,16 @@
+1795185546675 warmup
+1795185609680 step 6 Rosin · Sea Salt cpp.kw.template
+1795185619355 step 7 Rosin · Sea Salt cpp.op.overload.decl
+1795185629054 step 8 Rosin · Sea Salt cpp.this.use
+1795185638511 step 9 Rosin · Sea Salt rs.kw.struct
+1795185648199 step 10 Rosin · Sea Salt rs.type.prim.u8
+1795185657877 step 11 Rosin · Sea Salt rs.const.use
+1795185667542 step 12 Rosin · Sea Salt rs.static.decl
+1795185676987 step 13 Rosin · Sea Salt py.decorator.name
+1795185686663 step 14 Rosin · Sea Salt py.decorator.builtin
+1795185696330 step 15 Rosin · Sea Salt py.fn.builtin
+1795185706008 step 16 Rosin · Sea Salt py.attr.use
+1795185715468 step 21 Rosin · Sea Salt dts.label.def
+1795185724908 step 18 Rosin · Sea Salt kc.config
+1795185736986 step 18 Rosin · Licorice kc.config
+1795185746123 done

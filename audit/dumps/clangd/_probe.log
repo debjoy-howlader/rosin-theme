@@ -1,0 +1,24 @@
+2026-11-20T11:20:04.165Z start clangd
+2026-11-20T11:20:14.264Z c/corpus.c lang=c tokens=0 kind=document diags=0 waited=10049
+2026-11-20T11:20:24.356Z cpp/corpus.cpp lang=cpp tokens=0 kind=document diags=0 waited=10058
+2026-11-20T11:20:24.356Z done
+2026-11-20T11:23:37.694Z start clangd
+2026-11-20T11:23:45.308Z c/corpus.c lang=c tokens=114 kind=document diags=1 waited=7559
+2026-11-20T11:23:52.883Z cpp/corpus.cpp lang=cpp tokens=102 kind=document diags=0 waited=7547
+2026-11-20T11:23:52.884Z done
+2026-11-20T11:25:10.241Z start clangd
+2026-11-20T11:25:17.837Z c/corpus.c lang=c tokens=114 kind=document diags=0 waited=7537
+2026-11-20T11:25:25.420Z cpp/corpus.cpp lang=cpp tokens=102 kind=document diags=0 waited=7556
+2026-11-20T11:25:25.420Z done
+2026-11-20T13:42:53.356Z start clangd
+2026-11-20T13:43:00.988Z c/corpus.c lang=c tokens=169 kind=document diags=13 waited=7530
+2026-11-20T13:43:08.583Z cpp/corpus.cpp lang=cpp tokens=304 kind=document diags=12 waited=7566
+2026-11-20T13:43:08.584Z done
+2026-11-20T13:44:54.757Z start clangd
+2026-11-20T13:45:02.390Z c/corpus.c lang=c tokens=179 kind=document diags=1 waited=7537
+2026-11-20T13:45:09.954Z cpp/corpus.cpp lang=cpp tokens=316 kind=document diags=4 waited=7536
+2026-11-20T13:45:09.954Z done
+2026-11-20T15:49:59.054Z start clangd
+2026-11-20T15:50:06.643Z c/corpus.c lang=c tokens=188 kind=document diags=1 waited=7531
+2026-11-20T15:50:14.218Z cpp/corpus.cpp lang=cpp tokens=430 kind=document diags=7 waited=7547
+2026-11-20T15:50:14.218Z done
